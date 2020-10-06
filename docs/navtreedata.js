@@ -8,7 +8,7 @@ var NAVTREE =
     [ "Accessors", "accessors.html", null ],
     [ "Multi-channel-composition", "multichannelcomposition.html", null ],
     [ "CZIcmd Documentation", "naczircmd.html", null ],
-    [ "3rd party software", "_3rdpartysoftware.html", null ],
+    [ "3rd party software", "thirddpartysoftware.html", null ],
     [ "Todos", "todos.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
@@ -40,9 +40,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_3rdpartysoftware.html",
-"classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception.html#a6bcf9792770dc4cbe17f8a8a0d665b7d",
-"structlib_c_z_i_1_1_query_options.html#a5fa08bd9612f2e676881498f93b03981"
+"accessors.html",
+"classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception.html#ab9f93bffdad9f93cec7d69f66ce57dfc",
+"structlib_c_z_i_1_1_query_options.html#aadf6570c2717cac879fc54c2f31fd079"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

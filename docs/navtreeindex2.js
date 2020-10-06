@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"structlib_c_z_i_1_1_query_options.html#a5fa08bd9612f2e676881498f93b03981":[10,0,0,55,2],
 "structlib_c_z_i_1_1_query_options.html#aadf6570c2717cac879fc54c2f31fd079":[10,0,0,55,1],
 "structlib_c_z_i_1_1_query_options.html#ae9ed8c23d9b03f1d146d9527b41c75fa":[10,0,0,55,0],
 "structlib_c_z_i_1_1_query_options.html#ae9ed8c23d9b03f1d146d9527b41c75faa8117d5f936be083cdaf889d9f142cc84":[10,0,0,55,0,0],
@@ -62,6 +61,7 @@ var NAVTREEINDEX2 =
 "structlib_c_z_i_1_1_xml_date_time.html#ac050f3222783e2e118d82fa7d90ef195":[10,0,0,64,8],
 "structlib_c_z_i_1_1_xml_date_time.html#ad6150dda14ef3c9dd3c7d8035e203add":[10,0,0,64,12],
 "structlib_c_z_i_1_1_xml_date_time.html#ae7360fea53276bdf24eb96d788498397":[10,0,0,64,7],
+"thirddpartysoftware.html":[7],
 "todos.html":[8],
 "using_naczirlib.html":[3]
 };
