@@ -8,7 +8,7 @@ var NAVTREE =
     [ "Accessors", "accessors.html", null ],
     [ "Multi-channel-composition", "multichannelcomposition.html", null ],
     [ "CZIcmd Documentation", "naczircmd.html", null ],
-    [ "3rd party software", "thirddpartysoftware.html", null ],
+    [ "3rd party software", "thirdpartysoftware.html", null ],
     [ "Todos", "todos.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],

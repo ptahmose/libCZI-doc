@@ -61,7 +61,7 @@ var NAVTREEINDEX2 =
 "structlib_c_z_i_1_1_xml_date_time.html#ac050f3222783e2e118d82fa7d90ef195":[10,0,0,64,8],
 "structlib_c_z_i_1_1_xml_date_time.html#ad6150dda14ef3c9dd3c7d8035e203add":[10,0,0,64,12],
 "structlib_c_z_i_1_1_xml_date_time.html#ae7360fea53276bdf24eb96d788498397":[10,0,0,64,7],
-"thirddpartysoftware.html":[7],
+"thirdpartysoftware.html":[7],
 "todos.html":[8],
 "using_naczirlib.html":[3]
 };
