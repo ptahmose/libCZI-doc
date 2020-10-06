@@ -1,0 +1,86 @@
+\hypertarget{classlib_c_z_i_1_1_i_dim_coordinate}{}\section{lib\+C\+ZI\+:\+:I\+Dim\+Coordinate Class Reference}
+\label{classlib_c_z_i_1_1_i_dim_coordinate}\index{lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate@{lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate}}
+
+
+Interface used to represent a coordinate (in the space of the dimensions identified by {\ttfamily Dimension\+Index}).  
+
+
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I\+\_\+\+Dim\+Coordinate.\+h$>$}
+
+Inheritance diagram for lib\+C\+ZI\+:\+:I\+Dim\+Coordinate\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classlib_c_z_i_1_1_i_dim_coordinate}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate_a3b1c18f0102bd5635b3cd9cc3fba69d2}{Try\+Get\+Position} (\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{Dimension\+Index} dim, int $\ast$coordinate) const =0
+\item 
+bool \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate_a92dbe2ec439f6c5c47102c51955039e0}{Is\+Valid} (\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{Dimension\+Index} dim) const
+\item 
+int \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate_af70c2c0edc0ce4cc15de7a5a0b6442bd}{Get\+Number\+Of\+Valid\+Dimensions} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface used to represent a coordinate (in the space of the dimensions identified by {\ttfamily Dimension\+Index}). 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dim_coordinate_af70c2c0edc0ce4cc15de7a5a0b6442bd}\label{classlib_c_z_i_1_1_i_dim_coordinate_af70c2c0edc0ce4cc15de7a5a0b6442bd}} 
+\index{lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate@{lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate}!Get\+Number\+Of\+Valid\+Dimensions@{Get\+Number\+Of\+Valid\+Dimensions}}
+\index{Get\+Number\+Of\+Valid\+Dimensions@{Get\+Number\+Of\+Valid\+Dimensions}!lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate@{lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate}}
+\subsubsection{\texorpdfstring{Get\+Number\+Of\+Valid\+Dimensions()}{GetNumberOfValidDimensions()}}
+{\footnotesize\ttfamily int lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate\+::\+Get\+Number\+Of\+Valid\+Dimensions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the number of valid dimensions.
+
+\begin{DoxyReturn}{Returns}
+The number of valid dimensions. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dim_coordinate_a92dbe2ec439f6c5c47102c51955039e0}\label{classlib_c_z_i_1_1_i_dim_coordinate_a92dbe2ec439f6c5c47102c51955039e0}} 
+\index{lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate@{lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate}!Is\+Valid@{Is\+Valid}}
+\index{Is\+Valid@{Is\+Valid}!lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate@{lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate}}
+\subsubsection{\texorpdfstring{Is\+Valid()}{IsValid()}}
+{\footnotesize\ttfamily bool lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate\+::\+Is\+Valid (\begin{DoxyParamCaption}\item[{\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{Dimension\+Index}}]{dim }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Query if the specified dimension is given (\textquotesingle{}is valid\textquotesingle{}) in this coordinate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dim} & The dimension.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the dimension is valid for this coordinate, false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dim_coordinate_a3b1c18f0102bd5635b3cd9cc3fba69d2}\label{classlib_c_z_i_1_1_i_dim_coordinate_a3b1c18f0102bd5635b3cd9cc3fba69d2}} 
+\index{lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate@{lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate}!Try\+Get\+Position@{Try\+Get\+Position}}
+\index{Try\+Get\+Position@{Try\+Get\+Position}!lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate@{lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate}}
+\subsubsection{\texorpdfstring{Try\+Get\+Position()}{TryGetPosition()}}
+{\footnotesize\ttfamily virtual bool lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate\+::\+Try\+Get\+Position (\begin{DoxyParamCaption}\item[{\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{Dimension\+Index}}]{dim,  }\item[{int $\ast$}]{coordinate }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Attempts to get position index in the specified dimension.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em dim} & The dimension. \\
+\hline
+\mbox{\tt out}  & {\em coordinate} & If non-\/null and the dimension is valid (in this coordinate), it will receive the value of the coordinate for the specified dimension.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds (i. e. the specified dimension is given in this coordinate), false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classlib_c_z_i_1_1_c_dim_coordinate_af7bc7e775a5971d46550e45ebf2b2ba7}{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I\+\_\+\+Dim\+Coordinate.\+h\end{DoxyCompactItemize}

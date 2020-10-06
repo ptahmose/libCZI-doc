@@ -1,0 +1,98 @@
+\hypertarget{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception}{}\section{lib\+C\+ZI\+:\+:Lib\+C\+Z\+I\+Query\+Parse\+Exception Class Reference}
+\label{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception}\index{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception}}
+
+
+Exception for signaling errors when parsing a query-\/string.  
+
+
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I\+\_\+exceptions.\+h$>$}
+
+Inheritance diagram for lib\+C\+ZI\+:\+:Lib\+C\+Z\+I\+Query\+Parse\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception_adf5a11c2415ec7c92d95365fa5af2fde}\label{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception_adf5a11c2415ec7c92d95365fa5af2fde}} 
+enum \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception_adf5a11c2415ec7c92d95365fa5af2fde}{Error\+Type} \{ {\bfseries Syntax\+Error}, 
+{\bfseries Unbalanced\+Parenthesis}, 
+{\bfseries Illformed\+Expression}, 
+{\bfseries Invalid\+Number\+Format}
+ \}\begin{DoxyCompactList}\small\item\em Values that represent different error conditions. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception_a9c01ed75a7d690006bae37444a08a2a7}{Lib\+C\+Z\+I\+Query\+Parse\+Exception} (const char $\ast$sz\+Err\+Msg, \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception_adf5a11c2415ec7c92d95365fa5af2fde}{Error\+Type} error\+Type)
+\item 
+\hyperlink{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception_a93adeb0fad20a3c8c4ea7ba68e49d127}{Lib\+C\+Z\+I\+Query\+Parse\+Exception} (const char $\ast$sz\+Err\+Msg, \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception_adf5a11c2415ec7c92d95365fa5af2fde}{Error\+Type} error\+Type, int index\+Of\+Parse\+Error)
+\item 
+\hyperlink{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception_adf5a11c2415ec7c92d95365fa5af2fde}{Error\+Type} \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception_a22088facd6fc204fcaf44867bfaeb8bc}{Get\+Error\+Type} () const
+\item 
+int \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception_ae880a97ae7923437190a968d5865b86e}{Get\+Position\+After\+Which\+Parser\+Error\+Occurred} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Exception for signaling errors when parsing a query-\/string. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception_a9c01ed75a7d690006bae37444a08a2a7}\label{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception_a9c01ed75a7d690006bae37444a08a2a7}} 
+\index{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception}!Lib\+C\+Z\+I\+Query\+Parse\+Exception@{Lib\+C\+Z\+I\+Query\+Parse\+Exception}}
+\index{Lib\+C\+Z\+I\+Query\+Parse\+Exception@{Lib\+C\+Z\+I\+Query\+Parse\+Exception}!lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception}}
+\subsubsection{\texorpdfstring{Lib\+C\+Z\+I\+Query\+Parse\+Exception()}{LibCZIQueryParseException()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception (\begin{DoxyParamCaption}\item[{const char $\ast$}]{sz\+Err\+Msg,  }\item[{\hyperlink{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception_adf5a11c2415ec7c92d95365fa5af2fde}{Error\+Type}}]{error\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for the Lib\+C\+Z\+I\+Query\+Parse\+Exception-\/exception. This exception is used to signal errors when parsing a query-\/string. 
+\begin{DoxyParams}{Parameters}
+{\em sz\+Err\+Msg} & Message describing the error. \\
+\hline
+{\em error\+Type} & Type of the error. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception_a93adeb0fad20a3c8c4ea7ba68e49d127}\label{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception_a93adeb0fad20a3c8c4ea7ba68e49d127}} 
+\index{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception}!Lib\+C\+Z\+I\+Query\+Parse\+Exception@{Lib\+C\+Z\+I\+Query\+Parse\+Exception}}
+\index{Lib\+C\+Z\+I\+Query\+Parse\+Exception@{Lib\+C\+Z\+I\+Query\+Parse\+Exception}!lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception}}
+\subsubsection{\texorpdfstring{Lib\+C\+Z\+I\+Query\+Parse\+Exception()}{LibCZIQueryParseException()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception (\begin{DoxyParamCaption}\item[{const char $\ast$}]{sz\+Err\+Msg,  }\item[{\hyperlink{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception_adf5a11c2415ec7c92d95365fa5af2fde}{Error\+Type}}]{error\+Type,  }\item[{int}]{index\+Of\+Parse\+Error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+Constructor for the Lib\+C\+Z\+I\+Query\+Parse\+Exception-\/exception. This exception is used to signal errors when parsing a query-\/string. 
+\begin{DoxyParams}{Parameters}
+{\em sz\+Err\+Msg} & Message describing the error. \\
+\hline
+{\em error\+Type} & Type of the error. \\
+\hline
+{\em index\+Of\+Parse\+Error} & The index to the character of the query string where the error was detected. If negative, this value is not valid. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception_a22088facd6fc204fcaf44867bfaeb8bc}\label{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception_a22088facd6fc204fcaf44867bfaeb8bc}} 
+\index{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception}!Get\+Error\+Type@{Get\+Error\+Type}}
+\index{Get\+Error\+Type@{Get\+Error\+Type}!lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception}}
+\subsubsection{\texorpdfstring{Get\+Error\+Type()}{GetErrorType()}}
+{\footnotesize\ttfamily \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception_adf5a11c2415ec7c92d95365fa5af2fde}{Error\+Type} lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception\+::\+Get\+Error\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets error type \begin{DoxyReturn}{Returns}
+The error type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception_ae880a97ae7923437190a968d5865b86e}\label{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception_ae880a97ae7923437190a968d5865b86e}} 
+\index{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception}!Get\+Position\+After\+Which\+Parser\+Error\+Occurred@{Get\+Position\+After\+Which\+Parser\+Error\+Occurred}}
+\index{Get\+Position\+After\+Which\+Parser\+Error\+Occurred@{Get\+Position\+After\+Which\+Parser\+Error\+Occurred}!lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception}}
+\subsubsection{\texorpdfstring{Get\+Position\+After\+Which\+Parser\+Error\+Occurred()}{GetPositionAfterWhichParserErrorOccurred()}}
+{\footnotesize\ttfamily int lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+Query\+Parse\+Exception\+::\+Get\+Position\+After\+Which\+Parser\+Error\+Occurred (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets position of the character in the query-\/string after which the parser error occurred. If negative, this value is not valid. \begin{DoxyReturn}{Returns}
+The position after which parser error occurred. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I\+\_\+exceptions.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,181 @@
+\hypertarget{classlib_c_z_i_1_1_c_dim_coordinate}{}\section{lib\+C\+ZI\+:\+:C\+Dim\+Coordinate Class Reference}
+\label{classlib_c_z_i_1_1_c_dim_coordinate}\index{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate@{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate}}
+
+
+Implementation of a class representing a coordinate (and implementing the {\ttfamily \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate}}-\/interface).  
+
+
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I\+\_\+\+Dim\+Coordinate.\+h$>$}
+
+Inheritance diagram for lib\+C\+ZI\+:\+:C\+Dim\+Coordinate\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classlib_c_z_i_1_1_c_dim_coordinate}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlib_c_z_i_1_1_c_dim_coordinate_a51d381d8965a8d10c6d0295593bc3885}\label{classlib_c_z_i_1_1_c_dim_coordinate_a51d381d8965a8d10c6d0295593bc3885}} 
+\hyperlink{classlib_c_z_i_1_1_c_dim_coordinate_a51d381d8965a8d10c6d0295593bc3885}{C\+Dim\+Coordinate} ()
+\begin{DoxyCompactList}\small\item\em Default constructor which constructs an empty coordinate (no valid dimensions). \end{DoxyCompactList}\item 
+\hyperlink{classlib_c_z_i_1_1_c_dim_coordinate_a513ae54e9dc32c0c19040b94add75e80}{C\+Dim\+Coordinate} (std\+::initializer\+\_\+list$<$ \hyperlink{structlib_c_z_i_1_1_dimension_and_value}{Dimension\+And\+Value} $>$ list)
+\item 
+\hyperlink{classlib_c_z_i_1_1_c_dim_coordinate_a95be8c1ca51e6bf4e5efc4f23a027148}{C\+Dim\+Coordinate} (const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate} $\ast$other)
+\item 
+void \hyperlink{classlib_c_z_i_1_1_c_dim_coordinate_a9f6d967df6c2040e395c0710e8374909}{Set} (\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{lib\+C\+Z\+I\+::\+Dimension\+Index} dimension, int value)
+\item 
+void \hyperlink{classlib_c_z_i_1_1_c_dim_coordinate_abfffd501e6cb4818a4b0454920b866ef}{Clear} (\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{lib\+C\+Z\+I\+::\+Dimension\+Index} dimension)
+\item 
+\mbox{\Hypertarget{classlib_c_z_i_1_1_c_dim_coordinate_ae1a5a2f981dff4c66edd2a4ef86829ef}\label{classlib_c_z_i_1_1_c_dim_coordinate_ae1a5a2f981dff4c66edd2a4ef86829ef}} 
+void \hyperlink{classlib_c_z_i_1_1_c_dim_coordinate_ae1a5a2f981dff4c66edd2a4ef86829ef}{Clear} ()
+\begin{DoxyCompactList}\small\item\em Clears the validity of all dimensions. \end{DoxyCompactList}\item 
+void \hyperlink{classlib_c_z_i_1_1_c_dim_coordinate_a65d3104fbc171cdab0cd53616df13f8e}{Enum\+Valid\+Dimensions} (std\+::function$<$ bool(\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{lib\+C\+Z\+I\+::\+Dimension\+Index} dim, int value)$>$ func) const
+\item 
+\mbox{\Hypertarget{classlib_c_z_i_1_1_c_dim_coordinate_a94b1116ff62dc82965df419b46e73dac}\label{classlib_c_z_i_1_1_c_dim_coordinate_a94b1116ff62dc82965df419b46e73dac}} 
+int \hyperlink{classlib_c_z_i_1_1_c_dim_coordinate_a94b1116ff62dc82965df419b46e73dac}{Get\+Valid\+Dimensions\+Count} () const
+\begin{DoxyCompactList}\small\item\em Determine the number the valid dimensions contained in this coordinate. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classlib_c_z_i_1_1_c_dim_coordinate_af7bc7e775a5971d46550e45ebf2b2ba7}{Try\+Get\+Position} (\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{lib\+C\+Z\+I\+::\+Dimension\+Index} dim, int $\ast$coordinate) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classlib_c_z_i_1_1_c_dim_coordinate}{C\+Dim\+Coordinate} \hyperlink{classlib_c_z_i_1_1_c_dim_coordinate_a684c17ad37de1e817c660e89e704d81e}{Parse} (const char $\ast$str)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Implementation of a class representing a coordinate (and implementing the {\ttfamily \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate}}-\/interface). 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_c_dim_coordinate_a513ae54e9dc32c0c19040b94add75e80}\label{classlib_c_z_i_1_1_c_dim_coordinate_a513ae54e9dc32c0c19040b94add75e80}} 
+\index{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate@{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate}!C\+Dim\+Coordinate@{C\+Dim\+Coordinate}}
+\index{C\+Dim\+Coordinate@{C\+Dim\+Coordinate}!lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate@{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate}}
+\subsubsection{\texorpdfstring{C\+Dim\+Coordinate()}{CDimCoordinate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate\+::\+C\+Dim\+Coordinate (\begin{DoxyParamCaption}\item[{std\+::initializer\+\_\+list$<$ \hyperlink{structlib_c_z_i_1_1_dimension_and_value}{Dimension\+And\+Value} $>$}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor which constructs a coordinate object from the specified initializer list. It can be used like this\+: 
+\begin{DoxyCode}
+\textcolor{keyword}{auto} coord = \hyperlink{classlib_c_z_i_1_1_c_dim_coordinate_a51d381d8965a8d10c6d0295593bc3885}{CDimCoordinate}\{ \{ \hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424a21c2e59531c8710156d34a3c30ac81d5}{DimensionIndex::Z},8 \} , \{ 
+      \hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424ab9ece18c950afbfa6b0fdbfa4ff731d3}{DimensionIndex::T},0 \}, \{ \hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424a0d61f8370cad1d412f80b84d143e1257}{DimensionIndex::C},1 \} \};
+\end{DoxyCode}
+ \begin{DoxyRemark}{Remarks}
+If the same dimension appears multiple times in the initializer list, then the last occurence wins. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em list} & The list of dimensions-\/and-\/values. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_c_dim_coordinate_a95be8c1ca51e6bf4e5efc4f23a027148}\label{classlib_c_z_i_1_1_c_dim_coordinate_a95be8c1ca51e6bf4e5efc4f23a027148}} 
+\index{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate@{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate}!C\+Dim\+Coordinate@{C\+Dim\+Coordinate}}
+\index{C\+Dim\+Coordinate@{C\+Dim\+Coordinate}!lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate@{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate}}
+\subsubsection{\texorpdfstring{C\+Dim\+Coordinate()}{CDimCoordinate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate\+::\+C\+Dim\+Coordinate (\begin{DoxyParamCaption}\item[{const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate} $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Copy-\/constructor which creates a copy of the specifed coordinate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The coordinate for which to create a copy. It may be null in which case an empty coordinate is created. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_c_dim_coordinate_abfffd501e6cb4818a4b0454920b866ef}\label{classlib_c_z_i_1_1_c_dim_coordinate_abfffd501e6cb4818a4b0454920b866ef}} 
+\index{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate@{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate}!Clear@{Clear}}
+\index{Clear@{Clear}!lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate@{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate\+::\+Clear (\begin{DoxyParamCaption}\item[{\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{lib\+C\+Z\+I\+::\+Dimension\+Index}}]{dimension }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Clears the validity of the specified dimension.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dimension} & The dimension to mark as \textquotesingle{}not valid for this coordinate\textquotesingle{}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_c_dim_coordinate_a65d3104fbc171cdab0cd53616df13f8e}\label{classlib_c_z_i_1_1_c_dim_coordinate_a65d3104fbc171cdab0cd53616df13f8e}} 
+\index{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate@{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate}!Enum\+Valid\+Dimensions@{Enum\+Valid\+Dimensions}}
+\index{Enum\+Valid\+Dimensions@{Enum\+Valid\+Dimensions}!lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate@{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate}}
+\subsubsection{\texorpdfstring{Enum\+Valid\+Dimensions()}{EnumValidDimensions()}}
+{\footnotesize\ttfamily void lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate\+::\+Enum\+Valid\+Dimensions (\begin{DoxyParamCaption}\item[{std\+::function$<$ bool(\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{lib\+C\+Z\+I\+::\+Dimension\+Index} dim, int value)$>$}]{func }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Enumerate the valid dimensions contained in this coordinate. The specified functor will be called for each valid dimension (and providing the functor with the dimension index and the coordinate). If the functor returns false, the enumeration is cancelled.
+
+
+\begin{DoxyParams}{Parameters}
+{\em func} & The functor to call for each valid dimension. If returning false, the enumeration is cancelled. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_c_dim_coordinate_a684c17ad37de1e817c660e89e704d81e}\label{classlib_c_z_i_1_1_c_dim_coordinate_a684c17ad37de1e817c660e89e704d81e}} 
+\index{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate@{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate}!Parse@{Parse}}
+\index{Parse@{Parse}!lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate@{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate}}
+\subsubsection{\texorpdfstring{Parse()}{Parse()}}
+{\footnotesize\ttfamily static \hyperlink{classlib_c_z_i_1_1_c_dim_coordinate}{C\+Dim\+Coordinate} lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate\+::\+Parse (\begin{DoxyParamCaption}\item[{const char $\ast$}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parse the specified string and construct a C\+Dim\+Coordinate-\/object from the information. The syntax for the string is -\/ a character identifying the dimension (one of \textquotesingle{}Z\textquotesingle{}, \textquotesingle{}C\textquotesingle{}, \textquotesingle{}T\textquotesingle{}, \textquotesingle{}R\textquotesingle{}, \textquotesingle{}S\textquotesingle{}, \textquotesingle{}I\textquotesingle{}, \textquotesingle{}H\textquotesingle{}, \textquotesingle{}V\textquotesingle{}, \textquotesingle{}B\textquotesingle{}) followed by an integer (possibly with a + or -\/). There can be more than one dimension given, in which case the parts can be separated by a comma, a semicolon or spaces. The regular expression is\+: 
+\begin{DoxyCode}
+([:blank:]*[Z|C|T|R|S|I|H|V|B][\(\backslash\)\(\backslash\)+|-]?[[:digit:]]+[,|;| ]*)
+\end{DoxyCode}
+ It is illegal to give the same dimension multiple times.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception}{Lib\+C\+Z\+I\+String\+Parse\+Exception}} & Thrown when the specified string cannot be parsed because of a syntactical error.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em str} & The string to parse.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{classlib_c_z_i_1_1_c_dim_coordinate}{C\+Dim\+Coordinate} object constructed from the string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_c_dim_coordinate_a9f6d967df6c2040e395c0710e8374909}\label{classlib_c_z_i_1_1_c_dim_coordinate_a9f6d967df6c2040e395c0710e8374909}} 
+\index{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate@{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate}!Set@{Set}}
+\index{Set@{Set}!lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate@{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate}}
+\subsubsection{\texorpdfstring{Set()}{Set()}}
+{\footnotesize\ttfamily void lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate\+::\+Set (\begin{DoxyParamCaption}\item[{\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{lib\+C\+Z\+I\+::\+Dimension\+Index}}]{dimension,  }\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the value for the specified dimension. The specified dimension will be marked \textquotesingle{}valid\textquotesingle{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dimension} & The dimension to set. \\
+\hline
+{\em value} & The value to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_c_dim_coordinate_af7bc7e775a5971d46550e45ebf2b2ba7}\label{classlib_c_z_i_1_1_c_dim_coordinate_af7bc7e775a5971d46550e45ebf2b2ba7}} 
+\index{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate@{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate}!Try\+Get\+Position@{Try\+Get\+Position}}
+\index{Try\+Get\+Position@{Try\+Get\+Position}!lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate@{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate}}
+\subsubsection{\texorpdfstring{Try\+Get\+Position()}{TryGetPosition()}}
+{\footnotesize\ttfamily virtual bool lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate\+::\+Try\+Get\+Position (\begin{DoxyParamCaption}\item[{\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{lib\+C\+Z\+I\+::\+Dimension\+Index}}]{dim,  }\item[{int $\ast$}]{coordinate }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Attempts to get position index in the specified dimension.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em dim} & The dimension. \\
+\hline
+\mbox{\tt out}  & {\em coordinate} & If non-\/null and the dimension is valid (in this coordinate), it will receive the value of the coordinate for the specified dimension.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds (i. e. the specified dimension is given in this coordinate), false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate_a3b1c18f0102bd5635b3cd9cc3fba69d2}{lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I\+\_\+\+Dim\+Coordinate.\+h\end{DoxyCompactItemize}

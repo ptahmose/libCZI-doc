@@ -1,0 +1,108 @@
+\hypertarget{classlib_c_z_i_1_1_scoped_bitmap_locker}{}\section{lib\+C\+ZI\+:\+:Scoped\+Bitmap\+Locker$<$ t\+Bitmap $>$ Class Template Reference}
+\label{classlib_c_z_i_1_1_scoped_bitmap_locker}\index{lib\+C\+Z\+I\+::\+Scoped\+Bitmap\+Locker$<$ t\+Bitmap $>$@{lib\+C\+Z\+I\+::\+Scoped\+Bitmap\+Locker$<$ t\+Bitmap $>$}}
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I\+\_\+\+Pixels.\+h$>$}
+
+Inheritance diagram for lib\+C\+ZI\+:\+:Scoped\+Bitmap\+Locker$<$ t\+Bitmap $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classlib_c_z_i_1_1_scoped_bitmap_locker}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlib_c_z_i_1_1_scoped_bitmap_locker_a871926718a1b6f2b00002d327154049b}{Scoped\+Bitmap\+Locker} (t\+Bitmap bm\+Data)
+\item 
+\hyperlink{classlib_c_z_i_1_1_scoped_bitmap_locker_a3d5e197884453daaa5c6252a6dd19e9e}{Scoped\+Bitmap\+Locker} (const \hyperlink{classlib_c_z_i_1_1_scoped_bitmap_locker}{Scoped\+Bitmap\+Locker}$<$ t\+Bitmap $>$ \&other)
+\item 
+\mbox{\Hypertarget{classlib_c_z_i_1_1_scoped_bitmap_locker_ae8096865753018bffff4544c28ab4945}\label{classlib_c_z_i_1_1_scoped_bitmap_locker_ae8096865753018bffff4544c28ab4945}} 
+\hyperlink{classlib_c_z_i_1_1_scoped_bitmap_locker_ae8096865753018bffff4544c28ab4945}{Scoped\+Bitmap\+Locker} (\hyperlink{classlib_c_z_i_1_1_scoped_bitmap_locker}{Scoped\+Bitmap\+Locker}$<$ t\+Bitmap $>$ \&\&other) noexcept
+\begin{DoxyCompactList}\small\item\em move constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlib_c_z_i_1_1_scoped_bitmap_locker_aaaf38bc85de0190783597ccf3620fd85}\label{classlib_c_z_i_1_1_scoped_bitmap_locker_aaaf38bc85de0190783597ccf3620fd85}} 
+\hyperlink{classlib_c_z_i_1_1_scoped_bitmap_locker}{Scoped\+Bitmap\+Locker}$<$ t\+Bitmap $>$ \& \hyperlink{classlib_c_z_i_1_1_scoped_bitmap_locker_aaaf38bc85de0190783597ccf3620fd85}{operator=} (\hyperlink{classlib_c_z_i_1_1_scoped_bitmap_locker}{Scoped\+Bitmap\+Locker}$<$ t\+Bitmap $>$ \&\&other) noexcept
+\begin{DoxyCompactList}\small\item\em move assignment \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename t\+Bitmap$>$\newline
+class lib\+C\+Z\+I\+::\+Scoped\+Bitmap\+Locker$<$ t\+Bitmap $>$}
+
+A helper class used to scope the lock state of a bitmap.
+
+It is intended to be used like this\+: 
+\begin{DoxyCode}
+\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{libCZI::IBitmapData}* bm = ... \textcolor{comment}{// assume that we have a pointer to a bitmap}
+
+\textcolor{comment}{// this example assumes that the pixel type is Gray8 and nothing else...}
+\textcolor{keywordflow}{if} (bm->\hyperlink{classlib_c_z_i_1_1_i_bitmap_data_a66f27266674d7f328dd5f1270b81a94e}{GetPixelType}() != \hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834ac8cfe3d00282445878661f32adca48ef}{libCZI::PixelType::Gray8}) \textcolor{keywordflow}{throw} 
+      std::exception();
+
+\{
+    \textcolor{comment}{// access the bitmap's pixels directly within this scope}
+    \hyperlink{classlib_c_z_i_1_1_scoped_bitmap_locker}{libCZI::ScopedBitmapLocker<libCZI::IBitmapData*>} lckBm\{
+       bm \};   \textcolor{comment}{// <- will call bm->Lock here}
+    \textcolor{keywordflow}{for} (std::uint32\_t y  = 0; y < bm->\hyperlink{classlib_c_z_i_1_1_i_bitmap_data_a2072b5c8db493b7b19717811a96a6483}{GetHeight}(); ++y)
+    \{
+        \textcolor{keyword}{const} std::uint8\_t* ptrLine = ((\textcolor{keyword}{const} std::uint8\_t*)lckBm.ptrDataRoi) + y * lckBm.stride;
+        \textcolor{keywordflow}{for} (std::uint32\_t x  = 0; x < bm->\hyperlink{classlib_c_z_i_1_1_i_bitmap_data_aa2638991a88c736ff4e6c42dc4c6c5c7}{GetWidth}(); ++x)
+        \{
+            \textcolor{keyword}{auto} pixelVal = ptrLine[x];
+            \textcolor{comment}{// do something with the pixel...}
+        \}
+    \}
+    
+    \textcolor{comment}{// when lckBm goes out of scope, bm->Unlock will be called}
+ \}
+\end{DoxyCode}
+
+
+For convenience two typedef are provided\+: {\ttfamily Scoped\+Bitmap\+LockerP} and {\ttfamily Scoped\+Bitmap\+Locker\+SP} for use with the types {\ttfamily I\+Bitmap\+Data$\ast$} and {\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{I\+Bitmap\+Data}$>$}.
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{typedef} ScopedBitmapLocker<IBitmapData*> \hyperlink{namespacelib_c_z_i_aa0a4df11f476d960267cc3757d7e889d}{ScopedBitmapLockerP};
+\textcolor{keyword}{typedef} ScopedBitmapLocker<std::shared\_ptr<IBitmapData>> \hyperlink{namespacelib_c_z_i_a44eca12300534095278df46d8b7ef824}{ScopedBitmapLockerSP};
+\end{DoxyCode}
+
+
+So in above sample we could have used 
+\begin{DoxyCode}
+\hyperlink{classlib_c_z_i_1_1_scoped_bitmap_locker}{libCZI::ScopedBitmapLockerP} lckBm\{ bm \};
+\end{DoxyCode}
+
+
+This utility is intended to help adhering to the R\+A\+I\+I-\/pattern, since it makes writing exception-\/safe code easier -\/ in case of an exception (within the scope of the \hyperlink{classlib_c_z_i_1_1_scoped_bitmap_locker}{Scoped\+Bitmap\+Locker} object) the bitmap\textquotesingle{}s Unlock method will be called (which is cumbersome to achieve otherwise). 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_scoped_bitmap_locker_a871926718a1b6f2b00002d327154049b}\label{classlib_c_z_i_1_1_scoped_bitmap_locker_a871926718a1b6f2b00002d327154049b}} 
+\index{lib\+C\+Z\+I\+::\+Scoped\+Bitmap\+Locker@{lib\+C\+Z\+I\+::\+Scoped\+Bitmap\+Locker}!Scoped\+Bitmap\+Locker@{Scoped\+Bitmap\+Locker}}
+\index{Scoped\+Bitmap\+Locker@{Scoped\+Bitmap\+Locker}!lib\+C\+Z\+I\+::\+Scoped\+Bitmap\+Locker@{lib\+C\+Z\+I\+::\+Scoped\+Bitmap\+Locker}}
+\subsubsection{\texorpdfstring{Scoped\+Bitmap\+Locker()}{ScopedBitmapLocker()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename t\+Bitmap$>$ \\
+\hyperlink{classlib_c_z_i_1_1_scoped_bitmap_locker}{lib\+C\+Z\+I\+::\+Scoped\+Bitmap\+Locker}$<$ t\+Bitmap $>$\+::\hyperlink{classlib_c_z_i_1_1_scoped_bitmap_locker}{Scoped\+Bitmap\+Locker} (\begin{DoxyParamCaption}\item[{t\+Bitmap}]{bm\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+Constructor taking the object for which we provide the scope-\/guard. 
+\begin{DoxyParams}{Parameters}
+{\em bm\+Data} & The object for which we are to provide the scope-\/guard. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_scoped_bitmap_locker_a3d5e197884453daaa5c6252a6dd19e9e}\label{classlib_c_z_i_1_1_scoped_bitmap_locker_a3d5e197884453daaa5c6252a6dd19e9e}} 
+\index{lib\+C\+Z\+I\+::\+Scoped\+Bitmap\+Locker@{lib\+C\+Z\+I\+::\+Scoped\+Bitmap\+Locker}!Scoped\+Bitmap\+Locker@{Scoped\+Bitmap\+Locker}}
+\index{Scoped\+Bitmap\+Locker@{Scoped\+Bitmap\+Locker}!lib\+C\+Z\+I\+::\+Scoped\+Bitmap\+Locker@{lib\+C\+Z\+I\+::\+Scoped\+Bitmap\+Locker}}
+\subsubsection{\texorpdfstring{Scoped\+Bitmap\+Locker()}{ScopedBitmapLocker()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename t\+Bitmap$>$ \\
+\hyperlink{classlib_c_z_i_1_1_scoped_bitmap_locker}{lib\+C\+Z\+I\+::\+Scoped\+Bitmap\+Locker}$<$ t\+Bitmap $>$\+::\hyperlink{classlib_c_z_i_1_1_scoped_bitmap_locker}{Scoped\+Bitmap\+Locker} (\begin{DoxyParamCaption}\item[{const \hyperlink{classlib_c_z_i_1_1_scoped_bitmap_locker}{Scoped\+Bitmap\+Locker}$<$ t\+Bitmap $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Copy-\/\+Constructor . 
+\begin{DoxyParams}{Parameters}
+{\em other} & The other object. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I\+\_\+\+Pixels.\+h\end{DoxyCompactItemize}

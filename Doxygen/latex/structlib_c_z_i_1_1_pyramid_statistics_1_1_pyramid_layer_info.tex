@@ -1,0 +1,55 @@
+\hypertarget{structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_info}{}\section{lib\+C\+ZI\+:\+:Pyramid\+Statistics\+:\+:Pyramid\+Layer\+Info Struct Reference}
+\label{structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_info}\index{lib\+C\+Z\+I\+::\+Pyramid\+Statistics\+::\+Pyramid\+Layer\+Info@{lib\+C\+Z\+I\+::\+Pyramid\+Statistics\+::\+Pyramid\+Layer\+Info}}
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_info_a9cafde3541c9752058dcbeaaa73d4686}{Is\+Layer0} () const
+\item 
+bool \hyperlink{structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_info_afc9992be68effd61fa8ff828c3fe467d}{Is\+Not\+Identified\+As\+Pyramid\+Layer} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_info_a397023f140015ffb12dc87bdfd721dc1}\label{structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_info_a397023f140015ffb12dc87bdfd721dc1}} 
+std\+::uint8\+\_\+t \hyperlink{structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_info_a397023f140015ffb12dc87bdfd721dc1}{minification\+Factor}
+\begin{DoxyCompactList}\small\item\em Factor by which adjacent pyramid-\/layers are shrunk. Commonly used in C\+ZI are 2 or 3. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_info_ad6b9ffa4916540dc3749711678cf272b}\label{structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_info_ad6b9ffa4916540dc3749711678cf272b}} 
+std\+::uint8\+\_\+t \hyperlink{structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_info_ad6b9ffa4916540dc3749711678cf272b}{pyramid\+Layer\+No}
+\begin{DoxyCompactList}\small\item\em The pyramid layer number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Information about the pyramid-\/layer. It consists of two parts\+: the minification factor and the layer number. The minification factor specifies by which factor two adjacent pyramid-\/layers are shrunk. Commonly used in C\+ZI are 2 or 3. The layer number starts with 0 with the highest resolution layer. The lowest level (layer 0) is denoted by pyramid\+Layer\+No == 0 A\+ND minification\+Factor==0. Another special case is pyramid\+Layer\+No == 0xff A\+ND minification\+Factor==0xff which means that the pyramid-\/layer could not be determined (=the minification factor could not unambiguously correlated to a pyramid-\/layer). 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_info_a9cafde3541c9752058dcbeaaa73d4686}\label{structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_info_a9cafde3541c9752058dcbeaaa73d4686}} 
+\index{lib\+C\+Z\+I\+::\+Pyramid\+Statistics\+::\+Pyramid\+Layer\+Info@{lib\+C\+Z\+I\+::\+Pyramid\+Statistics\+::\+Pyramid\+Layer\+Info}!Is\+Layer0@{Is\+Layer0}}
+\index{Is\+Layer0@{Is\+Layer0}!lib\+C\+Z\+I\+::\+Pyramid\+Statistics\+::\+Pyramid\+Layer\+Info@{lib\+C\+Z\+I\+::\+Pyramid\+Statistics\+::\+Pyramid\+Layer\+Info}}
+\subsubsection{\texorpdfstring{Is\+Layer0()}{IsLayer0()}}
+{\footnotesize\ttfamily bool lib\+C\+Z\+I\+::\+Pyramid\+Statistics\+::\+Pyramid\+Layer\+Info\+::\+Is\+Layer0 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Query if this object represents layer 0 (=no minification).
+
+\begin{DoxyReturn}{Returns}
+True if representing layer 0, false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_info_afc9992be68effd61fa8ff828c3fe467d}\label{structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_info_afc9992be68effd61fa8ff828c3fe467d}} 
+\index{lib\+C\+Z\+I\+::\+Pyramid\+Statistics\+::\+Pyramid\+Layer\+Info@{lib\+C\+Z\+I\+::\+Pyramid\+Statistics\+::\+Pyramid\+Layer\+Info}!Is\+Not\+Identified\+As\+Pyramid\+Layer@{Is\+Not\+Identified\+As\+Pyramid\+Layer}}
+\index{Is\+Not\+Identified\+As\+Pyramid\+Layer@{Is\+Not\+Identified\+As\+Pyramid\+Layer}!lib\+C\+Z\+I\+::\+Pyramid\+Statistics\+::\+Pyramid\+Layer\+Info@{lib\+C\+Z\+I\+::\+Pyramid\+Statistics\+::\+Pyramid\+Layer\+Info}}
+\subsubsection{\texorpdfstring{Is\+Not\+Identified\+As\+Pyramid\+Layer()}{IsNotIdentifiedAsPyramidLayer()}}
+{\footnotesize\ttfamily bool lib\+C\+Z\+I\+::\+Pyramid\+Statistics\+::\+Pyramid\+Layer\+Info\+::\+Is\+Not\+Identified\+As\+Pyramid\+Layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Query if this object represents the set of subblocks which cannot be represented as pyramid-\/layers.
+
+\begin{DoxyReturn}{Returns}
+True if the set of \char`\"{}not representable as pyramid-\/layer\char`\"{} is represented by this object, false if not. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,48 @@
+\hypertarget{classlib_c_z_i_1_1_i_decoder}{}\section{lib\+C\+ZI\+:\+:I\+Decoder Class Reference}
+\label{classlib_c_z_i_1_1_i_decoder}\index{lib\+C\+Z\+I\+::\+I\+Decoder@{lib\+C\+Z\+I\+::\+I\+Decoder}}
+
+
+The interface used for operating image decoder. That is the simplest possible interface at this point...  
+
+
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I\+\_\+\+Site.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $>$ \hyperlink{classlib_c_z_i_1_1_i_decoder_a14733581cd1ba72bd39a156b98b52835}{Decode} (const void $\ast$ptr\+Data, size\+\_\+t size)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The interface used for operating image decoder. That is the simplest possible interface at this point... 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_decoder_a14733581cd1ba72bd39a156b98b52835}\label{classlib_c_z_i_1_1_i_decoder_a14733581cd1ba72bd39a156b98b52835}} 
+\index{lib\+C\+Z\+I\+::\+I\+Decoder@{lib\+C\+Z\+I\+::\+I\+Decoder}!Decode@{Decode}}
+\index{Decode@{Decode}!lib\+C\+Z\+I\+::\+I\+Decoder@{lib\+C\+Z\+I\+::\+I\+Decoder}}
+\subsubsection{\texorpdfstring{Decode()}{Decode()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data}$>$ lib\+C\+Z\+I\+::\+I\+Decoder\+::\+Decode (\begin{DoxyParamCaption}\item[{const void $\ast$}]{ptr\+Data,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Passing in a block of raw data, decode the image and return a bitmap object. \begin{DoxyRemark}{Remarks}
+This method is intended to be called concurrently, implementors should make no assumption about concurrency.
+
+In case of an error (of whatever kind) the method is expected to throw an exception.
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em ptr\+Data} & Pointer to a a block of memory (which contains the encoded image). \\
+\hline
+{\em size} & The size of the memory block pointed by {\ttfamily ptr\+Data}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A bitmap object witht the decoded data. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I\+\_\+\+Site.\+h\end{DoxyCompactItemize}

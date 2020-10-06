@@ -1,0 +1,83 @@
+\hypertarget{classlib_c_z_i_1_1_i_attachment}{}\section{lib\+C\+ZI\+:\+:I\+Attachment Class Reference}
+\label{classlib_c_z_i_1_1_i_attachment}\index{lib\+C\+Z\+I\+::\+I\+Attachment@{lib\+C\+Z\+I\+::\+I\+Attachment}}
+
+
+Representation of an attachment. An attachment is a binary blob, its inner structure is opaque.  
+
+
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual const \hyperlink{structlib_c_z_i_1_1_attachment_info}{Attachment\+Info} \& \hyperlink{classlib_c_z_i_1_1_i_attachment_adabcfe4e9a9198fca93445fe22a09c1c}{Get\+Attachment\+Info} () const =0
+\item 
+virtual void \hyperlink{classlib_c_z_i_1_1_i_attachment_ab809465974cfe7eaf10e171cc1c7bc15}{Dangerous\+Get\+Raw\+Data} (const void $\ast$\&ptr, size\+\_\+t \&size) const =0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ const void $>$ \hyperlink{classlib_c_z_i_1_1_i_attachment_a123ae7b474e78b44cfbb3e36f2e74fd8}{Get\+Raw\+Data} (size\+\_\+t $\ast$ptr\+Size)=0
+\item 
+{\footnotesize template$<$class Q $>$ }\\void \hyperlink{classlib_c_z_i_1_1_i_attachment_a2f716dad937d9bc600c27ff33c94dd4e}{Dangerous\+Get\+Raw\+Data} (const Q $\ast$\&ptr, size\+\_\+t \&size) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Representation of an attachment. An attachment is a binary blob, its inner structure is opaque. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_attachment_ab809465974cfe7eaf10e171cc1c7bc15}\label{classlib_c_z_i_1_1_i_attachment_ab809465974cfe7eaf10e171cc1c7bc15}} 
+\index{lib\+C\+Z\+I\+::\+I\+Attachment@{lib\+C\+Z\+I\+::\+I\+Attachment}!Dangerous\+Get\+Raw\+Data@{Dangerous\+Get\+Raw\+Data}}
+\index{Dangerous\+Get\+Raw\+Data@{Dangerous\+Get\+Raw\+Data}!lib\+C\+Z\+I\+::\+I\+Attachment@{lib\+C\+Z\+I\+::\+I\+Attachment}}
+\subsubsection{\texorpdfstring{Dangerous\+Get\+Raw\+Data()}{DangerousGetRawData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void lib\+C\+Z\+I\+::\+I\+Attachment\+::\+Dangerous\+Get\+Raw\+Data (\begin{DoxyParamCaption}\item[{const void $\ast$\&}]{ptr,  }\item[{size\+\_\+t \&}]{size }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get a pointer to the raw data. Note that the pointer returned is only valid during the lifetime of the sub-\/block-\/object. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em ptr} & The pointer to the data is stored here. \\
+\hline
+\mbox{\tt out}  & {\em size} & The size of the data. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_attachment_a2f716dad937d9bc600c27ff33c94dd4e}\label{classlib_c_z_i_1_1_i_attachment_a2f716dad937d9bc600c27ff33c94dd4e}} 
+\index{lib\+C\+Z\+I\+::\+I\+Attachment@{lib\+C\+Z\+I\+::\+I\+Attachment}!Dangerous\+Get\+Raw\+Data@{Dangerous\+Get\+Raw\+Data}}
+\index{Dangerous\+Get\+Raw\+Data@{Dangerous\+Get\+Raw\+Data}!lib\+C\+Z\+I\+::\+I\+Attachment@{lib\+C\+Z\+I\+::\+I\+Attachment}}
+\subsubsection{\texorpdfstring{Dangerous\+Get\+Raw\+Data()}{DangerousGetRawData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Q $>$ \\
+void lib\+C\+Z\+I\+::\+I\+Attachment\+::\+Dangerous\+Get\+Raw\+Data (\begin{DoxyParamCaption}\item[{const Q $\ast$\&}]{ptr,  }\item[{size\+\_\+t \&}]{size }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+A helper method used to cast the pointer to a specific type. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em ptr} & The pointer to the data is stored here. \\
+\hline
+\mbox{\tt out}  & {\em size} & The size of the data. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_attachment_adabcfe4e9a9198fca93445fe22a09c1c}\label{classlib_c_z_i_1_1_i_attachment_adabcfe4e9a9198fca93445fe22a09c1c}} 
+\index{lib\+C\+Z\+I\+::\+I\+Attachment@{lib\+C\+Z\+I\+::\+I\+Attachment}!Get\+Attachment\+Info@{Get\+Attachment\+Info}}
+\index{Get\+Attachment\+Info@{Get\+Attachment\+Info}!lib\+C\+Z\+I\+::\+I\+Attachment@{lib\+C\+Z\+I\+::\+I\+Attachment}}
+\subsubsection{\texorpdfstring{Get\+Attachment\+Info()}{GetAttachmentInfo()}}
+{\footnotesize\ttfamily virtual const \hyperlink{structlib_c_z_i_1_1_attachment_info}{Attachment\+Info}\& lib\+C\+Z\+I\+::\+I\+Attachment\+::\+Get\+Attachment\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets information about the attachment. \begin{DoxyReturn}{Returns}
+The attachment information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_attachment_a123ae7b474e78b44cfbb3e36f2e74fd8}\label{classlib_c_z_i_1_1_i_attachment_a123ae7b474e78b44cfbb3e36f2e74fd8}} 
+\index{lib\+C\+Z\+I\+::\+I\+Attachment@{lib\+C\+Z\+I\+::\+I\+Attachment}!Get\+Raw\+Data@{Get\+Raw\+Data}}
+\index{Get\+Raw\+Data@{Get\+Raw\+Data}!lib\+C\+Z\+I\+::\+I\+Attachment@{lib\+C\+Z\+I\+::\+I\+Attachment}}
+\subsubsection{\texorpdfstring{Get\+Raw\+Data()}{GetRawData()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$const void$>$ lib\+C\+Z\+I\+::\+I\+Attachment\+::\+Get\+Raw\+Data (\begin{DoxyParamCaption}\item[{size\+\_\+t $\ast$}]{ptr\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets raw data. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em ptr\+Size} & If non-\/null, size of the data buffer is stored here. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The raw data. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I.\+h\end{DoxyCompactItemize}

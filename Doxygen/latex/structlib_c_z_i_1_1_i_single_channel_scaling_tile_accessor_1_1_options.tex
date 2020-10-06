@@ -1,0 +1,50 @@
+\hypertarget{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options}{}\section{lib\+C\+ZI\+:\+:I\+Single\+Channel\+Scaling\+Tile\+Accessor\+:\+:Options Struct Reference}
+\label{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options}\index{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor\+::\+Options@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor\+::\+Options}}
+
+
+\hyperlink{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options}{Options} used for this accessor.  
+
+
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I\+\_\+\+Compositor.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options_a62bce09e0eb8da84c26106b183c6d338}\label{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options_a62bce09e0eb8da84c26106b183c6d338}} 
+void \hyperlink{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options_a62bce09e0eb8da84c26106b183c6d338}{Clear} ()
+\begin{DoxyCompactList}\small\item\em Clears this object to its blank state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structlib_c_z_i_1_1_rgb_float_color}{Rgb\+Float\+Color} \hyperlink{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options_a2d62a4b7e8dd4edc3d4419c2dc3e4901}{back\+Ground\+Color}
+\item 
+bool \hyperlink{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options_ad0ff6bfe4369dd315edc4cfca9747596}{draw\+Tile\+Border}
+\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options_a8cede93cd20a293ccf34354813779d41}\label{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options_a8cede93cd20a293ccf34354813779d41}} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_index_set}{lib\+C\+Z\+I\+::\+I\+Index\+Set} $>$ \hyperlink{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options_a8cede93cd20a293ccf34354813779d41}{scene\+Filter}
+\begin{DoxyCompactList}\small\item\em If specified, only subblocks with a scene-\/index contained in the set will be considered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options}{Options} used for this accessor. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options_a2d62a4b7e8dd4edc3d4419c2dc3e4901}\label{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options_a2d62a4b7e8dd4edc3d4419c2dc3e4901}} 
+\index{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor\+::\+Options@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor\+::\+Options}!back\+Ground\+Color@{back\+Ground\+Color}}
+\index{back\+Ground\+Color@{back\+Ground\+Color}!lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor\+::\+Options@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor\+::\+Options}}
+\subsubsection{\texorpdfstring{back\+Ground\+Color}{backGroundColor}}
+{\footnotesize\ttfamily \hyperlink{structlib_c_z_i_1_1_rgb_float_color}{Rgb\+Float\+Color} lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor\+::\+Options\+::back\+Ground\+Color}
+
+The back ground color. If the destination bitmap is a grayscale-\/type, then the mean from R, G and B is calculated and multiplied with the maximum pixel value (of the specific pixeltype). If it is a R\+G\+B-\/color type, then R, G and B are separately multiplied with the maximum pixel value. If any of R, G or B is NaN, then the background is not cleared. \mbox{\Hypertarget{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options_ad0ff6bfe4369dd315edc4cfca9747596}\label{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options_ad0ff6bfe4369dd315edc4cfca9747596}} 
+\index{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor\+::\+Options@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor\+::\+Options}!draw\+Tile\+Border@{draw\+Tile\+Border}}
+\index{draw\+Tile\+Border@{draw\+Tile\+Border}!lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor\+::\+Options@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor\+::\+Options}}
+\subsubsection{\texorpdfstring{draw\+Tile\+Border}{drawTileBorder}}
+{\footnotesize\ttfamily bool lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor\+::\+Options\+::draw\+Tile\+Border}
+
+If true, then a one-\/pixel wide boundary will be drawn around each tile (in black color). 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I\+\_\+\+Compositor.\+h\end{DoxyCompactItemize}

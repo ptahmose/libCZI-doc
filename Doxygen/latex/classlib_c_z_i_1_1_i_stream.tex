@@ -1,0 +1,41 @@
+\hypertarget{classlib_c_z_i_1_1_i_stream}{}\section{lib\+C\+ZI\+:\+:I\+Stream Class Reference}
+\label{classlib_c_z_i_1_1_i_stream}\index{lib\+C\+Z\+I\+::\+I\+Stream@{lib\+C\+Z\+I\+::\+I\+Stream}}
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classlib_c_z_i_1_1_i_stream_ae275276d0da5082a3711527ddfedfd9f}{Read} (std\+::uint64\+\_\+t offset, void $\ast$pv, std\+::uint64\+\_\+t size, std\+::uint64\+\_\+t $\ast$ptr\+Bytes\+Read)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface used for accessing the data-\/stream. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_stream_ae275276d0da5082a3711527ddfedfd9f}\label{classlib_c_z_i_1_1_i_stream_ae275276d0da5082a3711527ddfedfd9f}} 
+\index{lib\+C\+Z\+I\+::\+I\+Stream@{lib\+C\+Z\+I\+::\+I\+Stream}!Read@{Read}}
+\index{Read@{Read}!lib\+C\+Z\+I\+::\+I\+Stream@{lib\+C\+Z\+I\+::\+I\+Stream}}
+\subsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily virtual void lib\+C\+Z\+I\+::\+I\+Stream\+::\+Read (\begin{DoxyParamCaption}\item[{std\+::uint64\+\_\+t}]{offset,  }\item[{void $\ast$}]{pv,  }\item[{std\+::uint64\+\_\+t}]{size,  }\item[{std\+::uint64\+\_\+t $\ast$}]{ptr\+Bytes\+Read }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Reads the specified amount of data from the stream at the specified position.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em offset} & The offset to start reading from. \\
+\hline
+\mbox{\tt out}  & {\em pv} & The caller-\/provided buffer for the data. Must be non-\/null. \\
+\hline
+ & {\em size} & The size of the buffer. \\
+\hline
+\mbox{\tt out}  & {\em ptr\+Bytes\+Read} & If non-\/null, the variable pointed to will receive the number of bytes actually read. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I.\+h\end{DoxyCompactItemize}

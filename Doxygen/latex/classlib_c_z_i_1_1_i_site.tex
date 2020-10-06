@@ -1,0 +1,134 @@
+\hypertarget{classlib_c_z_i_1_1_i_site}{}\section{lib\+C\+ZI\+:\+:I\+Site Class Reference}
+\label{classlib_c_z_i_1_1_i_site}\index{lib\+C\+Z\+I\+::\+I\+Site@{lib\+C\+Z\+I\+::\+I\+Site}}
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I\+\_\+\+Site.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classlib_c_z_i_1_1_i_site_a56c0d12cfa78ecb83fb5bbd0f500ee30}{Is\+Enabled} (int log\+Level)=0
+\item 
+virtual void \hyperlink{classlib_c_z_i_1_1_i_site_aa709ab923626e1a17898b3d6802c2082}{Log} (int level, const char $\ast$sz\+Msg)=0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_decoder}{I\+Decoder} $>$ \hyperlink{classlib_c_z_i_1_1_i_site_a2cbf7eccd867378b4943519284b98ef1}{Get\+Decoder} (\hyperlink{namespacelib_c_z_i_a68cd7521fd89880f820ea55baf6f6179}{Image\+Decoder\+Type} type, const char $\ast$arguments)=0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $>$ \hyperlink{classlib_c_z_i_1_1_i_site_ab1b59f522c0dfdce2474036e4ac6cc23}{Create\+Bitmap} (\hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834}{lib\+C\+Z\+I\+::\+Pixel\+Type} pixeltype, std\+::uint32\+\_\+t width, std\+::uint32\+\_\+t height, std\+::uint32\+\_\+t stride=0, std\+::uint32\+\_\+t extra\+Rows=0, std\+::uint32\+\_\+t extra\+Columns=0)=0
+\item 
+void \hyperlink{classlib_c_z_i_1_1_i_site_af879b88237db67ebf48f9c48fc15f57f}{Log} (int level, const std\+::string \&str)
+\item 
+void \hyperlink{classlib_c_z_i_1_1_i_site_a3485af37a7034750ee9d90efa9fcf2c7}{Log} (int level, std\+::stringstream \&ss)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for the Site-\/object. It is intented for customizing the library (by injecting a custom implementation of this interface). 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_site_ab1b59f522c0dfdce2474036e4ac6cc23}\label{classlib_c_z_i_1_1_i_site_ab1b59f522c0dfdce2474036e4ac6cc23}} 
+\index{lib\+C\+Z\+I\+::\+I\+Site@{lib\+C\+Z\+I\+::\+I\+Site}!Create\+Bitmap@{Create\+Bitmap}}
+\index{Create\+Bitmap@{Create\+Bitmap}!lib\+C\+Z\+I\+::\+I\+Site@{lib\+C\+Z\+I\+::\+I\+Site}}
+\subsubsection{\texorpdfstring{Create\+Bitmap()}{CreateBitmap()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data}$>$ lib\+C\+Z\+I\+::\+I\+Site\+::\+Create\+Bitmap (\begin{DoxyParamCaption}\item[{\hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834}{lib\+C\+Z\+I\+::\+Pixel\+Type}}]{pixeltype,  }\item[{std\+::uint32\+\_\+t}]{width,  }\item[{std\+::uint32\+\_\+t}]{height,  }\item[{std\+::uint32\+\_\+t}]{stride = {\ttfamily 0},  }\item[{std\+::uint32\+\_\+t}]{extra\+Rows = {\ttfamily 0},  }\item[{std\+::uint32\+\_\+t}]{extra\+Columns = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Creates a bitmap object. All internal bitmap allocations are done with this method, and overloading this method allows to use a externally controlled memory management to be injected.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pixeltype} & The pixeltype of the newly allocated bitmap. \\
+\hline
+{\em width} & The width of the newly allocated bitmap. \\
+\hline
+{\em height} & The height of the newly allocated bitmap. \\
+\hline
+{\em stride} & The stride of the newly allocated bitmap. If $<$= 0, then the method may choose an appropriate stride on its own. If a stride $>$0 is given here, then we expect that the newly created bitmap adheres to it. \\
+\hline
+{\em extra\+Rows} & The extra rows (not currently used, will always be 0). \\
+\hline
+{\em extra\+Columns} & The extra columns (not currently used, will always be 0).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The newly allocated bitmap. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_site_a2cbf7eccd867378b4943519284b98ef1}\label{classlib_c_z_i_1_1_i_site_a2cbf7eccd867378b4943519284b98ef1}} 
+\index{lib\+C\+Z\+I\+::\+I\+Site@{lib\+C\+Z\+I\+::\+I\+Site}!Get\+Decoder@{Get\+Decoder}}
+\index{Get\+Decoder@{Get\+Decoder}!lib\+C\+Z\+I\+::\+I\+Site@{lib\+C\+Z\+I\+::\+I\+Site}}
+\subsubsection{\texorpdfstring{Get\+Decoder()}{GetDecoder()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_decoder}{I\+Decoder}$>$ lib\+C\+Z\+I\+::\+I\+Site\+::\+Get\+Decoder (\begin{DoxyParamCaption}\item[{\hyperlink{namespacelib_c_z_i_a68cd7521fd89880f820ea55baf6f6179}{Image\+Decoder\+Type}}]{type,  }\item[{const char $\ast$}]{arguments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets a decoder object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type. \\
+\hline
+{\em arguments} & The arguments.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The decoder object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_site_a56c0d12cfa78ecb83fb5bbd0f500ee30}\label{classlib_c_z_i_1_1_i_site_a56c0d12cfa78ecb83fb5bbd0f500ee30}} 
+\index{lib\+C\+Z\+I\+::\+I\+Site@{lib\+C\+Z\+I\+::\+I\+Site}!Is\+Enabled@{Is\+Enabled}}
+\index{Is\+Enabled@{Is\+Enabled}!lib\+C\+Z\+I\+::\+I\+Site@{lib\+C\+Z\+I\+::\+I\+Site}}
+\subsubsection{\texorpdfstring{Is\+Enabled()}{IsEnabled()}}
+{\footnotesize\ttfamily virtual bool lib\+C\+Z\+I\+::\+I\+Site\+::\+Is\+Enabled (\begin{DoxyParamCaption}\item[{int}]{log\+Level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Query if the specified logging level is enabled. In the case that constructing the message to be logged takes a significant amount of resources (i. e. time or memory), this method should be called before in order to determine whether the output is required at all. This also means that this method may be called very frequently, so implementors should take care that it executes reasonably fast.
+
+
+\begin{DoxyParams}{Parameters}
+{\em log\+Level} & The logging level.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the specified logging level is enabled, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_site_aa709ab923626e1a17898b3d6802c2082}\label{classlib_c_z_i_1_1_i_site_aa709ab923626e1a17898b3d6802c2082}} 
+\index{lib\+C\+Z\+I\+::\+I\+Site@{lib\+C\+Z\+I\+::\+I\+Site}!Log@{Log}}
+\index{Log@{Log}!lib\+C\+Z\+I\+::\+I\+Site@{lib\+C\+Z\+I\+::\+I\+Site}}
+\subsubsection{\texorpdfstring{Log()}{Log()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily virtual void lib\+C\+Z\+I\+::\+I\+Site\+::\+Log (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{const char $\ast$}]{sz\+Msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Output the specified string at the specified logging level. \begin{DoxyRemark}{Remarks}
+The text is assumed to be A\+S\+C\+II -\/ not U\+T\+F8 or any other codepage. Use only plain-\/\+A\+S\+C\+II. This might change... 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em level} & The logging level. \\
+\hline
+{\em sz\+Msg} & The message to be logged. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_site_af879b88237db67ebf48f9c48fc15f57f}\label{classlib_c_z_i_1_1_i_site_af879b88237db67ebf48f9c48fc15f57f}} 
+\index{lib\+C\+Z\+I\+::\+I\+Site@{lib\+C\+Z\+I\+::\+I\+Site}!Log@{Log}}
+\index{Log@{Log}!lib\+C\+Z\+I\+::\+I\+Site@{lib\+C\+Z\+I\+::\+I\+Site}}
+\subsubsection{\texorpdfstring{Log()}{Log()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void lib\+C\+Z\+I\+::\+I\+Site\+::\+Log (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Output the specified string at the specified logging level. 
+\begin{DoxyParams}{Parameters}
+{\em level} & The level. \\
+\hline
+{\em str} & The string. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_site_a3485af37a7034750ee9d90efa9fcf2c7}\label{classlib_c_z_i_1_1_i_site_a3485af37a7034750ee9d90efa9fcf2c7}} 
+\index{lib\+C\+Z\+I\+::\+I\+Site@{lib\+C\+Z\+I\+::\+I\+Site}!Log@{Log}}
+\index{Log@{Log}!lib\+C\+Z\+I\+::\+I\+Site@{lib\+C\+Z\+I\+::\+I\+Site}}
+\subsubsection{\texorpdfstring{Log()}{Log()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void lib\+C\+Z\+I\+::\+I\+Site\+::\+Log (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{std\+::stringstream \&}]{ss }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Output the specified stringstream object at the specified logging level. 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em level} & The level. \\
+\hline
+\mbox{\tt in}  & {\em ss} & The stringstream object. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I\+\_\+\+Site.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+\hypertarget{classlib_c_z_i_1_1_i_attachment_repository}{}\section{lib\+C\+ZI\+:\+:I\+Attachment\+Repository Class Reference}
+\label{classlib_c_z_i_1_1_i_attachment_repository}\index{lib\+C\+Z\+I\+::\+I\+Attachment\+Repository@{lib\+C\+Z\+I\+::\+I\+Attachment\+Repository}}
+
+
+Interface for the attachment repository. This interface is used to access the attachments in a C\+Z\+I-\/file.  
+
+
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I.\+h$>$}
+
+Inheritance diagram for lib\+C\+ZI\+:\+:I\+Attachment\+Repository\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classlib_c_z_i_1_1_i_attachment_repository}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classlib_c_z_i_1_1_i_attachment_repository_a38f1c13a03e2dd8887d911be2c1b892b}{Enumerate\+Attachments} (std\+::function$<$ bool(int index, const \hyperlink{structlib_c_z_i_1_1_attachment_info}{Attachment\+Info} \&info)$>$ func\+Enum)=0
+\item 
+virtual void \hyperlink{classlib_c_z_i_1_1_i_attachment_repository_acc6b932d8d587bb8399c0236c1c29a55}{Enumerate\+Subset} (const char $\ast$content\+File\+Type, const char $\ast$name, std\+::function$<$ bool(int index, const \hyperlink{structlib_c_z_i_1_1_attachment_info}{Attachment\+Info} \&infi)$>$ func\+Enum)=0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_attachment}{I\+Attachment} $>$ \hyperlink{classlib_c_z_i_1_1_i_attachment_repository_a8f0a7a926425e39017559a95207e2d5d}{Read\+Attachment} (int index)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for the attachment repository. This interface is used to access the attachments in a C\+Z\+I-\/file. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_attachment_repository_a38f1c13a03e2dd8887d911be2c1b892b}\label{classlib_c_z_i_1_1_i_attachment_repository_a38f1c13a03e2dd8887d911be2c1b892b}} 
+\index{lib\+C\+Z\+I\+::\+I\+Attachment\+Repository@{lib\+C\+Z\+I\+::\+I\+Attachment\+Repository}!Enumerate\+Attachments@{Enumerate\+Attachments}}
+\index{Enumerate\+Attachments@{Enumerate\+Attachments}!lib\+C\+Z\+I\+::\+I\+Attachment\+Repository@{lib\+C\+Z\+I\+::\+I\+Attachment\+Repository}}
+\subsubsection{\texorpdfstring{Enumerate\+Attachments()}{EnumerateAttachments()}}
+{\footnotesize\ttfamily virtual void lib\+C\+Z\+I\+::\+I\+Attachment\+Repository\+::\+Enumerate\+Attachments (\begin{DoxyParamCaption}\item[{std\+::function$<$ bool(int index, const \hyperlink{structlib_c_z_i_1_1_attachment_info}{Attachment\+Info} \&info)$>$}]{func\+Enum }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Enumerate all attachments.
+
+
+\begin{DoxyParams}{Parameters}
+{\em func\+Enum} & The functor which will be called for every attachment. If the return value of the functor is true, the enumeration is continued, otherwise it is stopped. The first argument is the index of the attachment and the second is providing information about the attachment. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_attachment_repository_acc6b932d8d587bb8399c0236c1c29a55}\label{classlib_c_z_i_1_1_i_attachment_repository_acc6b932d8d587bb8399c0236c1c29a55}} 
+\index{lib\+C\+Z\+I\+::\+I\+Attachment\+Repository@{lib\+C\+Z\+I\+::\+I\+Attachment\+Repository}!Enumerate\+Subset@{Enumerate\+Subset}}
+\index{Enumerate\+Subset@{Enumerate\+Subset}!lib\+C\+Z\+I\+::\+I\+Attachment\+Repository@{lib\+C\+Z\+I\+::\+I\+Attachment\+Repository}}
+\subsubsection{\texorpdfstring{Enumerate\+Subset()}{EnumerateSubset()}}
+{\footnotesize\ttfamily virtual void lib\+C\+Z\+I\+::\+I\+Attachment\+Repository\+::\+Enumerate\+Subset (\begin{DoxyParamCaption}\item[{const char $\ast$}]{content\+File\+Type,  }\item[{const char $\ast$}]{name,  }\item[{std\+::function$<$ bool(int index, const \hyperlink{structlib_c_z_i_1_1_attachment_info}{Attachment\+Info} \&infi)$>$}]{func\+Enum }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Enumerate the subset of the attachments defined by the parameters. 
+\begin{DoxyParams}{Parameters}
+{\em content\+File\+Type} & If non-\/null, only attachments with this content\+File\+Type will be considered. \\
+\hline
+{\em name} & If non-\/null, only attachments with this name will be considered. \\
+\hline
+{\em func\+Enum} & The functor which will be called for every attachment (within the subset). If the return value of the functor is true, the enumeration is continued, otherwise it is stopped. The first argument is the index of the attachment and the second is providing information about the attachment. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_attachment_repository_a8f0a7a926425e39017559a95207e2d5d}\label{classlib_c_z_i_1_1_i_attachment_repository_a8f0a7a926425e39017559a95207e2d5d}} 
+\index{lib\+C\+Z\+I\+::\+I\+Attachment\+Repository@{lib\+C\+Z\+I\+::\+I\+Attachment\+Repository}!Read\+Attachment@{Read\+Attachment}}
+\index{Read\+Attachment@{Read\+Attachment}!lib\+C\+Z\+I\+::\+I\+Attachment\+Repository@{lib\+C\+Z\+I\+::\+I\+Attachment\+Repository}}
+\subsubsection{\texorpdfstring{Read\+Attachment()}{ReadAttachment()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_attachment}{I\+Attachment}$>$ lib\+C\+Z\+I\+::\+I\+Attachment\+Repository\+::\+Read\+Attachment (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Reads the attachment identified by the specified index. If there is no attachment present (for the specified index) then an empty shared\+\_\+ptr is returned. If a different kind of problem occurs (e. g. I/O error or corrupted data) an exception is thrown. 
+\begin{DoxyParams}{Parameters}
+{\em index} & Index of the attachment (as reported by the Enumerate-\/methods). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If successful, the attachment object; otherwise an empty shared\+\_\+ptr. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,44 @@
+Listing some features and ideas that did not make it into this version. This list is of course not exhaustive.
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ feature }&\textbf{ comment  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ feature }&\textbf{ comment  }\\\cline{1-2}
+\endhead
+support for Gray32\+Float &The pixeltype Gray32\+Float (in fact, all but Gray8, Gray16, Bgr24 and Bgr48) is not supported with Compose\+Multi\+Channel\+\_\+\+Bgr24.~\newline
+Also, the simple conversion (with the Get-\/method of accessors) is not implemented for all pixeltypes. \\\cline{1-2}
+support for \char`\"{}tinting L\+U\+Ts\char`\"{} &This feature of display-\/settings in Z\+EN is not yet implemented\+:~\newline
+
+\begin{DoxyImage}
+\includegraphics[width=7cm]{Tinting-LUT.png}
+\doxyfigcaption{tinting lut in Z\+EN}
+\end{DoxyImage}
+ \\\cline{1-2}
+domain objects for metadata &for accessing the metadata there is very little support (besides parsing the X\+ML by hand) \\\cline{1-2}
+performance &Performance has not been a priority so far. Performance has many aspects, and as far as the library (and its anticipated use) is concerned, it is expected that the most important task is to provide caching.~\newline
+Besides, in the composition the use of S\+I\+M\+D-\/code would surely be beneficial. \\\cline{1-2}
+sub-\/block metadata &Currently no domain objects for sub-\/block metadata, only raw-\/\+X\+ML is accesible. \\\cline{1-2}
+support for mask &Support for the \char`\"{}valid pixel mask\char`\"{}-\/feature is not implemented. \\\cline{1-2}
+multi-\/channel-\/composition~\newline
+for pixeltype Bgr48 &This would be a function akin to Compose\+Multi\+Channel\+\_\+\+Bgr24 ⇒ Compose\+Multi\+Channel\+\_\+\+Bgr48. \\\cline{1-2}
+\end{longtabu}
+Besides those features which are missing somewhat undisputed, there are of course a lot of ideas what could be added. Here are some ideas listed\+:
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ feature }&\textbf{ comment  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ feature }&\textbf{ comment  }\\\cline{1-2}
+\endhead
+bindings &Provide bindings and samples for popular languages and software (Java, Python, Mat\+Lab, Mathematica, ImageJ, Open\+CV, ...) \\\cline{1-2}
+support for authoring C\+Z\+I-\/files&Writing C\+Z\+Is should not be harder than reading them \\\cline{1-2}
+\end{longtabu}

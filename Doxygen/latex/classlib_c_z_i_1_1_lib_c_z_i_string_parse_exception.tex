@@ -1,0 +1,113 @@
+\hypertarget{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception}{}\section{lib\+C\+ZI\+:\+:Lib\+C\+Z\+I\+String\+Parse\+Exception Class Reference}
+\label{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception}\index{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception}}
+
+
+Exception for signaling that a string did not parse correctly.  
+
+
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I\+\_\+exceptions.\+h$>$}
+
+Inheritance diagram for lib\+C\+ZI\+:\+:Lib\+C\+Z\+I\+String\+Parse\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_a42ecdd87f0e6f47ca0accda1b90497d2}{Error\+Type} \{ \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_a42ecdd87f0e6f47ca0accda1b90497d2afc52000b95d50ca5da692212b69e61c2}{Error\+Type\+::\+Invalid\+Syntax}, 
+\hyperlink{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_a42ecdd87f0e6f47ca0accda1b90497d2a6a381f451ea053e25a0e87136e35dd19}{Error\+Type\+::\+Duplicate\+Dimension}, 
+\hyperlink{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_a42ecdd87f0e6f47ca0accda1b90497d2aff73eb7f68565f16f023d1c074816ea5}{Error\+Type\+::\+From\+Greater\+Than\+To}, 
+\hyperlink{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_a42ecdd87f0e6f47ca0accda1b90497d2a6fcdc090caeade09d0efd6253932b6f5}{Error\+Type\+::\+Unspecified}
+ \}\begin{DoxyCompactList}\small\item\em Values that represent error types. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_a6bcf9792770dc4cbe17f8a8a0d665b7d}{Lib\+C\+Z\+I\+String\+Parse\+Exception} (const char $\ast$sz\+Err\+Msg, int number\+Of\+Chars\+Parsed\+Ok, \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_a42ecdd87f0e6f47ca0accda1b90497d2}{Error\+Type} error\+Type)
+\item 
+\hyperlink{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_a42ecdd87f0e6f47ca0accda1b90497d2}{Error\+Type} \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_abf18d7eb523f8aa3ed8b110e2cc170a2}{Get\+Error\+Type} () const
+\item 
+int \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_ab9f93bffdad9f93cec7d69f66ce57dfc}{Get\+Number\+Of\+Chars\+Parsed\+Ok} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Exception for signaling that a string did not parse correctly. 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_a42ecdd87f0e6f47ca0accda1b90497d2}\label{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_a42ecdd87f0e6f47ca0accda1b90497d2}} 
+\index{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception}!Error\+Type@{Error\+Type}}
+\index{Error\+Type@{Error\+Type}!lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception}}
+\subsubsection{\texorpdfstring{Error\+Type}{ErrorType}}
+{\footnotesize\ttfamily enum \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_a42ecdd87f0e6f47ca0accda1b90497d2}{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception\+::\+Error\+Type}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Values that represent error types. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Invalid\+Syntax@{Invalid\+Syntax}!lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception}}\index{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception}!Invalid\+Syntax@{Invalid\+Syntax}}}\mbox{\Hypertarget{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_a42ecdd87f0e6f47ca0accda1b90497d2afc52000b95d50ca5da692212b69e61c2}\label{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_a42ecdd87f0e6f47ca0accda1b90497d2afc52000b95d50ca5da692212b69e61c2}} 
+Invalid\+Syntax&The string parsed has an invalid syntax. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Duplicate\+Dimension@{Duplicate\+Dimension}!lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception}}\index{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception}!Duplicate\+Dimension@{Duplicate\+Dimension}}}\mbox{\Hypertarget{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_a42ecdd87f0e6f47ca0accda1b90497d2a6a381f451ea053e25a0e87136e35dd19}\label{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_a42ecdd87f0e6f47ca0accda1b90497d2a6a381f451ea053e25a0e87136e35dd19}} 
+Duplicate\+Dimension&When parsing a string representation of a coordinate, it was detected, that a dimension occured more than once. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{From\+Greater\+Than\+To@{From\+Greater\+Than\+To}!lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception}}\index{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception}!From\+Greater\+Than\+To@{From\+Greater\+Than\+To}}}\mbox{\Hypertarget{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_a42ecdd87f0e6f47ca0accda1b90497d2aff73eb7f68565f16f023d1c074816ea5}\label{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_a42ecdd87f0e6f47ca0accda1b90497d2aff73eb7f68565f16f023d1c074816ea5}} 
+From\+Greater\+Than\+To&A range was parsed, and the start value is bigger than the end value. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Unspecified@{Unspecified}!lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception}}\index{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception}!Unspecified@{Unspecified}}}\mbox{\Hypertarget{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_a42ecdd87f0e6f47ca0accda1b90497d2a6fcdc090caeade09d0efd6253932b6f5}\label{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_a42ecdd87f0e6f47ca0accda1b90497d2a6fcdc090caeade09d0efd6253932b6f5}} 
+Unspecified&General error. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_a6bcf9792770dc4cbe17f8a8a0d665b7d}\label{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_a6bcf9792770dc4cbe17f8a8a0d665b7d}} 
+\index{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception}!Lib\+C\+Z\+I\+String\+Parse\+Exception@{Lib\+C\+Z\+I\+String\+Parse\+Exception}}
+\index{Lib\+C\+Z\+I\+String\+Parse\+Exception@{Lib\+C\+Z\+I\+String\+Parse\+Exception}!lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception}}
+\subsubsection{\texorpdfstring{Lib\+C\+Z\+I\+String\+Parse\+Exception()}{LibCZIStringParseException()}}
+{\footnotesize\ttfamily lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception (\begin{DoxyParamCaption}\item[{const char $\ast$}]{sz\+Err\+Msg,  }\item[{int}]{number\+Of\+Chars\+Parsed\+Ok,  }\item[{\hyperlink{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_a42ecdd87f0e6f47ca0accda1b90497d2}{Error\+Type}}]{error\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for the \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception}{Lib\+C\+Z\+I\+String\+Parse\+Exception}. This type is used to signal that a string did not parse correctly. 
+\begin{DoxyParams}{Parameters}
+{\em sz\+Err\+Msg} & Message describing the error. \\
+\hline
+{\em number\+Of\+Chars\+Parsed\+Ok} & Number of characters parsed ok. The parse error occured after this position. If negative, then this information is not available. \\
+\hline
+{\em error\+Type} & Type of the error. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_abf18d7eb523f8aa3ed8b110e2cc170a2}\label{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_abf18d7eb523f8aa3ed8b110e2cc170a2}} 
+\index{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception}!Get\+Error\+Type@{Get\+Error\+Type}}
+\index{Get\+Error\+Type@{Get\+Error\+Type}!lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception}}
+\subsubsection{\texorpdfstring{Get\+Error\+Type()}{GetErrorType()}}
+{\footnotesize\ttfamily \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_a42ecdd87f0e6f47ca0accda1b90497d2}{Error\+Type} lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception\+::\+Get\+Error\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets error type. \begin{DoxyReturn}{Returns}
+The error type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_ab9f93bffdad9f93cec7d69f66ce57dfc}\label{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception_ab9f93bffdad9f93cec7d69f66ce57dfc}} 
+\index{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception}!Get\+Number\+Of\+Chars\+Parsed\+Ok@{Get\+Number\+Of\+Chars\+Parsed\+Ok}}
+\index{Get\+Number\+Of\+Chars\+Parsed\+Ok@{Get\+Number\+Of\+Chars\+Parsed\+Ok}!lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception}}
+\subsubsection{\texorpdfstring{Get\+Number\+Of\+Chars\+Parsed\+Ok()}{GetNumberOfCharsParsedOk()}}
+{\footnotesize\ttfamily int lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+String\+Parse\+Exception\+::\+Get\+Number\+Of\+Chars\+Parsed\+Ok (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets number of characters that parsed correctly. The parse error occured after this position. If this number is negative, then this information is not available and valid. \begin{DoxyReturn}{Returns}
+The number of characters parsed that parsed correctly. If the number is negative, this information is not available. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I\+\_\+exceptions.\+h\end{DoxyCompactItemize}

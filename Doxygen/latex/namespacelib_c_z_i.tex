@@ -1,0 +1,637 @@
+\hypertarget{namespacelib_c_z_i}{}\section{lib\+C\+ZI Namespace Reference}
+\label{namespacelib_c_z_i}\index{lib\+C\+ZI@{lib\+C\+ZI}}
+
+
+External interfaces, classes, functions and structs are found in the namespace \char`\"{}lib\+C\+Z\+I\char`\"{}.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structlib_c_z_i_1_1_attachment_info}{Attachment\+Info}
+\begin{DoxyCompactList}\small\item\em Information about an attachment. \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_c_z_i_1_1_bitmap_lock_info}{Bitmap\+Lock\+Info}
+\begin{DoxyCompactList}\small\item\em Information about a locked bitmap -\/ allowing direct access to the image data in memory. \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_c_z_i_1_1_bounding_boxes}{Bounding\+Boxes}
+\begin{DoxyCompactList}\small\item\em This structure gathers the bounding-\/boxes determined from all sub-\/blocks and only be those on pyramid-\/layer 0. \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_c_z_i_1_1_build_information}{Build\+Information}
+\item 
+class \hyperlink{classlib_c_z_i_1_1_c_dim_base}{C\+Dim\+Base}
+\begin{DoxyCompactList}\small\item\em Base class containing some commonly used methods. \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_c_dim_bounds}{C\+Dim\+Bounds}
+\begin{DoxyCompactList}\small\item\em Implementation of a class representing an interval (and implementing the {\ttfamily \hyperlink{classlib_c_z_i_1_1_i_dim_bounds}{lib\+C\+Z\+I\+::\+I\+Dim\+Bounds}}-\/interface). \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_c_dim_coordinate}{C\+Dim\+Coordinate}
+\begin{DoxyCompactList}\small\item\em Implementation of a class representing a coordinate (and implementing the {\ttfamily \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate}}-\/interface). \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_c_z_i_1_1_channel_display_settings_p_o_d}{Channel\+Display\+Settings\+P\+OD}
+\item 
+class \hyperlink{classlib_c_z_i_1_1_compositors}{Compositors}
+\begin{DoxyCompactList}\small\item\em Composition operations are found in this class\+: multi-\/tile compositor and multi-\/channel compositor. \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_c_z_i_1_1_dbl_rect}{Dbl\+Rect}
+\begin{DoxyCompactList}\small\item\em A rectangle (with double coordinates). \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_c_z_i_1_1_dimension_and_start_size}{Dimension\+And\+Start\+Size}
+\begin{DoxyCompactList}\small\item\em A structure combining a dimension and an interval (defined by a start value and the size). \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_c_z_i_1_1_dimension_and_value}{Dimension\+And\+Value}
+\begin{DoxyCompactList}\small\item\em A structure combining a dimension and a value. \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_c_z_i_1_1_display_settings_p_o_d}{Display\+Settings\+P\+OD}
+\item 
+struct \hyperlink{structlib_c_z_i_1_1_file_header_info}{File\+Header\+Info}
+\begin{DoxyCompactList}\small\item\em Global information about the C\+Z\+I-\/file (from the C\+Z\+I-\/fileheader-\/segment). \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_c_z_i_1_1_general_document_info}{General\+Document\+Info}
+\begin{DoxyCompactList}\small\item\em General document information -\/ corresponding to Information/\+Document. \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_i_accessor}{I\+Accessor}
+\begin{DoxyCompactList}\small\item\em The base interface (all accessor-\/interface must derive from this). \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_i_attachment}{I\+Attachment}
+\begin{DoxyCompactList}\small\item\em Representation of an attachment. An attachment is a binary blob, its inner structure is opaque. \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_i_attachment_repository}{I\+Attachment\+Repository}
+\begin{DoxyCompactList}\small\item\em Interface for the attachment repository. This interface is used to access the attachments in a C\+Z\+I-\/file. \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{I\+Bitmap\+Data}
+\item 
+class \hyperlink{classlib_c_z_i_1_1_i_channel_display_setting}{I\+Channel\+Display\+Setting}
+\begin{DoxyCompactList}\small\item\em The display-\/settings for a channel. \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_i_czi_metadata}{I\+Czi\+Metadata}
+\begin{DoxyCompactList}\small\item\em Representation of the C\+Z\+I-\/metadata. \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info}{I\+Czi\+Multi\+Dimension\+Document\+Info}
+\begin{DoxyCompactList}\small\item\em The top-\/level interface for the C\+Z\+I-\/metadata object. \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_i_c_z_i_reader}{I\+C\+Z\+I\+Reader}
+\begin{DoxyCompactList}\small\item\em This interface is used to represent the C\+Z\+I-\/file. \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_i_decoder}{I\+Decoder}
+\begin{DoxyCompactList}\small\item\em The interface used for operating image decoder. That is the simplest possible interface at this point... \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_i_dim_bounds}{I\+Dim\+Bounds}
+\begin{DoxyCompactList}\small\item\em Interface used to represent an interval (for several dimensions). \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate}
+\begin{DoxyCompactList}\small\item\em Interface used to represent a coordinate (in the space of the dimensions identified by {\ttfamily Dimension\+Index}). \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_i_dimension_info}{I\+Dimension\+Info}
+\begin{DoxyCompactList}\small\item\em Base class for information about the dimension. \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_i_dimension_t_info}{I\+Dimension\+T\+Info}
+\begin{DoxyCompactList}\small\item\em This structure defines the information for the \char`\"{}\+T-\/dimension\char`\"{}. It resembles the Z\+E\+N-\/metadata-\/structure \char`\"{}\+Dimensions/\+T\char`\"{}. \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_i_dimension_z_info}{I\+Dimension\+Z\+Info}
+\begin{DoxyCompactList}\small\item\em This structure defines the information for the \char`\"{}\+Z-\/dimension\char`\"{}. It resembles the Z\+E\+N-\/metadata-\/structure \char`\"{}\+Dimensions/\+Z\char`\"{}. \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_i_display_settings}{I\+Display\+Settings}
+\begin{DoxyCompactList}\small\item\em The display settings. \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_i_index_set}{I\+Index\+Set}
+\item 
+class \hyperlink{classlib_c_z_i_1_1_i_metadata_segment}{I\+Metadata\+Segment}
+\begin{DoxyCompactList}\small\item\em Interface representing the metadata-\/segment. \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_c_z_i_1_1_int_rect}{Int\+Rect}
+\begin{DoxyCompactList}\small\item\em A rectangle (with integer coordinates). \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_c_z_i_1_1_int_size}{Int\+Size}
+\begin{DoxyCompactList}\small\item\em A structure representing a size (width and height) in integers. \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor}{I\+Single\+Channel\+Pyramid\+Layer\+Tile\+Accessor}
+\item 
+class \hyperlink{classlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor}{I\+Single\+Channel\+Scaling\+Tile\+Accessor}
+\item 
+class \hyperlink{classlib_c_z_i_1_1_i_single_channel_tile_accessor}{I\+Single\+Channel\+Tile\+Accessor}
+\item 
+class \hyperlink{classlib_c_z_i_1_1_i_site}{I\+Site}
+\item 
+class \hyperlink{classlib_c_z_i_1_1_i_stream}{I\+Stream}
+\item 
+class \hyperlink{classlib_c_z_i_1_1_i_sub_block}{I\+Sub\+Block}
+\item 
+class \hyperlink{classlib_c_z_i_1_1_i_sub_block_repository}{I\+Sub\+Block\+Repository}
+\begin{DoxyCompactList}\small\item\em Interface for sub-\/block repository. This interface is used to access the sub-\/blocks in a C\+Z\+I-\/file. \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_i_xml_node_read}{I\+Xml\+Node\+Read}
+\begin{DoxyCompactList}\small\item\em This interface provides read-\/only access to an X\+M\+L-\/node. \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_accessor_exception}{Lib\+C\+Z\+I\+Accessor\+Exception}
+\begin{DoxyCompactList}\small\item\em Exception for signaling errors specific for accessors. \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_c_z_i_1_1_lib_c_z_i_c_z_i_parse_exception}{Lib\+C\+Z\+I\+C\+Z\+I\+Parse\+Exception}
+\begin{DoxyCompactList}\small\item\em Exception for signaling errors parsing the C\+Z\+I-\/stream. \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_exception}{Lib\+C\+Z\+I\+Exception}
+\begin{DoxyCompactList}\small\item\em Base class for all lib\+C\+Z\+I-\/specific exceptions. \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_c_z_i_1_1_lib_c_z_i_invalid_plane_coordinate_exception}{Lib\+C\+Z\+I\+Invalid\+Plane\+Coordinate\+Exception}
+\begin{DoxyCompactList}\small\item\em Exception for signaling an incorrect plane-\/coordinate object. \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_i_o_exception}{Lib\+C\+Z\+I\+I\+O\+Exception}
+\item 
+class \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_metadata_exception}{Lib\+C\+Z\+I\+Metadata\+Exception}
+\begin{DoxyCompactList}\small\item\em Exception for signaling errors when accessing the X\+M\+L-\/metadata. \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_query_execution_exception}{Lib\+C\+Z\+I\+Query\+Execution\+Exception}
+\begin{DoxyCompactList}\small\item\em Exception for signaling errors when evaluating a query. \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_query_parse_exception}{Lib\+C\+Z\+I\+Query\+Parse\+Exception}
+\begin{DoxyCompactList}\small\item\em Exception for signaling errors when parsing a query-\/string. \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception}{Lib\+C\+Z\+I\+String\+Parse\+Exception}
+\begin{DoxyCompactList}\small\item\em Exception for signaling that a string did not parse correctly. \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_xml_parse_exception}{Lib\+C\+Z\+I\+Xml\+Parse\+Exception}
+\begin{DoxyCompactList}\small\item\em Exception for signaling errors when parsing the X\+M\+L-\/metadata. \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_c_z_i_1_1_pyramid_statistics}{Pyramid\+Statistics}
+\begin{DoxyCompactList}\small\item\em Statistics about the pyramid-\/layers. \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_c_z_i_1_1_rgb8_color}{Rgb8\+Color}
+\begin{DoxyCompactList}\small\item\em A structure representing an R-\/\+G-\/\+B-\/color triple (as bytes). \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_c_z_i_1_1_rgb_float_color}{Rgb\+Float\+Color}
+\begin{DoxyCompactList}\small\item\em A structure representing an R-\/\+G-\/\+B-\/color triple (as floats). \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_c_z_i_1_1_scaling_info}{Scaling\+Info}
+\begin{DoxyCompactList}\small\item\em Scaling information -\/ gives the size of a pixel. \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_c_z_i_1_1_scaling_info_ex}{Scaling\+Info\+Ex}
+\item 
+class \hyperlink{classlib_c_z_i_1_1_scoped_bitmap_locker}{Scoped\+Bitmap\+Locker}
+\item 
+struct \hyperlink{structlib_c_z_i_1_1_sub_block_info}{Sub\+Block\+Info}
+\begin{DoxyCompactList}\small\item\em Information about a sub-\/block. \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_c_z_i_1_1_sub_block_statistics}{Sub\+Block\+Statistics}
+\begin{DoxyCompactList}\small\item\em Statistics about all sub-\/blocks found in a C\+Z\+I-\/document. \end{DoxyCompactList}\item 
+class \hyperlink{classlib_c_z_i_1_1_utils}{Utils}
+\begin{DoxyCompactList}\small\item\em A bunch of utility functions. \end{DoxyCompactList}\item 
+struct \hyperlink{structlib_c_z_i_1_1_xml_date_time}{Xml\+Date\+Time}
+\begin{DoxyCompactList}\small\item\em This structure specifies the information in an X\+S\+D-\/\+Date\+Time field (cf. \href{https://www.w3schools.com/XML/schema_dtypes_date.asp}{\tt https\+://www.\+w3schools.\+com/\+X\+M\+L/schema\+\_\+dtypes\+\_\+date.\+asp}). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacelib_c_z_i_aa0a4df11f476d960267cc3757d7e889d}\label{namespacelib_c_z_i_aa0a4df11f476d960267cc3757d7e889d}} 
+typedef \hyperlink{classlib_c_z_i_1_1_scoped_bitmap_locker}{Scoped\+Bitmap\+Locker}$<$ \hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{I\+Bitmap\+Data} $\ast$ $>$ \hyperlink{namespacelib_c_z_i_aa0a4df11f476d960267cc3757d7e889d}{Scoped\+Bitmap\+LockerP}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the scoped bitmap locker for use with \hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacelib_c_z_i_a44eca12300534095278df46d8b7ef824}\label{namespacelib_c_z_i_a44eca12300534095278df46d8b7ef824}} 
+typedef \hyperlink{classlib_c_z_i_1_1_scoped_bitmap_locker}{Scoped\+Bitmap\+Locker}$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{I\+Bitmap\+Data} $>$ $>$ \hyperlink{namespacelib_c_z_i_a44eca12300534095278df46d8b7ef824}{Scoped\+Bitmap\+Locker\+SP}
+\begin{DoxyCompactList}\small\item\em Defines an alias representing the scoped bitmap locker for use with a shared\+\_\+ptr of type \hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacelib_c_z_i_a77743727a5f0709a64237e58b9254983}{Site\+Object\+Type} \{ \hyperlink{namespacelib_c_z_i_a77743727a5f0709a64237e58b9254983a7a1920d61156abc05a60135aefe8bc67}{Site\+Object\+Type\+::\+Default}, 
+\hyperlink{namespacelib_c_z_i_a77743727a5f0709a64237e58b9254983a6cdacd623c3a47d457783e5410437a42}{Site\+Object\+Type\+::\+With\+Jxr\+Decoder}
+ \}
+\item 
+enum \hyperlink{namespacelib_c_z_i_aa626474324df92c9cdc7258cdb1e677c}{Accessor\+Type} \{ \hyperlink{namespacelib_c_z_i_aa626474324df92c9cdc7258cdb1e677ca0e2de81425cb9e8bf8cc720f158dda7a}{Accessor\+Type\+::\+Single\+Channel\+Tile\+Accessor}, 
+\hyperlink{namespacelib_c_z_i_aa626474324df92c9cdc7258cdb1e677ca371b0260cc2165a52c4b4addd2fe4986}{Accessor\+Type\+::\+Single\+Channel\+Pyramid\+Layer\+Tile\+Accessor}, 
+\hyperlink{namespacelib_c_z_i_aa626474324df92c9cdc7258cdb1e677cae5c28a1e209fa4abe7f13039724c5a6c}{Accessor\+Type\+::\+Single\+Channel\+Scaling\+Tile\+Accessor}
+ \}\begin{DoxyCompactList}\small\item\em Values that represent the accessor types. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{Dimension\+Index} \+: std\+::uint8\+\_\+t \{ \newline
+\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424afedb2d84cafe20862cb4399751a8a7e3}{Dimension\+Index\+::invalid} = 0, 
+\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424a4664bf19d8f3ef0300bc3d7170ea139f}{Dimension\+Index\+::\+Min\+Dim} = 1, 
+\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424a21c2e59531c8710156d34a3c30ac81d5}{Dimension\+Index\+::Z} = 1, 
+\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424a0d61f8370cad1d412f80b84d143e1257}{Dimension\+Index\+::C} = 2, 
+\newline
+\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424ab9ece18c950afbfa6b0fdbfa4ff731d3}{Dimension\+Index\+::T} = 3, 
+\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424ae1e1d3d40573127e9ee0480caf1283d6}{Dimension\+Index\+::R} = 4, 
+\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424a5dbc98dcc983a70728bd082d1a47546e}{Dimension\+Index\+::S} = 5, 
+\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424add7536794b63bf90eccfd37f9b147d7f}{Dimension\+Index\+::I} = 6, 
+\newline
+\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424ac1d9f50f86825a1a2302ec2449c17196}{Dimension\+Index\+::H} = 7, 
+\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424a5206560a306a2e085a437fd258eb57ce}{Dimension\+Index\+::V} = 8, 
+\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424a9d5ed678fe57bcca610140957afab571}{Dimension\+Index\+::B} = 9, 
+\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424a217b2ee2e671fc8ef713c2c309d0fd13}{Dimension\+Index\+::\+Max\+Dim} = 9
+ \}\begin{DoxyCompactList}\small\item\em Values that represent dimension indexes. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834}{Pixel\+Type} \+: std\+::uint8\+\_\+t \{ \newline
+\hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a4bbb8f967da6d1a610596d7257179c2b}{Pixel\+Type\+::\+Invalid} = 0xff, 
+\hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834ac8cfe3d00282445878661f32adca48ef}{Pixel\+Type\+::\+Gray8} = 0, 
+\hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a2a6ec0dac8730c09dba12f860dbbad12}{Pixel\+Type\+::\+Gray16} = 1, 
+\hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a775c539daafabbfa29d83576687dd529}{Pixel\+Type\+::\+Gray32\+Float} = 2, 
+\newline
+\hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834ab2c7c7f5592a2d285184d73d3b619173}{Pixel\+Type\+::\+Bgr24} = 3, 
+\hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a7db8f5fba48387a28c10c0f27eea31a0}{Pixel\+Type\+::\+Bgr48} = 4, 
+\hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834ad42330ab003d3ccd0e9bfb8dcb59fe78}{Pixel\+Type\+::\+Bgr96\+Float} = 8, 
+\hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a2c5ed55e4aac8b7ca717880f2267896a}{Pixel\+Type\+::\+Bgra32} = 9, 
+\newline
+\hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a062a1aa408f0e6dff16852b6059d50eb}{Pixel\+Type\+::\+Gray64\+Complex\+Float} = 10, 
+\hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834aa48ea83023a8044662550b0871fa7878}{Pixel\+Type\+::\+Bgr192\+Complex\+Float} = 11, 
+\hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a7f0779c83e549b802dc51d3ee21409fb}{Pixel\+Type\+::\+Gray32} = 12, 
+\hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a6430601b36b882d0c9d97bfdd83865d9}{Pixel\+Type\+::\+Gray64\+Float} = 13
+ \}\begin{DoxyCompactList}\small\item\em An enum representing a pixel-\/type. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespacelib_c_z_i_a672959aa909ce27c5a549465200b08fb}{Compression\+Mode} \+: std\+::uint8\+\_\+t \{ \hyperlink{namespacelib_c_z_i_a672959aa909ce27c5a549465200b08fba4bbb8f967da6d1a610596d7257179c2b}{Compression\+Mode\+::\+Invalid} = 0xff, 
+\hyperlink{namespacelib_c_z_i_a672959aa909ce27c5a549465200b08fbae7e0de5672fc94ea487936c0de3ff199}{Compression\+Mode\+::\+Un\+Compressed} = 0, 
+\hyperlink{namespacelib_c_z_i_a672959aa909ce27c5a549465200b08fbad490ed93cc2099a7be4dcb5257fe50bf}{Compression\+Mode\+::\+Jpg} = 1, 
+\hyperlink{namespacelib_c_z_i_a672959aa909ce27c5a549465200b08fba92cede94b3f3b5fabbcd19c7fe25b9bc}{Compression\+Mode\+::\+Jpg\+Xr} = 4
+ \}\begin{DoxyCompactList}\small\item\em An enum specifying the compression method. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespacelib_c_z_i_a68cd7521fd89880f820ea55baf6f6179}{Image\+Decoder\+Type} \{ \hyperlink{namespacelib_c_z_i_a68cd7521fd89880f820ea55baf6f6179a843daf124e8ac9b9d6e02c87c0bdb580}{Image\+Decoder\+Type\+::\+J\+P\+X\+R\+\_\+\+Jxr\+Lib}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI \hyperlink{classlib_c_z_i_1_1_i_site}{I\+Site} $\ast$ \hyperlink{namespacelib_c_z_i_a12210a6ee4bbda8306b25648f2c4833d}{Get\+Default\+Site\+Object} (\hyperlink{namespacelib_c_z_i_a77743727a5f0709a64237e58b9254983}{lib\+C\+Z\+I\+::\+Site\+Object\+Type} type)
+\item 
+L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI void \hyperlink{namespacelib_c_z_i_a19b47bdfc502b06cbee0166ac5da6a3e}{Set\+Site\+Object} (\hyperlink{classlib_c_z_i_1_1_i_site}{lib\+C\+Z\+I\+::\+I\+Site} $\ast$p\+Site)
+\item 
+L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI void \hyperlink{namespacelib_c_z_i_a4ae53e1905b54a5b8ddb95ef62817e95}{Get\+Lib\+C\+Z\+I\+Version} (int $\ast$p\+Major, int $\ast$p\+Minor)
+\item 
+L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI void \hyperlink{namespacelib_c_z_i_aa8ab65987d0101d1e6a7f7a8c5f0941e}{Get\+Lib\+C\+Z\+I\+Build\+Information} (\hyperlink{structlib_c_z_i_1_1_build_information}{Build\+Information} \&info)
+\item 
+L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_c_z_i_reader}{I\+C\+Z\+I\+Reader} $>$ \hyperlink{namespacelib_c_z_i_abe978d8bd50abe94c2d37df6212859e8}{Create\+C\+Z\+I\+Reader} ()
+\item 
+L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{I\+Bitmap\+Data} $>$ \hyperlink{namespacelib_c_z_i_aca46f77d360ed5fadb9ff68835f80bfb}{Create\+Bitmap\+From\+Sub\+Block} (\hyperlink{classlib_c_z_i_1_1_i_sub_block}{I\+Sub\+Block} $\ast$sub\+Blk)
+\item 
+L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_czi_metadata}{I\+Czi\+Metadata} $>$ \hyperlink{namespacelib_c_z_i_a69621b531d30747728a2fd37eb5286c2}{Create\+Meta\+From\+Metadata\+Segment} (\hyperlink{classlib_c_z_i_1_1_i_metadata_segment}{I\+Metadata\+Segment} $\ast$metadata\+Segment)
+\item 
+L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_accessor}{I\+Accessor} $>$ \hyperlink{namespacelib_c_z_i_a036375c3761cc8ea54022d37000ae0ae}{Create\+Accesor} (std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_sub_block_repository}{I\+Sub\+Block\+Repository} $>$ repository, \hyperlink{namespacelib_c_z_i_aa626474324df92c9cdc7258cdb1e677c}{Accessor\+Type} accessor\+Type)
+\item 
+L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_stream}{I\+Stream} $>$ \hyperlink{namespacelib_c_z_i_a8783cf40c0eac418632db90c4f20b43b}{Create\+Stream\+From\+File} (const wchar\+\_\+t $\ast$sz\+Filename)
+\item 
+L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_stream}{I\+Stream} $>$ \hyperlink{namespacelib_c_z_i_afc0c5e268aa30fc812911a1a6eef44fb}{Create\+Stream\+From\+Memory} (std\+::shared\+\_\+ptr$<$ const void $>$ ptr, size\+\_\+t data\+Size)
+\item 
+L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_stream}{I\+Stream} $>$ \hyperlink{namespacelib_c_z_i_a27a30c227f027817b36e29ac259b270c}{Create\+Stream\+From\+Memory} (\hyperlink{classlib_c_z_i_1_1_i_attachment}{I\+Attachment} $\ast$attachment)
+\item 
+std\+::ostream \& \hyperlink{namespacelib_c_z_i_aee5b36178903cd959cd840973309c4bb}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{structlib_c_z_i_1_1_int_rect}{Int\+Rect} \&rect)
+\item 
+std\+::ostream \& \hyperlink{namespacelib_c_z_i_aa572fb9812d1569dc1afbcef03fbc3ee}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{structlib_c_z_i_1_1_int_size}{Int\+Size} \&size)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacelib_c_z_i_a67c1f1bc9ae5774830edaf5fb5ded0dc}\label{namespacelib_c_z_i_a67c1f1bc9ae5774830edaf5fb5ded0dc}} 
+const int \hyperlink{namespacelib_c_z_i_a67c1f1bc9ae5774830edaf5fb5ded0dc}{L\+O\+G\+L\+E\+V\+E\+L\+\_\+\+C\+A\+T\+A\+S\+T\+R\+O\+P\+H\+I\+C\+E\+R\+R\+OR} = 0
+\begin{DoxyCompactList}\small\item\em Identifies a catastrophic error (i. e. the program cannot continue). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacelib_c_z_i_a2711fb740d09c5a9c88d125b3d984a02}\label{namespacelib_c_z_i_a2711fb740d09c5a9c88d125b3d984a02}} 
+const int \hyperlink{namespacelib_c_z_i_a2711fb740d09c5a9c88d125b3d984a02}{L\+O\+G\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+OR} = 1
+\begin{DoxyCompactList}\small\item\em Identifies a non-\/recoverable error. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacelib_c_z_i_af57d6c80bea4f0809cd8b4c9160c8fab}\label{namespacelib_c_z_i_af57d6c80bea4f0809cd8b4c9160c8fab}} 
+const int \hyperlink{namespacelib_c_z_i_af57d6c80bea4f0809cd8b4c9160c8fab}{L\+O\+G\+L\+E\+V\+E\+L\+\_\+\+S\+E\+V\+E\+R\+E\+W\+A\+R\+N\+I\+NG} = 2
+\begin{DoxyCompactList}\small\item\em Identifies that a severe problem has occured. Proper operation of the module is not ensured. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacelib_c_z_i_a7e977f2d95127499f0f4e27b8a65d371}\label{namespacelib_c_z_i_a7e977f2d95127499f0f4e27b8a65d371}} 
+const int \hyperlink{namespacelib_c_z_i_a7e977f2d95127499f0f4e27b8a65d371}{L\+O\+G\+L\+E\+V\+E\+L\+\_\+\+W\+A\+R\+N\+I\+NG} = 3
+\begin{DoxyCompactList}\small\item\em Identifies that a problem has been identified. It is likely that proper operation can be kept up. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacelib_c_z_i_a16bb83f2e19fe08cc4edd0a43a4331f0}\label{namespacelib_c_z_i_a16bb83f2e19fe08cc4edd0a43a4331f0}} 
+const int \hyperlink{namespacelib_c_z_i_a16bb83f2e19fe08cc4edd0a43a4331f0}{L\+O\+G\+L\+E\+V\+E\+L\+\_\+\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON} = 4
+\begin{DoxyCompactList}\small\item\em Identifies an informational output. It has no impact on the proper operation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacelib_c_z_i_ae6175e1c87b444693bb1a903ac28102e}\label{namespacelib_c_z_i_ae6175e1c87b444693bb1a903ac28102e}} 
+const int \hyperlink{namespacelib_c_z_i_ae6175e1c87b444693bb1a903ac28102e}{L\+O\+G\+L\+E\+V\+E\+L\+\_\+\+C\+H\+A\+T\+T\+Y\+I\+N\+F\+O\+R\+M\+A\+T\+I\+ON} = 5
+\begin{DoxyCompactList}\small\item\em Identifies an informational output which has no impact on proper operation. Use this for output which may occur with high frequency. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+External interfaces, classes, functions and structs are found in the namespace \char`\"{}lib\+C\+Z\+I\char`\"{}. 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespacelib_c_z_i_aa626474324df92c9cdc7258cdb1e677c}\label{namespacelib_c_z_i_aa626474324df92c9cdc7258cdb1e677c}} 
+\index{lib\+C\+ZI@{lib\+C\+ZI}!Accessor\+Type@{Accessor\+Type}}
+\index{Accessor\+Type@{Accessor\+Type}!lib\+C\+ZI@{lib\+C\+ZI}}
+\subsubsection{\texorpdfstring{Accessor\+Type}{AccessorType}}
+{\footnotesize\ttfamily enum \hyperlink{namespacelib_c_z_i_aa626474324df92c9cdc7258cdb1e677c}{lib\+C\+Z\+I\+::\+Accessor\+Type}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Values that represent the accessor types. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Single\+Channel\+Tile\+Accessor@{Single\+Channel\+Tile\+Accessor}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!Single\+Channel\+Tile\+Accessor@{Single\+Channel\+Tile\+Accessor}}}\mbox{\Hypertarget{namespacelib_c_z_i_aa626474324df92c9cdc7258cdb1e677ca0e2de81425cb9e8bf8cc720f158dda7a}\label{namespacelib_c_z_i_aa626474324df92c9cdc7258cdb1e677ca0e2de81425cb9e8bf8cc720f158dda7a}} 
+Single\+Channel\+Tile\+Accessor&The single-\/channel-\/tile accessor (associated interface\+: \hyperlink{classlib_c_z_i_1_1_i_single_channel_tile_accessor}{I\+Single\+Channel\+Tile\+Accessor}). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Single\+Channel\+Pyramid\+Layer\+Tile\+Accessor@{Single\+Channel\+Pyramid\+Layer\+Tile\+Accessor}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!Single\+Channel\+Pyramid\+Layer\+Tile\+Accessor@{Single\+Channel\+Pyramid\+Layer\+Tile\+Accessor}}}\mbox{\Hypertarget{namespacelib_c_z_i_aa626474324df92c9cdc7258cdb1e677ca371b0260cc2165a52c4b4addd2fe4986}\label{namespacelib_c_z_i_aa626474324df92c9cdc7258cdb1e677ca371b0260cc2165a52c4b4addd2fe4986}} 
+Single\+Channel\+Pyramid\+Layer\+Tile\+Accessor&The single-\/channel-\/pyramidlayer-\/tile accessor (associated interface\+: \hyperlink{classlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor}{I\+Single\+Channel\+Pyramid\+Layer\+Tile\+Accessor}). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Single\+Channel\+Scaling\+Tile\+Accessor@{Single\+Channel\+Scaling\+Tile\+Accessor}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!Single\+Channel\+Scaling\+Tile\+Accessor@{Single\+Channel\+Scaling\+Tile\+Accessor}}}\mbox{\Hypertarget{namespacelib_c_z_i_aa626474324df92c9cdc7258cdb1e677cae5c28a1e209fa4abe7f13039724c5a6c}\label{namespacelib_c_z_i_aa626474324df92c9cdc7258cdb1e677cae5c28a1e209fa4abe7f13039724c5a6c}} 
+Single\+Channel\+Scaling\+Tile\+Accessor&The scaling-\/single-\/channel-\/tile accessor (associated interface\+: \hyperlink{classlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor}{I\+Single\+Channel\+Scaling\+Tile\+Accessor}). \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespacelib_c_z_i_a672959aa909ce27c5a549465200b08fb}\label{namespacelib_c_z_i_a672959aa909ce27c5a549465200b08fb}} 
+\index{lib\+C\+ZI@{lib\+C\+ZI}!Compression\+Mode@{Compression\+Mode}}
+\index{Compression\+Mode@{Compression\+Mode}!lib\+C\+ZI@{lib\+C\+ZI}}
+\subsubsection{\texorpdfstring{Compression\+Mode}{CompressionMode}}
+{\footnotesize\ttfamily enum \hyperlink{namespacelib_c_z_i_a672959aa909ce27c5a549465200b08fb}{lib\+C\+Z\+I\+::\+Compression\+Mode} \+: std\+::uint8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+An enum specifying the compression method. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Invalid@{Invalid}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!Invalid@{Invalid}}}\mbox{\Hypertarget{namespacelib_c_z_i_a672959aa909ce27c5a549465200b08fba4bbb8f967da6d1a610596d7257179c2b}\label{namespacelib_c_z_i_a672959aa909ce27c5a549465200b08fba4bbb8f967da6d1a610596d7257179c2b}} 
+Invalid&Invalid compression type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Un\+Compressed@{Un\+Compressed}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!Un\+Compressed@{Un\+Compressed}}}\mbox{\Hypertarget{namespacelib_c_z_i_a672959aa909ce27c5a549465200b08fbae7e0de5672fc94ea487936c0de3ff199}\label{namespacelib_c_z_i_a672959aa909ce27c5a549465200b08fbae7e0de5672fc94ea487936c0de3ff199}} 
+Un\+Compressed&The data is uncompressed. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Jpg@{Jpg}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!Jpg@{Jpg}}}\mbox{\Hypertarget{namespacelib_c_z_i_a672959aa909ce27c5a549465200b08fbad490ed93cc2099a7be4dcb5257fe50bf}\label{namespacelib_c_z_i_a672959aa909ce27c5a549465200b08fbad490ed93cc2099a7be4dcb5257fe50bf}} 
+Jpg&The data is J\+P\+G-\/compressed. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Jpg\+Xr@{Jpg\+Xr}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!Jpg\+Xr@{Jpg\+Xr}}}\mbox{\Hypertarget{namespacelib_c_z_i_a672959aa909ce27c5a549465200b08fba92cede94b3f3b5fabbcd19c7fe25b9bc}\label{namespacelib_c_z_i_a672959aa909ce27c5a549465200b08fba92cede94b3f3b5fabbcd19c7fe25b9bc}} 
+Jpg\+Xr&The data is J\+P\+G-\/\+X\+R-\/compressed. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}\label{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}} 
+\index{lib\+C\+ZI@{lib\+C\+ZI}!Dimension\+Index@{Dimension\+Index}}
+\index{Dimension\+Index@{Dimension\+Index}!lib\+C\+ZI@{lib\+C\+ZI}}
+\subsubsection{\texorpdfstring{Dimension\+Index}{DimensionIndex}}
+{\footnotesize\ttfamily enum \hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{lib\+C\+Z\+I\+::\+Dimension\+Index} \+: std\+::uint8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Values that represent dimension indexes. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{invalid@{invalid}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!invalid@{invalid}}}\mbox{\Hypertarget{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424afedb2d84cafe20862cb4399751a8a7e3}\label{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424afedb2d84cafe20862cb4399751a8a7e3}} 
+invalid&Invalid dimension index. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Min\+Dim@{Min\+Dim}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!Min\+Dim@{Min\+Dim}}}\mbox{\Hypertarget{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424a4664bf19d8f3ef0300bc3d7170ea139f}\label{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424a4664bf19d8f3ef0300bc3d7170ea139f}} 
+Min\+Dim&This enum must be have the value of the lowest (valid) dimension index. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Z@{Z}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!Z@{Z}}}\mbox{\Hypertarget{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424a21c2e59531c8710156d34a3c30ac81d5}\label{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424a21c2e59531c8710156d34a3c30ac81d5}} 
+Z&The Z-\/dimension. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C@{C}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!C@{C}}}\mbox{\Hypertarget{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424a0d61f8370cad1d412f80b84d143e1257}\label{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424a0d61f8370cad1d412f80b84d143e1257}} 
+C&The C-\/dimension (\char`\"{}channel\char`\"{}). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T@{T}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!T@{T}}}\mbox{\Hypertarget{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424ab9ece18c950afbfa6b0fdbfa4ff731d3}\label{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424ab9ece18c950afbfa6b0fdbfa4ff731d3}} 
+T&The T-\/dimension (\char`\"{}time\char`\"{}). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R@{R}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!R@{R}}}\mbox{\Hypertarget{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424ae1e1d3d40573127e9ee0480caf1283d6}\label{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424ae1e1d3d40573127e9ee0480caf1283d6}} 
+R&The R-\/dimension (\char`\"{}rotation\char`\"{}). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S@{S}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!S@{S}}}\mbox{\Hypertarget{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424a5dbc98dcc983a70728bd082d1a47546e}\label{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424a5dbc98dcc983a70728bd082d1a47546e}} 
+S&The S-\/dimension (\char`\"{}scene\char`\"{}). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I@{I}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!I@{I}}}\mbox{\Hypertarget{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424add7536794b63bf90eccfd37f9b147d7f}\label{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424add7536794b63bf90eccfd37f9b147d7f}} 
+I&The I-\/dimension (\char`\"{}illumination\char`\"{}). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{H@{H}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!H@{H}}}\mbox{\Hypertarget{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424ac1d9f50f86825a1a2302ec2449c17196}\label{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424ac1d9f50f86825a1a2302ec2449c17196}} 
+H&The H-\/dimension (\char`\"{}phase\char`\"{}). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{V@{V}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!V@{V}}}\mbox{\Hypertarget{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424a5206560a306a2e085a437fd258eb57ce}\label{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424a5206560a306a2e085a437fd258eb57ce}} 
+V&The V-\/dimension (\char`\"{}view\char`\"{}). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B@{B}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!B@{B}}}\mbox{\Hypertarget{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424a9d5ed678fe57bcca610140957afab571}\label{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424a9d5ed678fe57bcca610140957afab571}} 
+B&The B-\/dimension (\char`\"{}block\char`\"{}) -\/ its use is deprecated. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Max\+Dim@{Max\+Dim}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!Max\+Dim@{Max\+Dim}}}\mbox{\Hypertarget{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424a217b2ee2e671fc8ef713c2c309d0fd13}\label{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424a217b2ee2e671fc8ef713c2c309d0fd13}} 
+Max\+Dim&This enum must be have the value of the highest (valid) dimension index. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespacelib_c_z_i_a68cd7521fd89880f820ea55baf6f6179}\label{namespacelib_c_z_i_a68cd7521fd89880f820ea55baf6f6179}} 
+\index{lib\+C\+ZI@{lib\+C\+ZI}!Image\+Decoder\+Type@{Image\+Decoder\+Type}}
+\index{Image\+Decoder\+Type@{Image\+Decoder\+Type}!lib\+C\+ZI@{lib\+C\+ZI}}
+\subsubsection{\texorpdfstring{Image\+Decoder\+Type}{ImageDecoderType}}
+{\footnotesize\ttfamily enum \hyperlink{namespacelib_c_z_i_a68cd7521fd89880f820ea55baf6f6179}{lib\+C\+Z\+I\+::\+Image\+Decoder\+Type}\hspace{0.3cm}{\ttfamily [strong]}}
+
+Values that represent image decoder types -\/ used for distinguishing decoder objects created by {\ttfamily \hyperlink{classlib_c_z_i_1_1_i_site_a2cbf7eccd867378b4943519284b98ef1}{I\+Site\+::\+Get\+Decoder}}. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{J\+P\+X\+R\+\_\+\+Jxr\+Lib@{J\+P\+X\+R\+\_\+\+Jxr\+Lib}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!J\+P\+X\+R\+\_\+\+Jxr\+Lib@{J\+P\+X\+R\+\_\+\+Jxr\+Lib}}}\mbox{\Hypertarget{namespacelib_c_z_i_a68cd7521fd89880f820ea55baf6f6179a843daf124e8ac9b9d6e02c87c0bdb580}\label{namespacelib_c_z_i_a68cd7521fd89880f820ea55baf6f6179a843daf124e8ac9b9d6e02c87c0bdb580}} 
+J\+P\+X\+R\+\_\+\+Jxr\+Lib&Identifies an encoder capable of decoding a J\+P\+G-\/\+XR compressed image. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834}\label{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834}} 
+\index{lib\+C\+ZI@{lib\+C\+ZI}!Pixel\+Type@{Pixel\+Type}}
+\index{Pixel\+Type@{Pixel\+Type}!lib\+C\+ZI@{lib\+C\+ZI}}
+\subsubsection{\texorpdfstring{Pixel\+Type}{PixelType}}
+{\footnotesize\ttfamily enum \hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834}{lib\+C\+Z\+I\+::\+Pixel\+Type} \+: std\+::uint8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+An enum representing a pixel-\/type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Invalid@{Invalid}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!Invalid@{Invalid}}}\mbox{\Hypertarget{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a4bbb8f967da6d1a610596d7257179c2b}\label{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a4bbb8f967da6d1a610596d7257179c2b}} 
+Invalid&Invalid pixel type. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Gray8@{Gray8}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!Gray8@{Gray8}}}\mbox{\Hypertarget{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834ac8cfe3d00282445878661f32adca48ef}\label{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834ac8cfe3d00282445878661f32adca48ef}} 
+Gray8&Grayscale 8-\/bit unsinged. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Gray16@{Gray16}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!Gray16@{Gray16}}}\mbox{\Hypertarget{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a2a6ec0dac8730c09dba12f860dbbad12}\label{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a2a6ec0dac8730c09dba12f860dbbad12}} 
+Gray16&Grayscale 16-\/bit unsinged. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Gray32\+Float@{Gray32\+Float}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!Gray32\+Float@{Gray32\+Float}}}\mbox{\Hypertarget{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a775c539daafabbfa29d83576687dd529}\label{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a775c539daafabbfa29d83576687dd529}} 
+Gray32\+Float&Grayscale 4 byte float. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Bgr24@{Bgr24}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!Bgr24@{Bgr24}}}\mbox{\Hypertarget{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834ab2c7c7f5592a2d285184d73d3b619173}\label{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834ab2c7c7f5592a2d285184d73d3b619173}} 
+Bgr24&B\+G\+R-\/color 8-\/bytes triples (memory order B, G, R). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Bgr48@{Bgr48}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!Bgr48@{Bgr48}}}\mbox{\Hypertarget{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a7db8f5fba48387a28c10c0f27eea31a0}\label{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a7db8f5fba48387a28c10c0f27eea31a0}} 
+Bgr48&B\+G\+R-\/color 16-\/bytes triples (memory order B, G, R). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Bgr96\+Float@{Bgr96\+Float}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!Bgr96\+Float@{Bgr96\+Float}}}\mbox{\Hypertarget{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834ad42330ab003d3ccd0e9bfb8dcb59fe78}\label{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834ad42330ab003d3ccd0e9bfb8dcb59fe78}} 
+Bgr96\+Float&B\+G\+R-\/color 4 byte float triples (memory order B, G, R). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Bgra32@{Bgra32}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!Bgra32@{Bgra32}}}\mbox{\Hypertarget{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a2c5ed55e4aac8b7ca717880f2267896a}\label{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a2c5ed55e4aac8b7ca717880f2267896a}} 
+Bgra32&Currently not supported in \hyperlink{namespacelib_c_z_i}{lib\+C\+ZI}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Gray64\+Complex\+Float@{Gray64\+Complex\+Float}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!Gray64\+Complex\+Float@{Gray64\+Complex\+Float}}}\mbox{\Hypertarget{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a062a1aa408f0e6dff16852b6059d50eb}\label{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a062a1aa408f0e6dff16852b6059d50eb}} 
+Gray64\+Complex\+Float&Currently not supported in \hyperlink{namespacelib_c_z_i}{lib\+C\+ZI}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Bgr192\+Complex\+Float@{Bgr192\+Complex\+Float}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!Bgr192\+Complex\+Float@{Bgr192\+Complex\+Float}}}\mbox{\Hypertarget{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834aa48ea83023a8044662550b0871fa7878}\label{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834aa48ea83023a8044662550b0871fa7878}} 
+Bgr192\+Complex\+Float&Currently not supported in \hyperlink{namespacelib_c_z_i}{lib\+C\+ZI}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Gray32@{Gray32}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!Gray32@{Gray32}}}\mbox{\Hypertarget{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a7f0779c83e549b802dc51d3ee21409fb}\label{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a7f0779c83e549b802dc51d3ee21409fb}} 
+Gray32&Currently not supported in \hyperlink{namespacelib_c_z_i}{lib\+C\+ZI}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Gray64\+Float@{Gray64\+Float}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!Gray64\+Float@{Gray64\+Float}}}\mbox{\Hypertarget{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a6430601b36b882d0c9d97bfdd83865d9}\label{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a6430601b36b882d0c9d97bfdd83865d9}} 
+Gray64\+Float&Currently not supported in \hyperlink{namespacelib_c_z_i}{lib\+C\+ZI}. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespacelib_c_z_i_a77743727a5f0709a64237e58b9254983}\label{namespacelib_c_z_i_a77743727a5f0709a64237e58b9254983}} 
+\index{lib\+C\+ZI@{lib\+C\+ZI}!Site\+Object\+Type@{Site\+Object\+Type}}
+\index{Site\+Object\+Type@{Site\+Object\+Type}!lib\+C\+ZI@{lib\+C\+ZI}}
+\subsubsection{\texorpdfstring{Site\+Object\+Type}{SiteObjectType}}
+{\footnotesize\ttfamily enum \hyperlink{namespacelib_c_z_i_a77743727a5f0709a64237e58b9254983}{lib\+C\+Z\+I\+::\+Site\+Object\+Type}\hspace{0.3cm}{\ttfamily [strong]}}
+
+Values that represent site-\/object-\/types. On Windows, we provide one Site-\/object that uses the W\+I\+C-\/codec and one that uses an internal J\+P\+E\+G-\/\+XR decoder (J\+X\+R\+Lib). \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Default@{Default}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!Default@{Default}}}\mbox{\Hypertarget{namespacelib_c_z_i_a77743727a5f0709a64237e58b9254983a7a1920d61156abc05a60135aefe8bc67}\label{namespacelib_c_z_i_a77743727a5f0709a64237e58b9254983a7a1920d61156abc05a60135aefe8bc67}} 
+Default&An enum constant representing the default option (which is J\+X\+R\+Lib) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{With\+Jxr\+Decoder@{With\+Jxr\+Decoder}!lib\+C\+ZI@{lib\+C\+ZI}}\index{lib\+C\+ZI@{lib\+C\+ZI}!With\+Jxr\+Decoder@{With\+Jxr\+Decoder}}}\mbox{\Hypertarget{namespacelib_c_z_i_a77743727a5f0709a64237e58b9254983a6cdacd623c3a47d457783e5410437a42}\label{namespacelib_c_z_i_a77743727a5f0709a64237e58b9254983a6cdacd623c3a47d457783e5410437a42}} 
+With\+Jxr\+Decoder&An enum constant representing a Site-\/object using the internal J\+X\+R\+Lib. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacelib_c_z_i_a036375c3761cc8ea54022d37000ae0ae}\label{namespacelib_c_z_i_a036375c3761cc8ea54022d37000ae0ae}} 
+\index{lib\+C\+ZI@{lib\+C\+ZI}!Create\+Accesor@{Create\+Accesor}}
+\index{Create\+Accesor@{Create\+Accesor}!lib\+C\+ZI@{lib\+C\+ZI}}
+\subsubsection{\texorpdfstring{Create\+Accesor()}{CreateAccesor()}}
+{\footnotesize\ttfamily L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_accessor}{I\+Accessor}$>$ lib\+C\+Z\+I\+::\+Create\+Accesor (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_sub_block_repository}{I\+Sub\+Block\+Repository} $>$}]{repository,  }\item[{\hyperlink{namespacelib_c_z_i_aa626474324df92c9cdc7258cdb1e677c}{Accessor\+Type}}]{accessor\+Type }\end{DoxyParamCaption})}
+
+Creates an accessor of the specified type which uses the specified sub-\/block repository. 
+\begin{DoxyParams}{Parameters}
+{\em repository} & The sub-\/block repository. \\
+\hline
+{\em accessor\+Type} & Type of the accessor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The newly created accessor object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacelib_c_z_i_aca46f77d360ed5fadb9ff68835f80bfb}\label{namespacelib_c_z_i_aca46f77d360ed5fadb9ff68835f80bfb}} 
+\index{lib\+C\+ZI@{lib\+C\+ZI}!Create\+Bitmap\+From\+Sub\+Block@{Create\+Bitmap\+From\+Sub\+Block}}
+\index{Create\+Bitmap\+From\+Sub\+Block@{Create\+Bitmap\+From\+Sub\+Block}!lib\+C\+ZI@{lib\+C\+ZI}}
+\subsubsection{\texorpdfstring{Create\+Bitmap\+From\+Sub\+Block()}{CreateBitmapFromSubBlock()}}
+{\footnotesize\ttfamily L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{I\+Bitmap\+Data}$>$ lib\+C\+Z\+I\+::\+Create\+Bitmap\+From\+Sub\+Block (\begin{DoxyParamCaption}\item[{\hyperlink{classlib_c_z_i_1_1_i_sub_block}{I\+Sub\+Block} $\ast$}]{sub\+Blk }\end{DoxyParamCaption})}
+
+Creates bitmap from sub block. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sub\+Blk} & The sub-\/block. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The newly allocated bitmap containing the image from the sub-\/block. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacelib_c_z_i_abe978d8bd50abe94c2d37df6212859e8}\label{namespacelib_c_z_i_abe978d8bd50abe94c2d37df6212859e8}} 
+\index{lib\+C\+ZI@{lib\+C\+ZI}!Create\+C\+Z\+I\+Reader@{Create\+C\+Z\+I\+Reader}}
+\index{Create\+C\+Z\+I\+Reader@{Create\+C\+Z\+I\+Reader}!lib\+C\+ZI@{lib\+C\+ZI}}
+\subsubsection{\texorpdfstring{Create\+C\+Z\+I\+Reader()}{CreateCZIReader()}}
+{\footnotesize\ttfamily L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_c_z_i_reader}{I\+C\+Z\+I\+Reader}$>$ lib\+C\+Z\+I\+::\+Create\+C\+Z\+I\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates a new instance of the C\+Z\+I-\/reader class. \begin{DoxyReturn}{Returns}
+The newly created C\+Z\+I-\/reader. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacelib_c_z_i_a69621b531d30747728a2fd37eb5286c2}\label{namespacelib_c_z_i_a69621b531d30747728a2fd37eb5286c2}} 
+\index{lib\+C\+ZI@{lib\+C\+ZI}!Create\+Meta\+From\+Metadata\+Segment@{Create\+Meta\+From\+Metadata\+Segment}}
+\index{Create\+Meta\+From\+Metadata\+Segment@{Create\+Meta\+From\+Metadata\+Segment}!lib\+C\+ZI@{lib\+C\+ZI}}
+\subsubsection{\texorpdfstring{Create\+Meta\+From\+Metadata\+Segment()}{CreateMetaFromMetadataSegment()}}
+{\footnotesize\ttfamily L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_czi_metadata}{I\+Czi\+Metadata}$>$ lib\+C\+Z\+I\+::\+Create\+Meta\+From\+Metadata\+Segment (\begin{DoxyParamCaption}\item[{\hyperlink{classlib_c_z_i_1_1_i_metadata_segment}{I\+Metadata\+Segment} $\ast$}]{metadata\+Segment }\end{DoxyParamCaption})}
+
+Creates metadata-\/object from a metadata segment. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em metadata\+Segment} & The metadata segment object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The newly created metadata object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacelib_c_z_i_a8783cf40c0eac418632db90c4f20b43b}\label{namespacelib_c_z_i_a8783cf40c0eac418632db90c4f20b43b}} 
+\index{lib\+C\+ZI@{lib\+C\+ZI}!Create\+Stream\+From\+File@{Create\+Stream\+From\+File}}
+\index{Create\+Stream\+From\+File@{Create\+Stream\+From\+File}!lib\+C\+ZI@{lib\+C\+ZI}}
+\subsubsection{\texorpdfstring{Create\+Stream\+From\+File()}{CreateStreamFromFile()}}
+{\footnotesize\ttfamily L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_stream}{I\+Stream}$>$ lib\+C\+Z\+I\+::\+Create\+Stream\+From\+File (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{sz\+Filename }\end{DoxyParamCaption})}
+
+Creates a stream-\/object for the specified file. A stock-\/implementation of a stream-\/object (for reading a file from disk) is provided here. 
+\begin{DoxyParams}{Parameters}
+{\em sz\+Filename} & Filename of the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new stream object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacelib_c_z_i_afc0c5e268aa30fc812911a1a6eef44fb}\label{namespacelib_c_z_i_afc0c5e268aa30fc812911a1a6eef44fb}} 
+\index{lib\+C\+ZI@{lib\+C\+ZI}!Create\+Stream\+From\+Memory@{Create\+Stream\+From\+Memory}}
+\index{Create\+Stream\+From\+Memory@{Create\+Stream\+From\+Memory}!lib\+C\+ZI@{lib\+C\+ZI}}
+\subsubsection{\texorpdfstring{Create\+Stream\+From\+Memory()}{CreateStreamFromMemory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_stream}{I\+Stream}$>$ lib\+C\+Z\+I\+::\+Create\+Stream\+From\+Memory (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ const void $>$}]{ptr,  }\item[{size\+\_\+t}]{data\+Size }\end{DoxyParamCaption})}
+
+Creates a stream-\/object on a memory-\/block. 
+\begin{DoxyParams}{Parameters}
+{\em ptr} & Shared pointer to a memory-\/block. \\
+\hline
+{\em data\+Size} & Size of the memory-\/block. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new stream object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacelib_c_z_i_a27a30c227f027817b36e29ac259b270c}\label{namespacelib_c_z_i_a27a30c227f027817b36e29ac259b270c}} 
+\index{lib\+C\+ZI@{lib\+C\+ZI}!Create\+Stream\+From\+Memory@{Create\+Stream\+From\+Memory}}
+\index{Create\+Stream\+From\+Memory@{Create\+Stream\+From\+Memory}!lib\+C\+ZI@{lib\+C\+ZI}}
+\subsubsection{\texorpdfstring{Create\+Stream\+From\+Memory()}{CreateStreamFromMemory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_stream}{I\+Stream}$>$ lib\+C\+Z\+I\+::\+Create\+Stream\+From\+Memory (\begin{DoxyParamCaption}\item[{\hyperlink{classlib_c_z_i_1_1_i_attachment}{I\+Attachment} $\ast$}]{attachment }\end{DoxyParamCaption})}
+
+Creates a stream-\/object on the memory-\/block in an attachment. 
+\begin{DoxyParams}{Parameters}
+{\em attachment} & Pointer to attachment. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new stream object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacelib_c_z_i_a12210a6ee4bbda8306b25648f2c4833d}\label{namespacelib_c_z_i_a12210a6ee4bbda8306b25648f2c4833d}} 
+\index{lib\+C\+ZI@{lib\+C\+ZI}!Get\+Default\+Site\+Object@{Get\+Default\+Site\+Object}}
+\index{Get\+Default\+Site\+Object@{Get\+Default\+Site\+Object}!lib\+C\+ZI@{lib\+C\+ZI}}
+\subsubsection{\texorpdfstring{Get\+Default\+Site\+Object()}{GetDefaultSiteObject()}}
+{\footnotesize\ttfamily L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI \hyperlink{classlib_c_z_i_1_1_i_site}{I\+Site}$\ast$ lib\+C\+Z\+I\+::\+Get\+Default\+Site\+Object (\begin{DoxyParamCaption}\item[{\hyperlink{namespacelib_c_z_i_a77743727a5f0709a64237e58b9254983}{lib\+C\+Z\+I\+::\+Site\+Object\+Type}}]{type }\end{DoxyParamCaption})}
+
+Gets one of the available Site-\/objects. The objects returned are static objects with an unbounded lifetime. 
+\begin{DoxyParams}{Parameters}
+{\em type} & The Site-\/object type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nullptr if it fails, else the default site object (of the specified type). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacelib_c_z_i_aa8ab65987d0101d1e6a7f7a8c5f0941e}\label{namespacelib_c_z_i_aa8ab65987d0101d1e6a7f7a8c5f0941e}} 
+\index{lib\+C\+ZI@{lib\+C\+ZI}!Get\+Lib\+C\+Z\+I\+Build\+Information@{Get\+Lib\+C\+Z\+I\+Build\+Information}}
+\index{Get\+Lib\+C\+Z\+I\+Build\+Information@{Get\+Lib\+C\+Z\+I\+Build\+Information}!lib\+C\+ZI@{lib\+C\+ZI}}
+\subsubsection{\texorpdfstring{Get\+Lib\+C\+Z\+I\+Build\+Information()}{GetLibCZIBuildInformation()}}
+{\footnotesize\ttfamily L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI void lib\+C\+Z\+I\+::\+Get\+Lib\+C\+Z\+I\+Build\+Information (\begin{DoxyParamCaption}\item[{\hyperlink{structlib_c_z_i_1_1_build_information}{Build\+Information} \&}]{info }\end{DoxyParamCaption})}
+
+Gets information about the lib\+C\+Z\+I-\/library -\/ e.\+g. how it was built. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em info} & The information. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacelib_c_z_i_a4ae53e1905b54a5b8ddb95ef62817e95}\label{namespacelib_c_z_i_a4ae53e1905b54a5b8ddb95ef62817e95}} 
+\index{lib\+C\+ZI@{lib\+C\+ZI}!Get\+Lib\+C\+Z\+I\+Version@{Get\+Lib\+C\+Z\+I\+Version}}
+\index{Get\+Lib\+C\+Z\+I\+Version@{Get\+Lib\+C\+Z\+I\+Version}!lib\+C\+ZI@{lib\+C\+ZI}}
+\subsubsection{\texorpdfstring{Get\+Lib\+C\+Z\+I\+Version()}{GetLibCZIVersion()}}
+{\footnotesize\ttfamily L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI void lib\+C\+Z\+I\+::\+Get\+Lib\+C\+Z\+I\+Version (\begin{DoxyParamCaption}\item[{int $\ast$}]{p\+Major,  }\item[{int $\ast$}]{p\+Minor }\end{DoxyParamCaption})}
+
+Gets the version of the library.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em p\+Major} & If non-\/null, will receive the major version number. \\
+\hline
+\mbox{\tt out}  & {\em p\+Minor} & If non-\/null, will receive the minor version number. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespacelib_c_z_i_aee5b36178903cd959cd840973309c4bb}\label{namespacelib_c_z_i_aee5b36178903cd959cd840973309c4bb}} 
+\index{lib\+C\+ZI@{lib\+C\+ZI}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!lib\+C\+ZI@{lib\+C\+ZI}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::ostream\& lib\+C\+Z\+I\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \hyperlink{structlib_c_z_i_1_1_int_rect}{Int\+Rect} \&}]{rect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Stream insertion operator for the \hyperlink{structlib_c_z_i_1_1_int_rect}{lib\+C\+Z\+I\+::\+Int\+Rect} type. A string of the form \textquotesingle{}(x,y,width,height)\textquotesingle{} is output to the stream. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em os} & The stream to output the rect to. \\
+\hline
+ & {\em rect} & The rectangle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ostream object {\ttfamily os}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacelib_c_z_i_aa572fb9812d1569dc1afbcef03fbc3ee}\label{namespacelib_c_z_i_aa572fb9812d1569dc1afbcef03fbc3ee}} 
+\index{lib\+C\+ZI@{lib\+C\+ZI}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!lib\+C\+ZI@{lib\+C\+ZI}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::ostream\& lib\+C\+Z\+I\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \hyperlink{structlib_c_z_i_1_1_int_size}{Int\+Size} \&}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Stream insertion operator for the \hyperlink{structlib_c_z_i_1_1_int_size}{lib\+C\+Z\+I\+::\+Int\+Size} type. A string of the form \textquotesingle{}(width,height)\textquotesingle{} is output to the stream. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em os} & The stream to output the size to. \\
+\hline
+ & {\em size} & The size structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The ostream object {\ttfamily os}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacelib_c_z_i_a19b47bdfc502b06cbee0166ac5da6a3e}\label{namespacelib_c_z_i_a19b47bdfc502b06cbee0166ac5da6a3e}} 
+\index{lib\+C\+ZI@{lib\+C\+ZI}!Set\+Site\+Object@{Set\+Site\+Object}}
+\index{Set\+Site\+Object@{Set\+Site\+Object}!lib\+C\+ZI@{lib\+C\+ZI}}
+\subsubsection{\texorpdfstring{Set\+Site\+Object()}{SetSiteObject()}}
+{\footnotesize\ttfamily L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI void lib\+C\+Z\+I\+::\+Set\+Site\+Object (\begin{DoxyParamCaption}\item[{\hyperlink{classlib_c_z_i_1_1_i_site}{lib\+C\+Z\+I\+::\+I\+Site} $\ast$}]{p\+Site }\end{DoxyParamCaption})}
+
+Sets the global Site-\/object. This function must only be called once and before any other function in this library is called. The object passed in here must have a lifetime greater than any usage of the library. If no Site-\/object is set, then at first usage a default Site-\/object is created and used. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+Site} & The Site-\/object to use. It must not be nullptr. \\
+\hline
+\end{DoxyParams}

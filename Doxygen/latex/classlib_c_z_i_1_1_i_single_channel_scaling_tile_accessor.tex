@@ -1,0 +1,124 @@
+\hypertarget{classlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor}{}\section{lib\+C\+ZI\+:\+:I\+Single\+Channel\+Scaling\+Tile\+Accessor Class Reference}
+\label{classlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor}\index{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor}}
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I\+\_\+\+Compositor.\+h$>$}
+
+Inheritance diagram for lib\+C\+ZI\+:\+:I\+Single\+Channel\+Scaling\+Tile\+Accessor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options}{Options}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options}{Options} used for this accessor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{structlib_c_z_i_1_1_int_size}{lib\+C\+Z\+I\+::\+Int\+Size} \hyperlink{classlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_aa7a0c9edcdd3460471edfdbe54fc2f76}{Calc\+Size} (const \hyperlink{structlib_c_z_i_1_1_int_rect}{lib\+C\+Z\+I\+::\+Int\+Rect} \&roi, float zoom) const =0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $>$ \hyperlink{classlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_a3cd342d241a2c438a0b71d1342428a58}{Get} (const \hyperlink{structlib_c_z_i_1_1_int_rect}{lib\+C\+Z\+I\+::\+Int\+Rect} \&roi, const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate} $\ast$plane\+Coordinate, float zoom, const \hyperlink{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options}{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor\+::\+Options} $\ast$p\+Options)=0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $>$ \hyperlink{classlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_a1cd1fe10e445d286f4c64b75d4734caf}{Get} (\hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834}{lib\+C\+Z\+I\+::\+Pixel\+Type} pixeltype, const \hyperlink{structlib_c_z_i_1_1_int_rect}{lib\+C\+Z\+I\+::\+Int\+Rect} \&roi, const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate} $\ast$plane\+Coordinate, float zoom, const \hyperlink{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options}{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor\+::\+Options} $\ast$p\+Options)=0
+\item 
+virtual void \hyperlink{classlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_a09a7963766e4c99721e6c3e13dca61cb}{Get} (\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $\ast$p\+Dest, const \hyperlink{structlib_c_z_i_1_1_int_rect}{lib\+C\+Z\+I\+::\+Int\+Rect} \&roi, const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate} $\ast$plane\+Coordinate, float zoom, const \hyperlink{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options}{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor\+::\+Options} $\ast$p\+Options)=0
+\begin{DoxyCompactList}\small\item\em Copy the composite to the specified bitmap. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for single channel scaling tile accessors. This accessor creates a multi-\/tile composite of a single channel (and a single plane) with a given zoom-\/factor. It will use pyramid sub-\/blocks (if present) in order to create the destination bitmap. In this operation, it will use the pyramid-\/layer just above the specified zoom-\/factor and scale down to the requested size.~\newline
+The scaling operation employed here is a simple nearest-\/neighbor algorithm. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_aa7a0c9edcdd3460471edfdbe54fc2f76}\label{classlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_aa7a0c9edcdd3460471edfdbe54fc2f76}} 
+\index{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor}!Calc\+Size@{Calc\+Size}}
+\index{Calc\+Size@{Calc\+Size}!lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor}}
+\subsubsection{\texorpdfstring{Calc\+Size()}{CalcSize()}}
+{\footnotesize\ttfamily virtual \hyperlink{structlib_c_z_i_1_1_int_size}{lib\+C\+Z\+I\+::\+Int\+Size} lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor\+::\+Calc\+Size (\begin{DoxyParamCaption}\item[{const \hyperlink{structlib_c_z_i_1_1_int_rect}{lib\+C\+Z\+I\+::\+Int\+Rect} \&}]{roi,  }\item[{float}]{zoom }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Calculates the size a bitmap will have (when created by this accessor) for the specified R\+OI and the specified Zoom. Since the exact size if subject to rounding errors, one should always use this method if the exact size must be known beforehand. The Get-\/method which operates on a pre-\/allocated bitmap will only work if the size (of the bitmap passed in) exactly matches. 
+\begin{DoxyParams}{Parameters}
+{\em roi} & The R\+OI. \\
+\hline
+{\em zoom} & The zoom factor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The size of the composite created by this accessor (for these parameters). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_a3cd342d241a2c438a0b71d1342428a58}\label{classlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_a3cd342d241a2c438a0b71d1342428a58}} 
+\index{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor}!Get@{Get}}
+\index{Get@{Get}!lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data}$>$ lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor\+::\+Get (\begin{DoxyParamCaption}\item[{const \hyperlink{structlib_c_z_i_1_1_int_rect}{lib\+C\+Z\+I\+::\+Int\+Rect} \&}]{roi,  }\item[{const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate} $\ast$}]{plane\+Coordinate,  }\item[{float}]{zoom,  }\item[{const \hyperlink{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options}{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor\+::\+Options} $\ast$}]{p\+Options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the scaled tile composite of the specified plane and the specified R\+OI with the specifed zoom factor.~\newline
+The pixeltype is determined by examing the first subblock found in the specified plane (which is an arbitrary subblock). A newly allocated bitmap is returned. 
+\begin{DoxyParams}{Parameters}
+{\em roi} & The R\+OI. \\
+\hline
+{\em plane\+Coordinate} & The plane coordinate. \\
+\hline
+{\em zoom} & The zoom. \\
+\hline
+{\em p\+Options} & \hyperlink{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options}{Options} for controlling the operation (may be nullptr). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data}$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_a1cd1fe10e445d286f4c64b75d4734caf}\label{classlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_a1cd1fe10e445d286f4c64b75d4734caf}} 
+\index{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor}!Get@{Get}}
+\index{Get@{Get}!lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data}$>$ lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor\+::\+Get (\begin{DoxyParamCaption}\item[{\hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834}{lib\+C\+Z\+I\+::\+Pixel\+Type}}]{pixeltype,  }\item[{const \hyperlink{structlib_c_z_i_1_1_int_rect}{lib\+C\+Z\+I\+::\+Int\+Rect} \&}]{roi,  }\item[{const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate} $\ast$}]{plane\+Coordinate,  }\item[{float}]{zoom,  }\item[{const \hyperlink{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options}{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor\+::\+Options} $\ast$}]{p\+Options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the scaled tile composite of the specified plane and the specified R\+OI with the specifed zoom factor. 
+\begin{DoxyParams}{Parameters}
+{\em pixeltype} & The pixeltype (of the destination bitmap). \\
+\hline
+{\em roi} & The R\+OI. \\
+\hline
+{\em plane\+Coordinate} & The plane coordinate. \\
+\hline
+{\em zoom} & The zoom factor. \\
+\hline
+{\em p\+Options} & \hyperlink{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options}{Options} for controlling the operation (may be nullptr). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data}$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_a09a7963766e4c99721e6c3e13dca61cb}\label{classlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_a09a7963766e4c99721e6c3e13dca61cb}} 
+\index{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor}!Get@{Get}}
+\index{Get@{Get}!lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily virtual void lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor\+::\+Get (\begin{DoxyParamCaption}\item[{\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $\ast$}]{p\+Dest,  }\item[{const \hyperlink{structlib_c_z_i_1_1_int_rect}{lib\+C\+Z\+I\+::\+Int\+Rect} \&}]{roi,  }\item[{const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate} $\ast$}]{plane\+Coordinate,  }\item[{float}]{zoom,  }\item[{const \hyperlink{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options}{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Scaling\+Tile\+Accessor\+::\+Options} $\ast$}]{p\+Options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Copy the composite to the specified bitmap. 
+
+The size of the bitmap must exactly match the size reported by the method \char`\"{}\+Calc\+Size\char`\"{} (for the same R\+OI and zoom), otherwise an invalid\+\_\+argument-\/exception is thrown. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Dest} & \mbox{[}in,out\mbox{]} The destination bitmap. \\
+\hline
+{\em roi} & The R\+OI. \\
+\hline
+{\em plane\+Coordinate} & The plane coordinate. \\
+\hline
+{\em zoom} & The zoom factor. \\
+\hline
+{\em p\+Options} & \hyperlink{structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options}{Options} controlling the operation. May be nullptr.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I\+\_\+\+Compositor.\+h\end{DoxyCompactItemize}

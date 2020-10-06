@@ -1,0 +1,93 @@
+\hypertarget{structlib_c_z_i_1_1_channel_display_settings_p_o_d}{}\section{lib\+C\+ZI\+:\+:Channel\+Display\+Settings\+P\+OD Struct Reference}
+\label{structlib_c_z_i_1_1_channel_display_settings_p_o_d}\index{lib\+C\+Z\+I\+::\+Channel\+Display\+Settings\+P\+OD@{lib\+C\+Z\+I\+::\+Channel\+Display\+Settings\+P\+OD}}
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I\+\_\+\+Metadata.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI void \hyperlink{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a4191dc68cd622358ad1786753ebdfb24}{Clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI \hyperlink{classlib_c_z_i_1_1_i_channel_display_setting}{I\+Channel\+Display\+Setting} $\ast$ \hyperlink{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a1fcbd1c402caa3e365c4067882335205}{Create\+I\+Channel\+Display\+Setting} (const \hyperlink{structlib_c_z_i_1_1_channel_display_settings_p_o_d}{Channel\+Display\+Settings\+P\+OD} \&pod)
+\item 
+static L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_channel_display_setting}{I\+Channel\+Display\+Setting} $>$ \hyperlink{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a4c4582399de4ebc3ac1b69f043d0ebd1}{Create\+I\+Channel\+Display\+Setting\+Sp} (const \hyperlink{structlib_c_z_i_1_1_channel_display_settings_p_o_d}{Channel\+Display\+Settings\+P\+OD} \&pod)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a1bc6d34f37c6cbbe445706a18b1c0d0d}\label{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a1bc6d34f37c6cbbe445706a18b1c0d0d}} 
+bool \hyperlink{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a1bc6d34f37c6cbbe445706a18b1c0d0d}{is\+Enabled}
+\begin{DoxyCompactList}\small\item\em A boolean indicating whether the corresponding channel is \textquotesingle{}active\textquotesingle{} in the multi-\/channel-\/composition. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_channel_display_settings_p_o_d_ab887371af43cefafeeab87628f3d281a}\label{structlib_c_z_i_1_1_channel_display_settings_p_o_d_ab887371af43cefafeeab87628f3d281a}} 
+float \hyperlink{structlib_c_z_i_1_1_channel_display_settings_p_o_d_ab887371af43cefafeeab87628f3d281a}{weight}
+\begin{DoxyCompactList}\small\item\em The weight of the channel (for multi-\/channel-\/composition). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a3829067d6622854bddfb66f3e39718d1}\label{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a3829067d6622854bddfb66f3e39718d1}} 
+\hyperlink{classlib_c_z_i_1_1_i_display_settings_a5a69bda933a814a09f15983606047876}{I\+Display\+Settings\+::\+Tinting\+Mode} \hyperlink{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a3829067d6622854bddfb66f3e39718d1}{tinting\+Mode}
+\begin{DoxyCompactList}\small\item\em The tinting mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_channel_display_settings_p_o_d_aaecc9fb8046318f7eba1d711e20b824b}\label{structlib_c_z_i_1_1_channel_display_settings_p_o_d_aaecc9fb8046318f7eba1d711e20b824b}} 
+\hyperlink{structlib_c_z_i_1_1_rgb8_color}{lib\+C\+Z\+I\+::\+Rgb8\+Color} \hyperlink{structlib_c_z_i_1_1_channel_display_settings_p_o_d_aaecc9fb8046318f7eba1d711e20b824b}{tinting\+Color}
+\begin{DoxyCompactList}\small\item\em The tinting color (only valid if tinting mode == Color). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a5375f2af9da2d27d7c5899380ed7323a}\label{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a5375f2af9da2d27d7c5899380ed7323a}} 
+float \hyperlink{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a5375f2af9da2d27d7c5899380ed7323a}{black\+Point}
+\begin{DoxyCompactList}\small\item\em The (normalized) black point value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a5df9aec48677b4a96e305b9010f741cb}\label{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a5df9aec48677b4a96e305b9010f741cb}} 
+float \hyperlink{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a5df9aec48677b4a96e305b9010f741cb}{white\+Point}
+\begin{DoxyCompactList}\small\item\em The (normalized) white point value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a3f54ad6d72307e0e15f1e2f89bfd6aea}\label{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a3f54ad6d72307e0e15f1e2f89bfd6aea}} 
+\hyperlink{classlib_c_z_i_1_1_i_display_settings_af114dfcc8a603ca1c2fc57bc35c97684}{I\+Display\+Settings\+::\+Gradation\+Curve\+Mode} \hyperlink{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a3f54ad6d72307e0e15f1e2f89bfd6aea}{gradation\+Curve\+Mode}
+\begin{DoxyCompactList}\small\item\em The gradation curve mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a845e01c1c5e41e2ab64fe6a22361d8d6}\label{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a845e01c1c5e41e2ab64fe6a22361d8d6}} 
+float \hyperlink{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a845e01c1c5e41e2ab64fe6a22361d8d6}{gamma}
+\begin{DoxyCompactList}\small\item\em The value for gamma (only valid if gradation curve mode == Gamma). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_channel_display_settings_p_o_d_ae3342d21506c44664f165e7c9cc8422e}\label{structlib_c_z_i_1_1_channel_display_settings_p_o_d_ae3342d21506c44664f165e7c9cc8422e}} 
+std\+::vector$<$ \hyperlink{structlib_c_z_i_1_1_i_display_settings_1_1_spline_control_point}{lib\+C\+Z\+I\+::\+I\+Display\+Settings\+::\+Spline\+Control\+Point} $>$ \hyperlink{structlib_c_z_i_1_1_channel_display_settings_p_o_d_ae3342d21506c44664f165e7c9cc8422e}{spline\+Ctrl\+Points}
+\begin{DoxyCompactList}\small\item\em The spline control points (only valid if gradation curve mode == Spline). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This P\+OD (\char`\"{}plain-\/old-\/data\char`\"{}) structure is intended to capture all information found inside an I\+Channel\+Display\+Setting-\/object. It allows for easy modification of the information. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a4191dc68cd622358ad1786753ebdfb24}\label{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a4191dc68cd622358ad1786753ebdfb24}} 
+\index{lib\+C\+Z\+I\+::\+Channel\+Display\+Settings\+P\+OD@{lib\+C\+Z\+I\+::\+Channel\+Display\+Settings\+P\+OD}!Clear@{Clear}}
+\index{Clear@{Clear}!lib\+C\+Z\+I\+::\+Channel\+Display\+Settings\+P\+OD@{lib\+C\+Z\+I\+::\+Channel\+Display\+Settings\+P\+OD}}
+\subsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI void lib\+C\+Z\+I\+::\+Channel\+Display\+Settings\+P\+O\+D\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the structure to a defined standard value -\/ not enabled, no tinting, linear gradation-\/curve and black-\/point to zero and white-\/point to one. \mbox{\Hypertarget{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a1fcbd1c402caa3e365c4067882335205}\label{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a1fcbd1c402caa3e365c4067882335205}} 
+\index{lib\+C\+Z\+I\+::\+Channel\+Display\+Settings\+P\+OD@{lib\+C\+Z\+I\+::\+Channel\+Display\+Settings\+P\+OD}!Create\+I\+Channel\+Display\+Setting@{Create\+I\+Channel\+Display\+Setting}}
+\index{Create\+I\+Channel\+Display\+Setting@{Create\+I\+Channel\+Display\+Setting}!lib\+C\+Z\+I\+::\+Channel\+Display\+Settings\+P\+OD@{lib\+C\+Z\+I\+::\+Channel\+Display\+Settings\+P\+OD}}
+\subsubsection{\texorpdfstring{Create\+I\+Channel\+Display\+Setting()}{CreateIChannelDisplaySetting()}}
+{\footnotesize\ttfamily static L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI \hyperlink{classlib_c_z_i_1_1_i_channel_display_setting}{I\+Channel\+Display\+Setting}$\ast$ lib\+C\+Z\+I\+::\+Channel\+Display\+Settings\+P\+O\+D\+::\+Create\+I\+Channel\+Display\+Setting (\begin{DoxyParamCaption}\item[{const \hyperlink{structlib_c_z_i_1_1_channel_display_settings_p_o_d}{Channel\+Display\+Settings\+P\+OD} \&}]{pod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates an I\+Channel\+Display\+Setting-\/object from the specified Channel\+Display\+Settings\+P\+O\+D-\/structure. 
+\begin{DoxyParams}{Parameters}
+{\em pod} & The Channel\+Display\+Settings\+P\+O\+D-\/structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The newly created I\+Channel\+Display\+Setting-\/object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a4c4582399de4ebc3ac1b69f043d0ebd1}\label{structlib_c_z_i_1_1_channel_display_settings_p_o_d_a4c4582399de4ebc3ac1b69f043d0ebd1}} 
+\index{lib\+C\+Z\+I\+::\+Channel\+Display\+Settings\+P\+OD@{lib\+C\+Z\+I\+::\+Channel\+Display\+Settings\+P\+OD}!Create\+I\+Channel\+Display\+Setting\+Sp@{Create\+I\+Channel\+Display\+Setting\+Sp}}
+\index{Create\+I\+Channel\+Display\+Setting\+Sp@{Create\+I\+Channel\+Display\+Setting\+Sp}!lib\+C\+Z\+I\+::\+Channel\+Display\+Settings\+P\+OD@{lib\+C\+Z\+I\+::\+Channel\+Display\+Settings\+P\+OD}}
+\subsubsection{\texorpdfstring{Create\+I\+Channel\+Display\+Setting\+Sp()}{CreateIChannelDisplaySettingSp()}}
+{\footnotesize\ttfamily static L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_channel_display_setting}{I\+Channel\+Display\+Setting}$>$ lib\+C\+Z\+I\+::\+Channel\+Display\+Settings\+P\+O\+D\+::\+Create\+I\+Channel\+Display\+Setting\+Sp (\begin{DoxyParamCaption}\item[{const \hyperlink{structlib_c_z_i_1_1_channel_display_settings_p_o_d}{Channel\+Display\+Settings\+P\+OD} \&}]{pod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates an I\+Channel\+Display\+Setting-\/object from the specified Channel\+Display\+Settings\+P\+O\+D-\/structure, and return it as a shared pointer. 
+\begin{DoxyParams}{Parameters}
+{\em pod} & The Channel\+Display\+Settings\+P\+O\+D-\/structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The newly created I\+Channel\+Display\+Setting-\/object inside a shared pointer. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I\+\_\+\+Metadata.\+h\end{DoxyCompactItemize}

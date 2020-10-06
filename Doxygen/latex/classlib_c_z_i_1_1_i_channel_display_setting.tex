@@ -1,0 +1,172 @@
+\hypertarget{classlib_c_z_i_1_1_i_channel_display_setting}{}\section{lib\+C\+ZI\+:\+:I\+Channel\+Display\+Setting Class Reference}
+\label{classlib_c_z_i_1_1_i_channel_display_setting}\index{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting@{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting}}
+
+
+The display-\/settings for a channel.  
+
+
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I\+\_\+\+Metadata.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classlib_c_z_i_1_1_i_channel_display_setting_a874cb106b686e6f4b7fad2f6dd1b3eed}{Get\+Is\+Enabled} () const =0
+\item 
+virtual float \hyperlink{classlib_c_z_i_1_1_i_channel_display_setting_ad4b5a8fed9cad0b28acbbfed7736a8d0}{Get\+Weight} () const =0
+\item 
+virtual bool \hyperlink{classlib_c_z_i_1_1_i_channel_display_setting_a7fd49b4a914738b4640eedef351cdd02}{Try\+Get\+Tinting\+Color\+Rgb8} (\hyperlink{structlib_c_z_i_1_1_rgb8_color}{lib\+C\+Z\+I\+::\+Rgb8\+Color} $\ast$p\+Color) const =0
+\item 
+virtual void \hyperlink{classlib_c_z_i_1_1_i_channel_display_setting_a1172fdc6f7c3131d5e6ddf6ab35c6f85}{Get\+Black\+White\+Point} (float $\ast$p\+Black, float $\ast$p\+White) const =0
+\item 
+virtual \hyperlink{classlib_c_z_i_1_1_i_display_settings_af114dfcc8a603ca1c2fc57bc35c97684}{I\+Display\+Settings\+::\+Gradation\+Curve\+Mode} \hyperlink{classlib_c_z_i_1_1_i_channel_display_setting_abcee850366caccfb3245c84ea6f71287}{Get\+Gradation\+Curve\+Mode} () const =0
+\item 
+virtual bool \hyperlink{classlib_c_z_i_1_1_i_channel_display_setting_a37a0c8e3159e6a5e3a9cd0c22b90fd2f}{Try\+Get\+Gamma} (float $\ast$gamma) const =0
+\item 
+virtual bool \hyperlink{classlib_c_z_i_1_1_i_channel_display_setting_ae8a2192fd92015fc6ce59958b598a8cb}{Try\+Get\+Spline\+Control\+Points} (std\+::vector$<$ \hyperlink{structlib_c_z_i_1_1_i_display_settings_1_1_spline_control_point}{lib\+C\+Z\+I\+::\+I\+Display\+Settings\+::\+Spline\+Control\+Point} $>$ $\ast$ctrl\+Pts) const =0
+\item 
+virtual bool \hyperlink{classlib_c_z_i_1_1_i_channel_display_setting_ae3779bf0fb5b48c8ee3549e2ebb3947f}{Try\+Get\+Spline\+Data} (std\+::vector$<$ \hyperlink{structlib_c_z_i_1_1_i_display_settings_1_1_spline_data}{lib\+C\+Z\+I\+::\+I\+Display\+Settings\+::\+Spline\+Data} $>$ $\ast$data) const =0
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classlib_c_z_i_1_1_i_channel_display_setting_ac7569b65161bdfbc2cc8841e2c9fc45d}{Clone} (const \hyperlink{classlib_c_z_i_1_1_i_channel_display_setting}{I\+Channel\+Display\+Setting} $\ast$disp, \hyperlink{structlib_c_z_i_1_1_channel_display_settings_p_o_d}{Channel\+Display\+Settings\+P\+OD} \&pod)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The display-\/settings for a channel. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_channel_display_setting_ac7569b65161bdfbc2cc8841e2c9fc45d}\label{classlib_c_z_i_1_1_i_channel_display_setting_ac7569b65161bdfbc2cc8841e2c9fc45d}} 
+\index{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting@{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting}!Clone@{Clone}}
+\index{Clone@{Clone}!lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting@{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting}}
+\subsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily static void lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting\+::\+Clone (\begin{DoxyParamCaption}\item[{const \hyperlink{classlib_c_z_i_1_1_i_channel_display_setting}{I\+Channel\+Display\+Setting} $\ast$}]{disp,  }\item[{\hyperlink{structlib_c_z_i_1_1_channel_display_settings_p_o_d}{Channel\+Display\+Settings\+P\+OD} \&}]{pod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Makes a deep copy of the information in this object and store the information in the P\+OD. 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em disp} & The channel-\/display-\/settings object. \\
+\hline
+\mbox{\tt in,out}  & {\em pod} & The P\+O\+D-\/channel-\/display-\/settings object to store the information in. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_channel_display_setting_a1172fdc6f7c3131d5e6ddf6ab35c6f85}\label{classlib_c_z_i_1_1_i_channel_display_setting_a1172fdc6f7c3131d5e6ddf6ab35c6f85}} 
+\index{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting@{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting}!Get\+Black\+White\+Point@{Get\+Black\+White\+Point}}
+\index{Get\+Black\+White\+Point@{Get\+Black\+White\+Point}!lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting@{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting}}
+\subsubsection{\texorpdfstring{Get\+Black\+White\+Point()}{GetBlackWhitePoint()}}
+{\footnotesize\ttfamily virtual void lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting\+::\+Get\+Black\+White\+Point (\begin{DoxyParamCaption}\item[{float $\ast$}]{p\+Black,  }\item[{float $\ast$}]{p\+White }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the black point and the white point.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em p\+Black} & If non-\/null, the black point will be returned. \\
+\hline
+\mbox{\tt out}  & {\em p\+White} & If non-\/null, the white point will be returned. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_channel_display_setting_abcee850366caccfb3245c84ea6f71287}\label{classlib_c_z_i_1_1_i_channel_display_setting_abcee850366caccfb3245c84ea6f71287}} 
+\index{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting@{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting}!Get\+Gradation\+Curve\+Mode@{Get\+Gradation\+Curve\+Mode}}
+\index{Get\+Gradation\+Curve\+Mode@{Get\+Gradation\+Curve\+Mode}!lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting@{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting}}
+\subsubsection{\texorpdfstring{Get\+Gradation\+Curve\+Mode()}{GetGradationCurveMode()}}
+{\footnotesize\ttfamily virtual \hyperlink{classlib_c_z_i_1_1_i_display_settings_af114dfcc8a603ca1c2fc57bc35c97684}{I\+Display\+Settings\+::\+Gradation\+Curve\+Mode} lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting\+::\+Get\+Gradation\+Curve\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets gradation curve mode.
+
+\begin{DoxyReturn}{Returns}
+The gradation curve mode. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_channel_display_setting_a874cb106b686e6f4b7fad2f6dd1b3eed}\label{classlib_c_z_i_1_1_i_channel_display_setting_a874cb106b686e6f4b7fad2f6dd1b3eed}} 
+\index{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting@{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting}!Get\+Is\+Enabled@{Get\+Is\+Enabled}}
+\index{Get\+Is\+Enabled@{Get\+Is\+Enabled}!lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting@{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting}}
+\subsubsection{\texorpdfstring{Get\+Is\+Enabled()}{GetIsEnabled()}}
+{\footnotesize\ttfamily virtual bool lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting\+::\+Get\+Is\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets a boolean indicating whether the corresponding channel is \textquotesingle{}active\textquotesingle{} in the multi-\/channel-\/composition.
+
+\begin{DoxyReturn}{Returns}
+True if the corresponding channel is \textquotesingle{}active\textquotesingle{}, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_channel_display_setting_ad4b5a8fed9cad0b28acbbfed7736a8d0}\label{classlib_c_z_i_1_1_i_channel_display_setting_ad4b5a8fed9cad0b28acbbfed7736a8d0}} 
+\index{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting@{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting}!Get\+Weight@{Get\+Weight}}
+\index{Get\+Weight@{Get\+Weight}!lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting@{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting}}
+\subsubsection{\texorpdfstring{Get\+Weight()}{GetWeight()}}
+{\footnotesize\ttfamily virtual float lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting\+::\+Get\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the weight of the channel (for multi-\/channel-\/composition).
+
+\begin{DoxyReturn}{Returns}
+The weight. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_channel_display_setting_a37a0c8e3159e6a5e3a9cd0c22b90fd2f}\label{classlib_c_z_i_1_1_i_channel_display_setting_a37a0c8e3159e6a5e3a9cd0c22b90fd2f}} 
+\index{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting@{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting}!Try\+Get\+Gamma@{Try\+Get\+Gamma}}
+\index{Try\+Get\+Gamma@{Try\+Get\+Gamma}!lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting@{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting}}
+\subsubsection{\texorpdfstring{Try\+Get\+Gamma()}{TryGetGamma()}}
+{\footnotesize\ttfamily virtual bool lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting\+::\+Try\+Get\+Gamma (\begin{DoxyParamCaption}\item[{float $\ast$}]{gamma }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Attempts to get the gamma -\/ this will only be available if gradation curve mode is {\ttfamily Gamma}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em gamma} & If non-\/null and applicable, the gamma will be returned.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the corresponding channel uses gradation curve mode {\ttfamily Gamma} (and a value for gamma is available), false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_channel_display_setting_ae8a2192fd92015fc6ce59958b598a8cb}\label{classlib_c_z_i_1_1_i_channel_display_setting_ae8a2192fd92015fc6ce59958b598a8cb}} 
+\index{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting@{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting}!Try\+Get\+Spline\+Control\+Points@{Try\+Get\+Spline\+Control\+Points}}
+\index{Try\+Get\+Spline\+Control\+Points@{Try\+Get\+Spline\+Control\+Points}!lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting@{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting}}
+\subsubsection{\texorpdfstring{Try\+Get\+Spline\+Control\+Points()}{TryGetSplineControlPoints()}}
+{\footnotesize\ttfamily virtual bool lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting\+::\+Try\+Get\+Spline\+Control\+Points (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{structlib_c_z_i_1_1_i_display_settings_1_1_spline_control_point}{lib\+C\+Z\+I\+::\+I\+Display\+Settings\+::\+Spline\+Control\+Point} $>$ $\ast$}]{ctrl\+Pts }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Attempts to get spline control points -\/ this will only be available if gradation curve mode is {\ttfamily Spline}. \begin{DoxyRemark}{Remarks}
+We make no promises that both the control-\/points and the spline-\/data are always available. It might be plausible that the spline is defined in a different way (different than control-\/points), so in that case only the \char`\"{}spline-\/data\char`\"{} would be available. So -\/ be careful is using this interface in a context different thant \char`\"{}\+C\+Z\+I-\/metadata\char`\"{} where it might be the case the \textquotesingle{}Try\+Get\+Spline\+Control\+Points\textquotesingle{} will fail but \textquotesingle{}Try\+Get\+Spline\+Data\textquotesingle{} might succeed. Maybe better should remove \textquotesingle{}Try\+Get\+Spline\+Data\textquotesingle{} from this interface.
+\end{DoxyRemark}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em ctrl\+Pts} & If non-\/null, the control points will be written to this vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_channel_display_setting_ae3779bf0fb5b48c8ee3549e2ebb3947f}\label{classlib_c_z_i_1_1_i_channel_display_setting_ae3779bf0fb5b48c8ee3549e2ebb3947f}} 
+\index{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting@{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting}!Try\+Get\+Spline\+Data@{Try\+Get\+Spline\+Data}}
+\index{Try\+Get\+Spline\+Data@{Try\+Get\+Spline\+Data}!lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting@{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting}}
+\subsubsection{\texorpdfstring{Try\+Get\+Spline\+Data()}{TryGetSplineData()}}
+{\footnotesize\ttfamily virtual bool lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting\+::\+Try\+Get\+Spline\+Data (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{structlib_c_z_i_1_1_i_display_settings_1_1_spline_data}{lib\+C\+Z\+I\+::\+I\+Display\+Settings\+::\+Spline\+Data} $>$ $\ast$}]{data }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Attempts to get the spline data -\/ this will only be available if gradation curve mode is {\ttfamily Spline}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em data} & If non-\/null, the spline data will be written to this vector.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it the corresponding channels uses gradation curve mode {\ttfamily Spline}, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_channel_display_setting_a7fd49b4a914738b4640eedef351cdd02}\label{classlib_c_z_i_1_1_i_channel_display_setting_a7fd49b4a914738b4640eedef351cdd02}} 
+\index{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting@{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting}!Try\+Get\+Tinting\+Color\+Rgb8@{Try\+Get\+Tinting\+Color\+Rgb8}}
+\index{Try\+Get\+Tinting\+Color\+Rgb8@{Try\+Get\+Tinting\+Color\+Rgb8}!lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting@{lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting}}
+\subsubsection{\texorpdfstring{Try\+Get\+Tinting\+Color\+Rgb8()}{TryGetTintingColorRgb8()}}
+{\footnotesize\ttfamily virtual bool lib\+C\+Z\+I\+::\+I\+Channel\+Display\+Setting\+::\+Try\+Get\+Tinting\+Color\+Rgb8 (\begin{DoxyParamCaption}\item[{\hyperlink{structlib_c_z_i_1_1_rgb8_color}{lib\+C\+Z\+I\+::\+Rgb8\+Color} $\ast$}]{p\+Color }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Attempts to get the R\+G\+B24-\/tinting color for the corresponding channel. If tinting is not enabled, then this method will return false.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em p\+Color} & If tinting is enabled for the corresponding channel, then (if non-\/null) will receive the tinting-\/color.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if tinting is enabled for the corresponding channel (and in this case {\ttfamily p\+Color} will be set), false otherwise (and {\ttfamily p\+Color} will not be set). 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I\+\_\+\+Metadata.\+h\end{DoxyCompactItemize}

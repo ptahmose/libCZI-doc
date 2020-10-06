@@ -1,0 +1,451 @@
+\hypertarget{classlib_c_z_i_1_1_utils}{}\section{lib\+C\+ZI\+:\+:Utils Class Reference}
+\label{classlib_c_z_i_1_1_utils}\index{lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}}
+
+
+A bunch of utility functions.  
+
+
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I\+\_\+\+Utilities.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static char \hyperlink{classlib_c_z_i_1_1_utils_ae97a98f63029f18282b1c940a79518a4}{Dimension\+To\+Char} (\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{lib\+C\+Z\+I\+::\+Dimension\+Index} dim)
+\item 
+static \hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{lib\+C\+Z\+I\+::\+Dimension\+Index} \hyperlink{classlib_c_z_i_1_1_utils_acc8b44f500d3e3cda3dea381acca485a}{Char\+To\+Dimension} (char c)
+\item 
+static int \hyperlink{classlib_c_z_i_1_1_utils_a1718a9b6cf313114b8c70fd78befcf0a}{Calc\+Md5\+Sum\+Hash} (\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $\ast$bm, std\+::uint8\+\_\+t $\ast$ptr\+Hash, int hash\+Size)
+\item 
+static int \hyperlink{classlib_c_z_i_1_1_utils_ae31970caf0590b90fb85d4ff4a88cf1a}{Calc\+Md5\+Sum\+Hash} (const void $\ast$ptr\+Data, size\+\_\+t size\+Data, std\+::uint8\+\_\+t $\ast$ptr\+Hash, int hash\+Size)
+\item 
+static std\+::vector$<$ std\+::uint8\+\_\+t $>$ \hyperlink{classlib_c_z_i_1_1_utils_a4602857b1d21eb75a0c7740a21297791}{Create8\+Bit\+Look\+Up\+Table\+From\+Splines} (int table\+Element\+Cnt, float black\+Point, float white\+Point, const std\+::vector$<$ \hyperlink{structlib_c_z_i_1_1_i_display_settings_1_1_spline_data}{lib\+C\+Z\+I\+::\+I\+Display\+Settings\+::\+Spline\+Data} $>$ \&spline\+Data)
+\item 
+static std\+::vector$<$ std\+::uint8\+\_\+t $>$ \hyperlink{classlib_c_z_i_1_1_utils_a3814604760096f9d0bb6f292de4fdf5f}{Create8\+Bit\+Look\+Up\+Table\+From\+Gamma} (int table\+Element\+Cnt, float black\+Point, float white\+Point, float gamma)
+\item 
+static std\+::vector$<$ \hyperlink{structlib_c_z_i_1_1_i_display_settings_1_1_spline_data}{lib\+C\+Z\+I\+::\+I\+Display\+Settings\+::\+Spline\+Data} $>$ \hyperlink{classlib_c_z_i_1_1_utils_a1d09549e8c5202874d5adc0cc1baccf7}{Calc\+Spline\+Data\+From\+Points} (int point\+Cnt, std\+::function$<$ std\+::tuple$<$ double, double $>$(int idx)$>$ get\+Point)
+\item 
+static std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $>$ \hyperlink{classlib_c_z_i_1_1_utils_af19f5d15750c0949f3dd4ebb5684c7d3}{Nearest\+Neighbor\+Resize} (\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $\ast$bm\+Src, int dst\+Width, int dst\+Height)
+\item 
+static std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $>$ \hyperlink{classlib_c_z_i_1_1_utils_a6d56f447db1707083cb47042729bfabf}{Nearest\+Neighbor\+Resize} (\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $\ast$bm\+Src, int dst\+Width, int dst\+Height, const \hyperlink{structlib_c_z_i_1_1_dbl_rect}{Dbl\+Rect} \&roi\+Src, const \hyperlink{structlib_c_z_i_1_1_dbl_rect}{Dbl\+Rect} \&roi\+Dest)
+\item 
+static float \hyperlink{classlib_c_z_i_1_1_utils_aef8fdee9516bf45c9eaa4b28862aa8fc}{Calc\+Zoom} (const \hyperlink{structlib_c_z_i_1_1_int_rect}{lib\+C\+Z\+I\+::\+Int\+Rect} \&logical\+Rect, const \hyperlink{structlib_c_z_i_1_1_int_size}{lib\+C\+Z\+I\+::\+Int\+Size} \&physical\+Size)
+\item 
+static float \hyperlink{classlib_c_z_i_1_1_utils_ac62322c3e738d8a514ca5ee2dcbc6535}{Calc\+Zoom} (const \hyperlink{structlib_c_z_i_1_1_int_size}{lib\+C\+Z\+I\+::\+Int\+Size} \&logical\+Size, const \hyperlink{structlib_c_z_i_1_1_int_size}{lib\+C\+Z\+I\+::\+Int\+Size} \&physical\+Size)
+\item 
+static const char $\ast$ \hyperlink{classlib_c_z_i_1_1_utils_ac2b90922af21aa507257ac7f3d089542}{Pixel\+Type\+To\+Informal\+String} (\hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834}{lib\+C\+Z\+I\+::\+Pixel\+Type} pixeltype)
+\item 
+static const char $\ast$ \hyperlink{classlib_c_z_i_1_1_utils_a8866b5684bec94262510d6ff12bbdb2b}{Compression\+Mode\+To\+Informal\+String} (\hyperlink{namespacelib_c_z_i_a672959aa909ce27c5a549465200b08fb}{lib\+C\+Z\+I\+::\+Compression\+Mode} compression\+Mode)
+\item 
+static std\+::string \hyperlink{classlib_c_z_i_1_1_utils_aeb42843e65615302b51b68ad2b376e6d}{Dim\+Coordinate\+To\+String} (const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate} $\ast$coord)
+\item 
+static bool \hyperlink{classlib_c_z_i_1_1_utils_a3c3cf0e18a7588ff708bf279db79db95}{String\+To\+Dim\+Coordinate} (const char $\ast$sz, \hyperlink{classlib_c_z_i_1_1_c_dim_coordinate}{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate} $\ast$coord)
+\item 
+static std\+::string \hyperlink{classlib_c_z_i_1_1_utils_a63811f2fb98b3c15e0203b22ab1bbbe0}{Dim\+Bounds\+To\+String} (const \hyperlink{classlib_c_z_i_1_1_i_dim_bounds}{lib\+C\+Z\+I\+::\+I\+Dim\+Bounds} $\ast$bounds)
+\item 
+static std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_index_set}{lib\+C\+Z\+I\+::\+I\+Index\+Set} $>$ \hyperlink{classlib_c_z_i_1_1_utils_a69fdbdc41c4700f35a648a516757bbca}{Index\+Set\+From\+String} (const std\+::wstring \&s)
+\item 
+static \hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834}{lib\+C\+Z\+I\+::\+Pixel\+Type} \hyperlink{classlib_c_z_i_1_1_utils_ad105cc3a3791e6dd269116de0f71de04}{Try\+Determine\+Pixel\+Type\+For\+Channel} (\hyperlink{classlib_c_z_i_1_1_i_sub_block_repository}{lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository} $\ast$repository, int channel\+Idx)
+\item 
+static int \hyperlink{classlib_c_z_i_1_1_utils_a22bcbac6bcfb783d6dd3fbdb7c3b4f5f}{Compare} (const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate} $\ast$a, const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate} $\ast$b)
+\item 
+static bool \hyperlink{classlib_c_z_i_1_1_utils_a12906a27e0e3fbf65f999c9387782cbc}{Has\+Same\+Dimensions} (const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate} $\ast$a, const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate} $\ast$b)
+\item 
+static bool \hyperlink{classlib_c_z_i_1_1_utils_a38d50d87b67917004a2f0c8156ecee6d}{Enum\+All\+Coordinates} (const \hyperlink{classlib_c_z_i_1_1_c_dim_bounds}{lib\+C\+Z\+I\+::\+C\+Dim\+Bounds} \&bounds, const std\+::function$<$ bool(std\+::uint64\+\_\+t, const \hyperlink{classlib_c_z_i_1_1_c_dim_coordinate}{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate} \&coord)$>$ \&func)
+\item 
+static void \hyperlink{classlib_c_z_i_1_1_utils_a95ff03d97620e252f08a8366fdead551}{Fill\+Bitmap} (\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $\ast$bm, const \hyperlink{structlib_c_z_i_1_1_rgb_float_color}{lib\+C\+Z\+I\+::\+Rgb\+Float\+Color} \&float\+Color)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A bunch of utility functions. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_utils_a1718a9b6cf313114b8c70fd78befcf0a}\label{classlib_c_z_i_1_1_utils_a1718a9b6cf313114b8c70fd78befcf0a}} 
+\index{lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}!Calc\+Md5\+Sum\+Hash@{Calc\+Md5\+Sum\+Hash}}
+\index{Calc\+Md5\+Sum\+Hash@{Calc\+Md5\+Sum\+Hash}!lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}}
+\subsubsection{\texorpdfstring{Calc\+Md5\+Sum\+Hash()}{CalcMd5SumHash()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static int lib\+C\+Z\+I\+::\+Utils\+::\+Calc\+Md5\+Sum\+Hash (\begin{DoxyParamCaption}\item[{\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $\ast$}]{bm,  }\item[{std\+::uint8\+\_\+t $\ast$}]{ptr\+Hash,  }\item[{int}]{hash\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculates the M\+D5\+S\+UM hash for the pixels in the specified bitmap. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bm} & The bitmap. \\
+\hline
+\mbox{\tt in,out}  & {\em ptr\+Hash} & Pointer to the hash-\/code result. The result will be of size 16 bytes. \\
+\hline
+ & {\em hash\+Size} & Size of the hash-\/code result pointed to by {\ttfamily ptr\+Hash}. We need 16 bytes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The count of bytes that were written to in ptr\+Hash as the M\+D5\+S\+U\+M-\/hash (always 16). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_utils_ae31970caf0590b90fb85d4ff4a88cf1a}\label{classlib_c_z_i_1_1_utils_ae31970caf0590b90fb85d4ff4a88cf1a}} 
+\index{lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}!Calc\+Md5\+Sum\+Hash@{Calc\+Md5\+Sum\+Hash}}
+\index{Calc\+Md5\+Sum\+Hash@{Calc\+Md5\+Sum\+Hash}!lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}}
+\subsubsection{\texorpdfstring{Calc\+Md5\+Sum\+Hash()}{CalcMd5SumHash()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static int lib\+C\+Z\+I\+::\+Utils\+::\+Calc\+Md5\+Sum\+Hash (\begin{DoxyParamCaption}\item[{const void $\ast$}]{ptr\+Data,  }\item[{size\+\_\+t}]{size\+Data,  }\item[{std\+::uint8\+\_\+t $\ast$}]{ptr\+Hash,  }\item[{int}]{hash\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculates the M\+D5\+S\+UM hash for the specified data. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ptr\+Data} & Pointer to the data (for which to calculate the M\+D5\+S\+U\+M-\/hash). \\
+\hline
+\mbox{\tt in}  & {\em size\+Data} & The size of the data (pointed to by ptr\+Data). \\
+\hline
+\mbox{\tt in,out}  & {\em ptr\+Hash} & Pointer to the hash-\/code result. The result will be of size 16 bytes. \\
+\hline
+ & {\em hash\+Size} & Size of the hash-\/code result pointed to by {\ttfamily ptr\+Hash}. We need 16 bytes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The count of bytes that were written to in ptr\+Hash as the M\+D5\+S\+U\+M-\/hash (always 16). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_utils_a1d09549e8c5202874d5adc0cc1baccf7}\label{classlib_c_z_i_1_1_utils_a1d09549e8c5202874d5adc0cc1baccf7}} 
+\index{lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}!Calc\+Spline\+Data\+From\+Points@{Calc\+Spline\+Data\+From\+Points}}
+\index{Calc\+Spline\+Data\+From\+Points@{Calc\+Spline\+Data\+From\+Points}!lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}}
+\subsubsection{\texorpdfstring{Calc\+Spline\+Data\+From\+Points()}{CalcSplineDataFromPoints()}}
+{\footnotesize\ttfamily static std\+::vector$<$\hyperlink{structlib_c_z_i_1_1_i_display_settings_1_1_spline_data}{lib\+C\+Z\+I\+::\+I\+Display\+Settings\+::\+Spline\+Data}$>$ lib\+C\+Z\+I\+::\+Utils\+::\+Calc\+Spline\+Data\+From\+Points (\begin{DoxyParamCaption}\item[{int}]{point\+Cnt,  }\item[{std\+::function$<$ std\+::tuple$<$ double, double $>$(int idx)$>$}]{get\+Point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculates the spline coefficients from a list of control points. 
+\begin{DoxyParams}{Parameters}
+{\em point\+Cnt} & Number of control points. \\
+\hline
+{\em get\+Point} & A functor which will be used to retrieve the control point\textquotesingle{}s coordinates. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated spline data from the specified control points. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_utils_aef8fdee9516bf45c9eaa4b28862aa8fc}\label{classlib_c_z_i_1_1_utils_aef8fdee9516bf45c9eaa4b28862aa8fc}} 
+\index{lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}!Calc\+Zoom@{Calc\+Zoom}}
+\index{Calc\+Zoom@{Calc\+Zoom}!lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}}
+\subsubsection{\texorpdfstring{Calc\+Zoom()}{CalcZoom()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static float lib\+C\+Z\+I\+::\+Utils\+::\+Calc\+Zoom (\begin{DoxyParamCaption}\item[{const \hyperlink{structlib_c_z_i_1_1_int_rect}{lib\+C\+Z\+I\+::\+Int\+Rect} \&}]{logical\+Rect,  }\item[{const \hyperlink{structlib_c_z_i_1_1_int_size}{lib\+C\+Z\+I\+::\+Int\+Size} \&}]{physical\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Calculate a zoom-\/factor from the physical-\/ and logical size. \begin{DoxyRemark}{Remarks}
+This calculation not really well-\/defined. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em logical\+Rect} & The logical rectangle. \\
+\hline
+{\em physical\+Size} & Physical size. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated zoom. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_utils_ac62322c3e738d8a514ca5ee2dcbc6535}\label{classlib_c_z_i_1_1_utils_ac62322c3e738d8a514ca5ee2dcbc6535}} 
+\index{lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}!Calc\+Zoom@{Calc\+Zoom}}
+\index{Calc\+Zoom@{Calc\+Zoom}!lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}}
+\subsubsection{\texorpdfstring{Calc\+Zoom()}{CalcZoom()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static float lib\+C\+Z\+I\+::\+Utils\+::\+Calc\+Zoom (\begin{DoxyParamCaption}\item[{const \hyperlink{structlib_c_z_i_1_1_int_size}{lib\+C\+Z\+I\+::\+Int\+Size} \&}]{logical\+Size,  }\item[{const \hyperlink{structlib_c_z_i_1_1_int_size}{lib\+C\+Z\+I\+::\+Int\+Size} \&}]{physical\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Calculate a zoom-\/factor from the physical-\/ and logical size. \begin{DoxyRemark}{Remarks}
+This calculation not really well-\/defined. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em logical\+Size} & The logical size. \\
+\hline
+{\em physical\+Size} & The physical size. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated zoom. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_utils_acc8b44f500d3e3cda3dea381acca485a}\label{classlib_c_z_i_1_1_utils_acc8b44f500d3e3cda3dea381acca485a}} 
+\index{lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}!Char\+To\+Dimension@{Char\+To\+Dimension}}
+\index{Char\+To\+Dimension@{Char\+To\+Dimension}!lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}}
+\subsubsection{\texorpdfstring{Char\+To\+Dimension()}{CharToDimension()}}
+{\footnotesize\ttfamily static \hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{lib\+C\+Z\+I\+::\+Dimension\+Index} lib\+C\+Z\+I\+::\+Utils\+::\+Char\+To\+Dimension (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Convert the specifed single character to the corresponding dimension enum. The single character may be given uppercase or lowercase. In case that no corresponding dimension enum exists, {\ttfamily \hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424afedb2d84cafe20862cb4399751a8a7e3}{Dimension\+Index\+::invalid}} is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & The \char`\"{}single char representation\char`\"{} of a dimension.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A enum value representing the specified dimension if it exists, {\ttfamily \hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424afedb2d84cafe20862cb4399751a8a7e3}{Dimension\+Index\+::invalid}} otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_utils_a22bcbac6bcfb783d6dd3fbdb7c3b4f5f}\label{classlib_c_z_i_1_1_utils_a22bcbac6bcfb783d6dd3fbdb7c3b4f5f}} 
+\index{lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}!Compare@{Compare}}
+\index{Compare@{Compare}!lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}}
+\subsubsection{\texorpdfstring{Compare()}{Compare()}}
+{\footnotesize\ttfamily static int lib\+C\+Z\+I\+::\+Utils\+::\+Compare (\begin{DoxyParamCaption}\item[{const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate} $\ast$}]{a,  }\item[{const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate} $\ast$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Compares two coordinate-\/objects to determine their relative ordering. The algorithm employed is\+: we check for all coordinates which are marked valid in a or b (in the order of the numerical value or the enum)...
+\begin{DoxyEnumerate}
+\item coordinate\+A(dim) is valid and coordinate\+B(dim) is invalid -\/$>$ a $>$ b
+\item coordinate\+A(dim) is invalid and coordinate\+B(dim) is valid -\/$>$ a $<$ b
+\item if both are valid, then the coordinate-\/values are determined and compared
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First coordinate to be compared. \\
+\hline
+{\em b} & Second coordinate to be compared.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Negative if \textquotesingle{}a\textquotesingle{} is less than \textquotesingle{}b\textquotesingle{}, 0 if they are equal, or positive if it is greater. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_utils_a8866b5684bec94262510d6ff12bbdb2b}\label{classlib_c_z_i_1_1_utils_a8866b5684bec94262510d6ff12bbdb2b}} 
+\index{lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}!Compression\+Mode\+To\+Informal\+String@{Compression\+Mode\+To\+Informal\+String}}
+\index{Compression\+Mode\+To\+Informal\+String@{Compression\+Mode\+To\+Informal\+String}!lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}}
+\subsubsection{\texorpdfstring{Compression\+Mode\+To\+Informal\+String()}{CompressionModeToInformalString()}}
+{\footnotesize\ttfamily static const char$\ast$ lib\+C\+Z\+I\+::\+Utils\+::\+Compression\+Mode\+To\+Informal\+String (\begin{DoxyParamCaption}\item[{\hyperlink{namespacelib_c_z_i_a672959aa909ce27c5a549465200b08fb}{lib\+C\+Z\+I\+::\+Compression\+Mode}}]{compression\+Mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Retrieves an informal string representing the specified compression mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em compression\+Mode} & The pixel-\/type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to a static string. Will always be non-\/null (even in case of an invalid value for {\ttfamily compression\+Mode}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_utils_a3814604760096f9d0bb6f292de4fdf5f}\label{classlib_c_z_i_1_1_utils_a3814604760096f9d0bb6f292de4fdf5f}} 
+\index{lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}!Create8\+Bit\+Look\+Up\+Table\+From\+Gamma@{Create8\+Bit\+Look\+Up\+Table\+From\+Gamma}}
+\index{Create8\+Bit\+Look\+Up\+Table\+From\+Gamma@{Create8\+Bit\+Look\+Up\+Table\+From\+Gamma}!lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}}
+\subsubsection{\texorpdfstring{Create8\+Bit\+Look\+Up\+Table\+From\+Gamma()}{Create8BitLookUpTableFromGamma()}}
+{\footnotesize\ttfamily static std\+::vector$<$std\+::uint8\+\_\+t$>$ lib\+C\+Z\+I\+::\+Utils\+::\+Create8\+Bit\+Look\+Up\+Table\+From\+Gamma (\begin{DoxyParamCaption}\item[{int}]{table\+Element\+Cnt,  }\item[{float}]{black\+Point,  }\item[{float}]{white\+Point,  }\item[{float}]{gamma }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates 8-\/bit look-\/up table from the specified gamma value. An exponential with the specified gamma is sampled between {\ttfamily black\+Point} and {\ttfamily white\+Point} (i. e. points left of {\ttfamily black\+Point} are set to 0 and right of {\ttfamily white\+Point} are set to 1). 
+\begin{DoxyParams}{Parameters}
+{\em table\+Element\+Cnt} & Number of points to sample -\/ the result will have as many samples as specified here. \\
+\hline
+{\em black\+Point} & The black point. \\
+\hline
+{\em white\+Point} & The white point. \\
+\hline
+{\em gamma} & The gamma.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new 8-\/bit look up table generated from the spline. The number is elements is as specified by {\ttfamily table\+Element\+Count}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_utils_a4602857b1d21eb75a0c7740a21297791}\label{classlib_c_z_i_1_1_utils_a4602857b1d21eb75a0c7740a21297791}} 
+\index{lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}!Create8\+Bit\+Look\+Up\+Table\+From\+Splines@{Create8\+Bit\+Look\+Up\+Table\+From\+Splines}}
+\index{Create8\+Bit\+Look\+Up\+Table\+From\+Splines@{Create8\+Bit\+Look\+Up\+Table\+From\+Splines}!lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}}
+\subsubsection{\texorpdfstring{Create8\+Bit\+Look\+Up\+Table\+From\+Splines()}{Create8BitLookUpTableFromSplines()}}
+{\footnotesize\ttfamily static std\+::vector$<$std\+::uint8\+\_\+t$>$ lib\+C\+Z\+I\+::\+Utils\+::\+Create8\+Bit\+Look\+Up\+Table\+From\+Splines (\begin{DoxyParamCaption}\item[{int}]{table\+Element\+Cnt,  }\item[{float}]{black\+Point,  }\item[{float}]{white\+Point,  }\item[{const std\+::vector$<$ \hyperlink{structlib_c_z_i_1_1_i_display_settings_1_1_spline_data}{lib\+C\+Z\+I\+::\+I\+Display\+Settings\+::\+Spline\+Data} $>$ \&}]{spline\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates an 8-\/bit look-\/up table from the specifed splines. A spline is sampled between {\ttfamily black\+Point} and {\ttfamily white\+Point} (i. e. points left of {\ttfamily black\+Point} are set to 0 and right of {\ttfamily white\+Point} are set to 1). 
+\begin{DoxyParams}{Parameters}
+{\em table\+Element\+Cnt} & Number of points to sample -\/ the result will have as many samples as specified here. \\
+\hline
+{\em black\+Point} & The black point. \\
+\hline
+{\em white\+Point} & The white point. \\
+\hline
+{\em spline\+Data} & Information describing the spline. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new 8-\/bit look up table generated from the spline. The number is elements is as specified by {\ttfamily table\+Element\+Count}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_utils_a63811f2fb98b3c15e0203b22ab1bbbe0}\label{classlib_c_z_i_1_1_utils_a63811f2fb98b3c15e0203b22ab1bbbe0}} 
+\index{lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}!Dim\+Bounds\+To\+String@{Dim\+Bounds\+To\+String}}
+\index{Dim\+Bounds\+To\+String@{Dim\+Bounds\+To\+String}!lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}}
+\subsubsection{\texorpdfstring{Dim\+Bounds\+To\+String()}{DimBoundsToString()}}
+{\footnotesize\ttfamily static std\+::string lib\+C\+Z\+I\+::\+Utils\+::\+Dim\+Bounds\+To\+String (\begin{DoxyParamCaption}\item[{const \hyperlink{classlib_c_z_i_1_1_i_dim_bounds}{lib\+C\+Z\+I\+::\+I\+Dim\+Bounds} $\ast$}]{bounds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a string representation of the specified bounds. 
+\begin{DoxyParams}{Parameters}
+{\em bounds} & The bounds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string representation of the specified bounds. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_utils_aeb42843e65615302b51b68ad2b376e6d}\label{classlib_c_z_i_1_1_utils_aeb42843e65615302b51b68ad2b376e6d}} 
+\index{lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}!Dim\+Coordinate\+To\+String@{Dim\+Coordinate\+To\+String}}
+\index{Dim\+Coordinate\+To\+String@{Dim\+Coordinate\+To\+String}!lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}}
+\subsubsection{\texorpdfstring{Dim\+Coordinate\+To\+String()}{DimCoordinateToString()}}
+{\footnotesize\ttfamily static std\+::string lib\+C\+Z\+I\+::\+Utils\+::\+Dim\+Coordinate\+To\+String (\begin{DoxyParamCaption}\item[{const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{lib\+C\+Z\+I\+::\+I\+Dim\+Coordinate} $\ast$}]{coord }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a string representation of the specified coordinate. 
+\begin{DoxyParams}{Parameters}
+{\em coord} & The coordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string representation of the specified coordinate. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_utils_ae97a98f63029f18282b1c940a79518a4}\label{classlib_c_z_i_1_1_utils_ae97a98f63029f18282b1c940a79518a4}} 
+\index{lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}!Dimension\+To\+Char@{Dimension\+To\+Char}}
+\index{Dimension\+To\+Char@{Dimension\+To\+Char}!lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}}
+\subsubsection{\texorpdfstring{Dimension\+To\+Char()}{DimensionToChar()}}
+{\footnotesize\ttfamily static char lib\+C\+Z\+I\+::\+Utils\+::\+Dimension\+To\+Char (\begin{DoxyParamCaption}\item[{\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{lib\+C\+Z\+I\+::\+Dimension\+Index}}]{dim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Convert the specifed dimension enum to the corresponding \char`\"{}single char representation\char`\"{}. The returned character will be uppercase. If the specified dimension enum cannot be converted, \textquotesingle{}?\textquotesingle{} is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dim} & The dimension enum.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A character representing the specified dimension. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_utils_a38d50d87b67917004a2f0c8156ecee6d}\label{classlib_c_z_i_1_1_utils_a38d50d87b67917004a2f0c8156ecee6d}} 
+\index{lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}!Enum\+All\+Coordinates@{Enum\+All\+Coordinates}}
+\index{Enum\+All\+Coordinates@{Enum\+All\+Coordinates}!lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}}
+\subsubsection{\texorpdfstring{Enum\+All\+Coordinates()}{EnumAllCoordinates()}}
+{\footnotesize\ttfamily static bool lib\+C\+Z\+I\+::\+Utils\+::\+Enum\+All\+Coordinates (\begin{DoxyParamCaption}\item[{const \hyperlink{classlib_c_z_i_1_1_c_dim_bounds}{lib\+C\+Z\+I\+::\+C\+Dim\+Bounds} \&}]{bounds,  }\item[{const std\+::function$<$ bool(std\+::uint64\+\_\+t, const \hyperlink{classlib_c_z_i_1_1_c_dim_coordinate}{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate} \&coord)$>$ \&}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Enumerate all coordinates \char`\"{}contained\char`\"{} in the specified bounds. The specified function is called with all valid coordinates (which lie inside the bounds). The first argument to the function is a counter which increments for each generated coordinate (and starts with 0). If the function returns false, the enumeration is ended, and this function returns immediately with false.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bounds} & The bounds. \\
+\hline
+{\em func} & The function to be called with the generated coordinates.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the enumeration completed, false if it was cancelled (by returning false from the callback). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_utils_a95ff03d97620e252f08a8366fdead551}\label{classlib_c_z_i_1_1_utils_a95ff03d97620e252f08a8366fdead551}} 
+\index{lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}!Fill\+Bitmap@{Fill\+Bitmap}}
+\index{Fill\+Bitmap@{Fill\+Bitmap}!lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}}
+\subsubsection{\texorpdfstring{Fill\+Bitmap()}{FillBitmap()}}
+{\footnotesize\ttfamily static void lib\+C\+Z\+I\+::\+Utils\+::\+Fill\+Bitmap (\begin{DoxyParamCaption}\item[{\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $\ast$}]{bm,  }\item[{const \hyperlink{structlib_c_z_i_1_1_rgb_float_color}{lib\+C\+Z\+I\+::\+Rgb\+Float\+Color} \&}]{float\+Color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Fill the specified bitmap with the specified color. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em bm} & The bitmap. \\
+\hline
+ & {\em float\+Color} & The color. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_utils_a12906a27e0e3fbf65f999c9387782cbc}\label{classlib_c_z_i_1_1_utils_a12906a27e0e3fbf65f999c9387782cbc}} 
+\index{lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}!Has\+Same\+Dimensions@{Has\+Same\+Dimensions}}
+\index{Has\+Same\+Dimensions@{Has\+Same\+Dimensions}!lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}}
+\subsubsection{\texorpdfstring{Has\+Same\+Dimensions()}{HasSameDimensions()}}
+{\footnotesize\ttfamily static bool lib\+C\+Z\+I\+::\+Utils\+::\+Has\+Same\+Dimensions (\begin{DoxyParamCaption}\item[{const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate} $\ast$}]{a,  }\item[{const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate} $\ast$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Test whether the two specified coordinates have the same set of valid dimensions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The first coordinate-\/object to compare. \\
+\hline
+{\em b} & The second coordinate-\/object to compare.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the two coordinates have the same set of valid dimensions, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_utils_a69fdbdc41c4700f35a648a516757bbca}\label{classlib_c_z_i_1_1_utils_a69fdbdc41c4700f35a648a516757bbca}} 
+\index{lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}!Index\+Set\+From\+String@{Index\+Set\+From\+String}}
+\index{Index\+Set\+From\+String@{Index\+Set\+From\+String}!lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}}
+\subsubsection{\texorpdfstring{Index\+Set\+From\+String()}{IndexSetFromString()}}
+{\footnotesize\ttfamily static std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_index_set}{lib\+C\+Z\+I\+::\+I\+Index\+Set}$>$ lib\+C\+Z\+I\+::\+Utils\+::\+Index\+Set\+From\+String (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create an index-\/set object from a string representation. The string is a list of intervals, seperated by comma (\textquotesingle{},\textquotesingle{}). It can be of the form \char`\"{}5\char`\"{}, \char`\"{}17\char`\"{}, \char`\"{}3-\/5\char`\"{}, \char`\"{}-\/3-\/5\char`\"{}. The string \char`\"{}inf\char`\"{} (meaning \textquotesingle{}infinity\textquotesingle{}) is recognized in order to express \char`\"{}all numbers up to\char`\"{} or \char`\"{}all numbers after\char`\"{} , e. g. \char`\"{}-\/inf-\/4\char`\"{} or \char`\"{}5-\/inf\char`\"{}. In case of an invalid string, an \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception}{Lib\+C\+Z\+I\+String\+Parse\+Exception} exception is thrown. 
+\begin{DoxyParams}{Parameters}
+{\em s} & The string to convert to an index-\/set object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A newly create std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_index_set}{lib\+C\+Z\+I\+::\+I\+Index\+Set}$>$ object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_utils_af19f5d15750c0949f3dd4ebb5684c7d3}\label{classlib_c_z_i_1_1_utils_af19f5d15750c0949f3dd4ebb5684c7d3}} 
+\index{lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}!Nearest\+Neighbor\+Resize@{Nearest\+Neighbor\+Resize}}
+\index{Nearest\+Neighbor\+Resize@{Nearest\+Neighbor\+Resize}!lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}}
+\subsubsection{\texorpdfstring{Nearest\+Neighbor\+Resize()}{NearestNeighborResize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $>$ lib\+C\+Z\+I\+::\+Utils\+::\+Nearest\+Neighbor\+Resize (\begin{DoxyParamCaption}\item[{\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $\ast$}]{bm\+Src,  }\item[{int}]{dst\+Width,  }\item[{int}]{dst\+Height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Resize the specified bitmap to the specified width and height. This method employs a nearest-\/neighbor-\/scaling algorihm. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bm\+Src} & The source bitmap. \\
+\hline
+ & {\em dst\+Width} & Width of the destination. \\
+\hline
+ & {\em dst\+Height} & Height of the destination. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $>$ containing the scaled bitmap. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_utils_a6d56f447db1707083cb47042729bfabf}\label{classlib_c_z_i_1_1_utils_a6d56f447db1707083cb47042729bfabf}} 
+\index{lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}!Nearest\+Neighbor\+Resize@{Nearest\+Neighbor\+Resize}}
+\index{Nearest\+Neighbor\+Resize@{Nearest\+Neighbor\+Resize}!lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}}
+\subsubsection{\texorpdfstring{Nearest\+Neighbor\+Resize()}{NearestNeighborResize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $>$ lib\+C\+Z\+I\+::\+Utils\+::\+Nearest\+Neighbor\+Resize (\begin{DoxyParamCaption}\item[{\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $\ast$}]{bm\+Src,  }\item[{int}]{dst\+Width,  }\item[{int}]{dst\+Height,  }\item[{const \hyperlink{structlib_c_z_i_1_1_dbl_rect}{Dbl\+Rect} \&}]{roi\+Src,  }\item[{const \hyperlink{structlib_c_z_i_1_1_dbl_rect}{Dbl\+Rect} \&}]{roi\+Dest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Resize a R\+OI from the specified bitmap to the specified width and height. This method employs a nearest-\/neighbor-\/scaling algorihm. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bm\+Src} & The source bitmap. \\
+\hline
+ & {\em dst\+Width} & Width of the destination. \\
+\hline
+ & {\em dst\+Height} & Height of the destination. \\
+\hline
+ & {\em roi\+Src} & The R\+OI (in the source bitmap). \\
+\hline
+ & {\em roi\+Dest} & The R\+OI (in the destination bitmap) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_utils_ac2b90922af21aa507257ac7f3d089542}\label{classlib_c_z_i_1_1_utils_ac2b90922af21aa507257ac7f3d089542}} 
+\index{lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}!Pixel\+Type\+To\+Informal\+String@{Pixel\+Type\+To\+Informal\+String}}
+\index{Pixel\+Type\+To\+Informal\+String@{Pixel\+Type\+To\+Informal\+String}!lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}}
+\subsubsection{\texorpdfstring{Pixel\+Type\+To\+Informal\+String()}{PixelTypeToInformalString()}}
+{\footnotesize\ttfamily static const char$\ast$ lib\+C\+Z\+I\+::\+Utils\+::\+Pixel\+Type\+To\+Informal\+String (\begin{DoxyParamCaption}\item[{\hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834}{lib\+C\+Z\+I\+::\+Pixel\+Type}}]{pixeltype }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Retrieves an informal string representing the specified pixeltype.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pixeltype} & The pixel-\/type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to a static string. Will always be non-\/null (even in case of an invalid value for {\ttfamily pxltp}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_utils_a3c3cf0e18a7588ff708bf279db79db95}\label{classlib_c_z_i_1_1_utils_a3c3cf0e18a7588ff708bf279db79db95}} 
+\index{lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}!String\+To\+Dim\+Coordinate@{String\+To\+Dim\+Coordinate}}
+\index{String\+To\+Dim\+Coordinate@{String\+To\+Dim\+Coordinate}!lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}}
+\subsubsection{\texorpdfstring{String\+To\+Dim\+Coordinate()}{StringToDimCoordinate()}}
+{\footnotesize\ttfamily static bool lib\+C\+Z\+I\+::\+Utils\+::\+String\+To\+Dim\+Coordinate (\begin{DoxyParamCaption}\item[{const char $\ast$}]{sz,  }\item[{\hyperlink{classlib_c_z_i_1_1_c_dim_coordinate}{lib\+C\+Z\+I\+::\+C\+Dim\+Coordinate} $\ast$}]{coord }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Convert the specified string into a dimension-\/coordinate instance. 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em sz} & The string to convert. \\
+\hline
+\mbox{\tt out}  & {\em coord} & If non-\/null and if the parsing was successful, the information will be put here. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the string parsed successfully, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_utils_ad105cc3a3791e6dd269116de0f71de04}\label{classlib_c_z_i_1_1_utils_ad105cc3a3791e6dd269116de0f71de04}} 
+\index{lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}!Try\+Determine\+Pixel\+Type\+For\+Channel@{Try\+Determine\+Pixel\+Type\+For\+Channel}}
+\index{Try\+Determine\+Pixel\+Type\+For\+Channel@{Try\+Determine\+Pixel\+Type\+For\+Channel}!lib\+C\+Z\+I\+::\+Utils@{lib\+C\+Z\+I\+::\+Utils}}
+\subsubsection{\texorpdfstring{Try\+Determine\+Pixel\+Type\+For\+Channel()}{TryDeterminePixelTypeForChannel()}}
+{\footnotesize\ttfamily static \hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834}{lib\+C\+Z\+I\+::\+Pixel\+Type} lib\+C\+Z\+I\+::\+Utils\+::\+Try\+Determine\+Pixel\+Type\+For\+Channel (\begin{DoxyParamCaption}\item[{\hyperlink{classlib_c_z_i_1_1_i_sub_block_repository}{lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository} $\ast$}]{repository,  }\item[{int}]{channel\+Idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Try to determine the pixel type for channel. This is done by looking at an (arbitrary) subblock within the specified channel. There are cases where this does not yield a result -\/ e. g. if there is no subblock present with the specified channel-\/index. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em repository} & The C\+Z\+I-\/document. \\
+\hline
+ & {\em channel\+Idx} & The channel index.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The pixeltype if it can be determined. If it cannot be determined reliably (e.\+g. there is no subblock with the specified channel-\/index), then \hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834a4bbb8f967da6d1a610596d7257179c2b}{Pixel\+Type\+::\+Invalid} is returned. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I\+\_\+\+Utilities.\+h\end{DoxyCompactItemize}

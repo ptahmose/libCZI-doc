@@ -1,0 +1,58 @@
+\hypertarget{structlib_c_z_i_1_1_display_settings_p_o_d}{}\section{lib\+C\+ZI\+:\+:Display\+Settings\+P\+OD Struct Reference}
+\label{structlib_c_z_i_1_1_display_settings_p_o_d}\index{lib\+C\+Z\+I\+::\+Display\+Settings\+P\+OD@{lib\+C\+Z\+I\+::\+Display\+Settings\+P\+OD}}
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I\+\_\+\+Metadata.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI \hyperlink{classlib_c_z_i_1_1_i_display_settings}{lib\+C\+Z\+I\+::\+I\+Display\+Settings} $\ast$ \hyperlink{structlib_c_z_i_1_1_display_settings_p_o_d_acc98054af6df033b27b5c8214cb90284}{Create\+I\+Display\+Setting} (const \hyperlink{structlib_c_z_i_1_1_display_settings_p_o_d}{Display\+Settings\+P\+OD} \&pod)
+\item 
+static L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_display_settings}{lib\+C\+Z\+I\+::\+I\+Display\+Settings} $>$ \hyperlink{structlib_c_z_i_1_1_display_settings_p_o_d_afed6c69c9ffc6092c7d34706428767fa}{Create\+I\+Display\+Setting\+Sp} (const \hyperlink{structlib_c_z_i_1_1_display_settings_p_o_d}{Display\+Settings\+P\+OD} \&pod)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_display_settings_p_o_d_a6b8e45609b0d032340e5445f99fe9c59}\label{structlib_c_z_i_1_1_display_settings_p_o_d_a6b8e45609b0d032340e5445f99fe9c59}} 
+std\+::map$<$ int, \hyperlink{structlib_c_z_i_1_1_channel_display_settings_p_o_d}{Channel\+Display\+Settings\+P\+OD} $>$ \hyperlink{structlib_c_z_i_1_1_display_settings_p_o_d_a6b8e45609b0d032340e5445f99fe9c59}{channel\+Display\+Settings}
+\begin{DoxyCompactList}\small\item\em The channel display settings. Key is the channel index, and value is the P\+O\+D-\/channel-\/display-\/data structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This P\+OD (\char`\"{}plain-\/old-\/data\char`\"{}) structure is intended to capture all information found inside an I\+Channel\+Display\+Setting-\/object. It allows for easy modification of the information. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structlib_c_z_i_1_1_display_settings_p_o_d_acc98054af6df033b27b5c8214cb90284}\label{structlib_c_z_i_1_1_display_settings_p_o_d_acc98054af6df033b27b5c8214cb90284}} 
+\index{lib\+C\+Z\+I\+::\+Display\+Settings\+P\+OD@{lib\+C\+Z\+I\+::\+Display\+Settings\+P\+OD}!Create\+I\+Display\+Setting@{Create\+I\+Display\+Setting}}
+\index{Create\+I\+Display\+Setting@{Create\+I\+Display\+Setting}!lib\+C\+Z\+I\+::\+Display\+Settings\+P\+OD@{lib\+C\+Z\+I\+::\+Display\+Settings\+P\+OD}}
+\subsubsection{\texorpdfstring{Create\+I\+Display\+Setting()}{CreateIDisplaySetting()}}
+{\footnotesize\ttfamily static L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI \hyperlink{classlib_c_z_i_1_1_i_display_settings}{lib\+C\+Z\+I\+::\+I\+Display\+Settings}$\ast$ lib\+C\+Z\+I\+::\+Display\+Settings\+P\+O\+D\+::\+Create\+I\+Display\+Setting (\begin{DoxyParamCaption}\item[{const \hyperlink{structlib_c_z_i_1_1_display_settings_p_o_d}{Display\+Settings\+P\+OD} \&}]{pod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates an I\+Display\+Settings-\/object from the specified Display\+Settings\+P\+O\+D-\/structure. 
+\begin{DoxyParams}{Parameters}
+{\em pod} & The Channel\+Display\+Settings\+P\+O\+D-\/structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The newly created I\+Display\+Settings-\/object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structlib_c_z_i_1_1_display_settings_p_o_d_afed6c69c9ffc6092c7d34706428767fa}\label{structlib_c_z_i_1_1_display_settings_p_o_d_afed6c69c9ffc6092c7d34706428767fa}} 
+\index{lib\+C\+Z\+I\+::\+Display\+Settings\+P\+OD@{lib\+C\+Z\+I\+::\+Display\+Settings\+P\+OD}!Create\+I\+Display\+Setting\+Sp@{Create\+I\+Display\+Setting\+Sp}}
+\index{Create\+I\+Display\+Setting\+Sp@{Create\+I\+Display\+Setting\+Sp}!lib\+C\+Z\+I\+::\+Display\+Settings\+P\+OD@{lib\+C\+Z\+I\+::\+Display\+Settings\+P\+OD}}
+\subsubsection{\texorpdfstring{Create\+I\+Display\+Setting\+Sp()}{CreateIDisplaySettingSp()}}
+{\footnotesize\ttfamily static L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_display_settings}{lib\+C\+Z\+I\+::\+I\+Display\+Settings}$>$ lib\+C\+Z\+I\+::\+Display\+Settings\+P\+O\+D\+::\+Create\+I\+Display\+Setting\+Sp (\begin{DoxyParamCaption}\item[{const \hyperlink{structlib_c_z_i_1_1_display_settings_p_o_d}{Display\+Settings\+P\+OD} \&}]{pod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates an I\+Display\+Settings-\/object from the specified Display\+Settings\+P\+O\+D-\/structure, and return it as a shared pointer. 
+\begin{DoxyParams}{Parameters}
+{\em pod} & The Channel\+Display\+Settings\+P\+O\+D-\/structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The newly created I\+Display\+Settings-\/object inside a shared pointer. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I\+\_\+\+Metadata.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,103 @@
+\hypertarget{structlib_c_z_i_1_1_sub_block_statistics}{}\section{lib\+C\+ZI\+:\+:Sub\+Block\+Statistics Struct Reference}
+\label{structlib_c_z_i_1_1_sub_block_statistics}\index{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics@{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics}}
+
+
+Statistics about all sub-\/blocks found in a C\+Z\+I-\/document.  
+
+
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{structlib_c_z_i_1_1_sub_block_statistics_a61f70e5acf237b4d4550f18dbc23b4a7}{Is\+M\+Index\+Valid} () const
+\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_sub_block_statistics_a3b328670c14542bec4e37763379ca319}\label{structlib_c_z_i_1_1_sub_block_statistics_a3b328670c14542bec4e37763379ca319}} 
+void \hyperlink{structlib_c_z_i_1_1_sub_block_statistics_a3b328670c14542bec4e37763379ca319}{Invalidate} ()
+\begin{DoxyCompactList}\small\item\em Invalidates this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structlib_c_z_i_1_1_sub_block_statistics_a2507642d2007c30f4984cc2618203534}{sub\+Block\+Count}
+\item 
+int \hyperlink{structlib_c_z_i_1_1_sub_block_statistics_a3123641e5b748a84744082a651f199a9}{min\+Mindex}
+\item 
+int \hyperlink{structlib_c_z_i_1_1_sub_block_statistics_ad49c1710047fea5751e8b27263b0c62d}{max\+Mindex}
+\item 
+\hyperlink{structlib_c_z_i_1_1_int_rect}{Int\+Rect} \hyperlink{structlib_c_z_i_1_1_sub_block_statistics_a924c2adf7f3e132470dfeb06ea1e958c}{bounding\+Box}
+\item 
+\hyperlink{structlib_c_z_i_1_1_int_rect}{Int\+Rect} \hyperlink{structlib_c_z_i_1_1_sub_block_statistics_a5256d470970ed24507b6bd1fadf32096}{bounding\+Box\+Layer0\+Only}
+\item 
+\hyperlink{classlib_c_z_i_1_1_c_dim_bounds}{C\+Dim\+Bounds} \hyperlink{structlib_c_z_i_1_1_sub_block_statistics_a10b6e7fb9312e93b1e9785daed56e44e}{dim\+Bounds}
+\item 
+std\+::map$<$ int, \hyperlink{structlib_c_z_i_1_1_bounding_boxes}{Bounding\+Boxes} $>$ \hyperlink{structlib_c_z_i_1_1_sub_block_statistics_ab02ae7bcd25f34008ec9d5afa8a4efec}{scene\+Bounding\+Boxes}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Statistics about all sub-\/blocks found in a C\+Z\+I-\/document. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structlib_c_z_i_1_1_sub_block_statistics_a61f70e5acf237b4d4550f18dbc23b4a7}\label{structlib_c_z_i_1_1_sub_block_statistics_a61f70e5acf237b4d4550f18dbc23b4a7}} 
+\index{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics@{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics}!Is\+M\+Index\+Valid@{Is\+M\+Index\+Valid}}
+\index{Is\+M\+Index\+Valid@{Is\+M\+Index\+Valid}!lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics@{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics}}
+\subsubsection{\texorpdfstring{Is\+M\+Index\+Valid()}{IsMIndexValid()}}
+{\footnotesize\ttfamily bool lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics\+::\+Is\+M\+Index\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Query if the members min\+Mindex and max\+Mindex are valid. They may be invalid in the case that the sub-\/blocks do not define an M-\/index.
+
+\begin{DoxyReturn}{Returns}
+True if min\+Mindex and max\+Mindex are valid, false if not. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structlib_c_z_i_1_1_sub_block_statistics_a924c2adf7f3e132470dfeb06ea1e958c}\label{structlib_c_z_i_1_1_sub_block_statistics_a924c2adf7f3e132470dfeb06ea1e958c}} 
+\index{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics@{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics}!bounding\+Box@{bounding\+Box}}
+\index{bounding\+Box@{bounding\+Box}!lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics@{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics}}
+\subsubsection{\texorpdfstring{bounding\+Box}{boundingBox}}
+{\footnotesize\ttfamily \hyperlink{structlib_c_z_i_1_1_int_rect}{Int\+Rect} lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics\+::bounding\+Box}
+
+The bounding box determined from all sub-\/blocks in the document. \mbox{\Hypertarget{structlib_c_z_i_1_1_sub_block_statistics_a5256d470970ed24507b6bd1fadf32096}\label{structlib_c_z_i_1_1_sub_block_statistics_a5256d470970ed24507b6bd1fadf32096}} 
+\index{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics@{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics}!bounding\+Box\+Layer0\+Only@{bounding\+Box\+Layer0\+Only}}
+\index{bounding\+Box\+Layer0\+Only@{bounding\+Box\+Layer0\+Only}!lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics@{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics}}
+\subsubsection{\texorpdfstring{bounding\+Box\+Layer0\+Only}{boundingBoxLayer0Only}}
+{\footnotesize\ttfamily \hyperlink{structlib_c_z_i_1_1_int_rect}{Int\+Rect} lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics\+::bounding\+Box\+Layer0\+Only}
+
+The bounding box determined only from the sub-\/blocks of pyramid-\/layer0 in the document. \mbox{\Hypertarget{structlib_c_z_i_1_1_sub_block_statistics_a10b6e7fb9312e93b1e9785daed56e44e}\label{structlib_c_z_i_1_1_sub_block_statistics_a10b6e7fb9312e93b1e9785daed56e44e}} 
+\index{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics@{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics}!dim\+Bounds@{dim\+Bounds}}
+\index{dim\+Bounds@{dim\+Bounds}!lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics@{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics}}
+\subsubsection{\texorpdfstring{dim\+Bounds}{dimBounds}}
+{\footnotesize\ttfamily \hyperlink{classlib_c_z_i_1_1_c_dim_bounds}{C\+Dim\+Bounds} lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics\+::dim\+Bounds}
+
+The dimension bounds -\/ the minimum and maximum dimension index determined from all sub-\/blocks in the C\+Z\+I-\/document. \mbox{\Hypertarget{structlib_c_z_i_1_1_sub_block_statistics_ad49c1710047fea5751e8b27263b0c62d}\label{structlib_c_z_i_1_1_sub_block_statistics_ad49c1710047fea5751e8b27263b0c62d}} 
+\index{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics@{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics}!max\+Mindex@{max\+Mindex}}
+\index{max\+Mindex@{max\+Mindex}!lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics@{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics}}
+\subsubsection{\texorpdfstring{max\+Mindex}{maxMindex}}
+{\footnotesize\ttfamily int lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics\+::max\+Mindex}
+
+The maximum M-\/index (determined from all sub-\/blocks in the document with a valid M-\/index). If no valid M-\/index was present, then this member will have the value std\+::numeric\+\_\+limits$<$int$>$\+::min(). \mbox{\Hypertarget{structlib_c_z_i_1_1_sub_block_statistics_a3123641e5b748a84744082a651f199a9}\label{structlib_c_z_i_1_1_sub_block_statistics_a3123641e5b748a84744082a651f199a9}} 
+\index{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics@{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics}!min\+Mindex@{min\+Mindex}}
+\index{min\+Mindex@{min\+Mindex}!lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics@{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics}}
+\subsubsection{\texorpdfstring{min\+Mindex}{minMindex}}
+{\footnotesize\ttfamily int lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics\+::min\+Mindex}
+
+The minimum M-\/index (determined from all sub-\/blocks in the document with a valid M-\/index). If no valid M-\/index was present, then this member will have the value std\+::numeric\+\_\+limits$<$int$>$\+::max(). \mbox{\Hypertarget{structlib_c_z_i_1_1_sub_block_statistics_ab02ae7bcd25f34008ec9d5afa8a4efec}\label{structlib_c_z_i_1_1_sub_block_statistics_ab02ae7bcd25f34008ec9d5afa8a4efec}} 
+\index{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics@{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics}!scene\+Bounding\+Boxes@{scene\+Bounding\+Boxes}}
+\index{scene\+Bounding\+Boxes@{scene\+Bounding\+Boxes}!lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics@{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics}}
+\subsubsection{\texorpdfstring{scene\+Bounding\+Boxes}{sceneBoundingBoxes}}
+{\footnotesize\ttfamily std\+::map$<$int, \hyperlink{structlib_c_z_i_1_1_bounding_boxes}{Bounding\+Boxes}$>$ lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics\+::scene\+Bounding\+Boxes}
+
+A map with key scene-\/index and value bounding box of the scene. Two bounding-\/boxes are determined -\/ one from checking all sub-\/blocks (with the specific scene-\/index) and another one by only considering sub-\/blocks on pyramid-\/layer 0. If no scene-\/indices are present, this map is empty. \mbox{\Hypertarget{structlib_c_z_i_1_1_sub_block_statistics_a2507642d2007c30f4984cc2618203534}\label{structlib_c_z_i_1_1_sub_block_statistics_a2507642d2007c30f4984cc2618203534}} 
+\index{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics@{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics}!sub\+Block\+Count@{sub\+Block\+Count}}
+\index{sub\+Block\+Count@{sub\+Block\+Count}!lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics@{lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics}}
+\subsubsection{\texorpdfstring{sub\+Block\+Count}{subBlockCount}}
+{\footnotesize\ttfamily int lib\+C\+Z\+I\+::\+Sub\+Block\+Statistics\+::sub\+Block\+Count}
+
+The total number of sub-\/blocks in the C\+Z\+I-\/document. We are counting here all sub-\/block (no matter on which pyramid-\/layer). 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I.\+h\end{DoxyCompactItemize}

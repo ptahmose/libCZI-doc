@@ -1,0 +1,141 @@
+\hypertarget{structlib_c_z_i_1_1_xml_date_time}{}\section{lib\+C\+ZI\+:\+:Xml\+Date\+Time Struct Reference}
+\label{structlib_c_z_i_1_1_xml_date_time}\index{lib\+C\+Z\+I\+::\+Xml\+Date\+Time@{lib\+C\+Z\+I\+::\+Xml\+Date\+Time}}
+
+
+This structure specifies the information in an X\+S\+D-\/\+Date\+Time field (cf. \href{https://www.w3schools.com/XML/schema_dtypes_date.asp}{\tt https\+://www.\+w3schools.\+com/\+X\+M\+L/schema\+\_\+dtypes\+\_\+date.\+asp}).  
+
+
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I\+\_\+\+Metadata.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_xml_date_time_a7126c0b68b135306f28514add83fc720}\label{structlib_c_z_i_1_1_xml_date_time_a7126c0b68b135306f28514add83fc720}} 
+void \hyperlink{structlib_c_z_i_1_1_xml_date_time_a7126c0b68b135306f28514add83fc720}{Clear} ()
+\begin{DoxyCompactList}\small\item\em Clears this object to its blank/initial state. \end{DoxyCompactList}\item 
+bool \hyperlink{structlib_c_z_i_1_1_xml_date_time_abdd0b4dc181a4825b2eaf97aea58d44d}{Has\+Time\+Zone\+Offset} () const
+\item 
+std\+::string \hyperlink{structlib_c_z_i_1_1_xml_date_time_a0ecc73d0509f050a291817fd7e4c4e6d}{To\+Xml\+String} () const
+\item 
+std\+::wstring \hyperlink{structlib_c_z_i_1_1_xml_date_time_a98d5f56db50d7ae8b269dafb18f620a8}{To\+Xml\+Wstring} () const
+\item 
+bool \hyperlink{structlib_c_z_i_1_1_xml_date_time_a3ecf25b06c3b6e40978e9141a62a9b87}{Is\+Valid} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{structlib_c_z_i_1_1_xml_date_time_acde177dc8ddb80c6e831645a7d2fd276}{Try\+Parse} (const char $\ast$sz, \hyperlink{structlib_c_z_i_1_1_xml_date_time}{Xml\+Date\+Time} $\ast$ptr\+Date\+Time)
+\item 
+static bool \hyperlink{structlib_c_z_i_1_1_xml_date_time_ae7875a4a64cd9c4fd0906cf27832c0d4}{Try\+Parse} (const wchar\+\_\+t $\ast$szw, \hyperlink{structlib_c_z_i_1_1_xml_date_time}{Xml\+Date\+Time} $\ast$ptr\+Date\+Time)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_xml_date_time_ad6150dda14ef3c9dd3c7d8035e203add}\label{structlib_c_z_i_1_1_xml_date_time_ad6150dda14ef3c9dd3c7d8035e203add}} 
+int \hyperlink{structlib_c_z_i_1_1_xml_date_time_ad6150dda14ef3c9dd3c7d8035e203add}{sec}
+\begin{DoxyCompactList}\small\item\em Seconds after the minute -\/ \mbox{[}0, 60\mbox{]} including leap second. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_xml_date_time_ac050f3222783e2e118d82fa7d90ef195}\label{structlib_c_z_i_1_1_xml_date_time_ac050f3222783e2e118d82fa7d90ef195}} 
+int \hyperlink{structlib_c_z_i_1_1_xml_date_time_ac050f3222783e2e118d82fa7d90ef195}{min}
+\begin{DoxyCompactList}\small\item\em minutes after the hour -\/ \mbox{[}0, 59\mbox{]} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_xml_date_time_a2cdc652279c693a679fc677067f1555f}\label{structlib_c_z_i_1_1_xml_date_time_a2cdc652279c693a679fc677067f1555f}} 
+int \hyperlink{structlib_c_z_i_1_1_xml_date_time_a2cdc652279c693a679fc677067f1555f}{hour}
+\begin{DoxyCompactList}\small\item\em hours since midnight -\/ \mbox{[}0, 23\mbox{]} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_xml_date_time_ae7360fea53276bdf24eb96d788498397}\label{structlib_c_z_i_1_1_xml_date_time_ae7360fea53276bdf24eb96d788498397}} 
+int \hyperlink{structlib_c_z_i_1_1_xml_date_time_ae7360fea53276bdf24eb96d788498397}{mday}
+\begin{DoxyCompactList}\small\item\em day of the month -\/ \mbox{[}1, 31\mbox{]} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_xml_date_time_aa6dedc3005bf4d2fec428e8d3e27460c}\label{structlib_c_z_i_1_1_xml_date_time_aa6dedc3005bf4d2fec428e8d3e27460c}} 
+int \hyperlink{structlib_c_z_i_1_1_xml_date_time_aa6dedc3005bf4d2fec428e8d3e27460c}{mon}
+\begin{DoxyCompactList}\small\item\em months since January -\/ \mbox{[}0, 11\mbox{]} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_xml_date_time_a28b0ef778b554d027dd79704fb4f8565}\label{structlib_c_z_i_1_1_xml_date_time_a28b0ef778b554d027dd79704fb4f8565}} 
+int \hyperlink{structlib_c_z_i_1_1_xml_date_time_a28b0ef778b554d027dd79704fb4f8565}{year}
+\begin{DoxyCompactList}\small\item\em year \mbox{[}-\/9999 -\/ 9999\mbox{]} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_xml_date_time_a24fb6d660a4404438bc1e38f39d7ca92}\label{structlib_c_z_i_1_1_xml_date_time_a24fb6d660a4404438bc1e38f39d7ca92}} 
+bool \hyperlink{structlib_c_z_i_1_1_xml_date_time_a24fb6d660a4404438bc1e38f39d7ca92}{is\+U\+TC}
+\begin{DoxyCompactList}\small\item\em True if this object is specifying the time-\/date in U\+TC. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_xml_date_time_a9d3a3eb23c3ed6efe0b1ef51afc3460d}\label{structlib_c_z_i_1_1_xml_date_time_a9d3a3eb23c3ed6efe0b1ef51afc3460d}} 
+int \hyperlink{structlib_c_z_i_1_1_xml_date_time_a9d3a3eb23c3ed6efe0b1ef51afc3460d}{offset\+Hours}
+\begin{DoxyCompactList}\small\item\em The hours of the timezone-\/offset. If greater than 24 or less than -\/24, it indicates an invalid timezone-\/offset. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_xml_date_time_a3d565525946ec7c7e631dee5db70e50f}\label{structlib_c_z_i_1_1_xml_date_time_a3d565525946ec7c7e631dee5db70e50f}} 
+int \hyperlink{structlib_c_z_i_1_1_xml_date_time_a3d565525946ec7c7e631dee5db70e50f}{offset\+Minutes}
+\begin{DoxyCompactList}\small\item\em The minutes of the timezone-\/offset. If greater than 60 or negative, it indicates an invalid timezone-\/offset. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This structure specifies the information in an X\+S\+D-\/\+Date\+Time field (cf. \href{https://www.w3schools.com/XML/schema_dtypes_date.asp}{\tt https\+://www.\+w3schools.\+com/\+X\+M\+L/schema\+\_\+dtypes\+\_\+date.\+asp}). 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structlib_c_z_i_1_1_xml_date_time_abdd0b4dc181a4825b2eaf97aea58d44d}\label{structlib_c_z_i_1_1_xml_date_time_abdd0b4dc181a4825b2eaf97aea58d44d}} 
+\index{lib\+C\+Z\+I\+::\+Xml\+Date\+Time@{lib\+C\+Z\+I\+::\+Xml\+Date\+Time}!Has\+Time\+Zone\+Offset@{Has\+Time\+Zone\+Offset}}
+\index{Has\+Time\+Zone\+Offset@{Has\+Time\+Zone\+Offset}!lib\+C\+Z\+I\+::\+Xml\+Date\+Time@{lib\+C\+Z\+I\+::\+Xml\+Date\+Time}}
+\subsubsection{\texorpdfstring{Has\+Time\+Zone\+Offset()}{HasTimeZoneOffset()}}
+{\footnotesize\ttfamily bool lib\+C\+Z\+I\+::\+Xml\+Date\+Time\+::\+Has\+Time\+Zone\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Query if this object uses a \char`\"{}time zone offset\char`\"{}. This is the case of the fields offset\+Hours and offset\+Minutes contain valid values and \char`\"{}is\+U\+T\+C\char`\"{} is false. \begin{DoxyReturn}{Returns}
+True if a \char`\"{}time zone offset\char`\"{} is specified and it is used, false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structlib_c_z_i_1_1_xml_date_time_a3ecf25b06c3b6e40978e9141a62a9b87}\label{structlib_c_z_i_1_1_xml_date_time_a3ecf25b06c3b6e40978e9141a62a9b87}} 
+\index{lib\+C\+Z\+I\+::\+Xml\+Date\+Time@{lib\+C\+Z\+I\+::\+Xml\+Date\+Time}!Is\+Valid@{Is\+Valid}}
+\index{Is\+Valid@{Is\+Valid}!lib\+C\+Z\+I\+::\+Xml\+Date\+Time@{lib\+C\+Z\+I\+::\+Xml\+Date\+Time}}
+\subsubsection{\texorpdfstring{Is\+Valid()}{IsValid()}}
+{\footnotesize\ttfamily bool lib\+C\+Z\+I\+::\+Xml\+Date\+Time\+::\+Is\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Query if this object contains valid information. \begin{DoxyReturn}{Returns}
+True if valid, false if not. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structlib_c_z_i_1_1_xml_date_time_a0ecc73d0509f050a291817fd7e4c4e6d}\label{structlib_c_z_i_1_1_xml_date_time_a0ecc73d0509f050a291817fd7e4c4e6d}} 
+\index{lib\+C\+Z\+I\+::\+Xml\+Date\+Time@{lib\+C\+Z\+I\+::\+Xml\+Date\+Time}!To\+Xml\+String@{To\+Xml\+String}}
+\index{To\+Xml\+String@{To\+Xml\+String}!lib\+C\+Z\+I\+::\+Xml\+Date\+Time@{lib\+C\+Z\+I\+::\+Xml\+Date\+Time}}
+\subsubsection{\texorpdfstring{To\+Xml\+String()}{ToXmlString()}}
+{\footnotesize\ttfamily std\+::string lib\+C\+Z\+I\+::\+Xml\+Date\+Time\+::\+To\+Xml\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Converts the information into a string conforming to the X\+S\+D-\/specification for the Date\+Time data type. If this object does not contain valid information, an exception of type illegal\+\_\+argument is thrown. \begin{DoxyReturn}{Returns}
+This object as a string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structlib_c_z_i_1_1_xml_date_time_a98d5f56db50d7ae8b269dafb18f620a8}\label{structlib_c_z_i_1_1_xml_date_time_a98d5f56db50d7ae8b269dafb18f620a8}} 
+\index{lib\+C\+Z\+I\+::\+Xml\+Date\+Time@{lib\+C\+Z\+I\+::\+Xml\+Date\+Time}!To\+Xml\+Wstring@{To\+Xml\+Wstring}}
+\index{To\+Xml\+Wstring@{To\+Xml\+Wstring}!lib\+C\+Z\+I\+::\+Xml\+Date\+Time@{lib\+C\+Z\+I\+::\+Xml\+Date\+Time}}
+\subsubsection{\texorpdfstring{To\+Xml\+Wstring()}{ToXmlWstring()}}
+{\footnotesize\ttfamily std\+::wstring lib\+C\+Z\+I\+::\+Xml\+Date\+Time\+::\+To\+Xml\+Wstring (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Converts the information into a string conforming to the X\+S\+D-\/specification for the Date\+Time data type. If this object does not contain valid information, an exception of type illegal\+\_\+argument is thrown. \begin{DoxyReturn}{Returns}
+This object as a string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structlib_c_z_i_1_1_xml_date_time_acde177dc8ddb80c6e831645a7d2fd276}\label{structlib_c_z_i_1_1_xml_date_time_acde177dc8ddb80c6e831645a7d2fd276}} 
+\index{lib\+C\+Z\+I\+::\+Xml\+Date\+Time@{lib\+C\+Z\+I\+::\+Xml\+Date\+Time}!Try\+Parse@{Try\+Parse}}
+\index{Try\+Parse@{Try\+Parse}!lib\+C\+Z\+I\+::\+Xml\+Date\+Time@{lib\+C\+Z\+I\+::\+Xml\+Date\+Time}}
+\subsubsection{\texorpdfstring{Try\+Parse()}{TryParse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static bool lib\+C\+Z\+I\+::\+Xml\+Date\+Time\+::\+Try\+Parse (\begin{DoxyParamCaption}\item[{const char $\ast$}]{sz,  }\item[{\hyperlink{structlib_c_z_i_1_1_xml_date_time}{Xml\+Date\+Time} $\ast$}]{ptr\+Date\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Attempts to parse an \hyperlink{structlib_c_z_i_1_1_xml_date_time}{Xml\+Date\+Time} from the given string. The string needs to conform to I\+S\+O8601. 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em szw} & The string to parse. \\
+\hline
+\mbox{\tt in,out}  & {\em ptr\+Date\+Time} & If non-\/null and the parsing was successful, the information will be put here. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structlib_c_z_i_1_1_xml_date_time_ae7875a4a64cd9c4fd0906cf27832c0d4}\label{structlib_c_z_i_1_1_xml_date_time_ae7875a4a64cd9c4fd0906cf27832c0d4}} 
+\index{lib\+C\+Z\+I\+::\+Xml\+Date\+Time@{lib\+C\+Z\+I\+::\+Xml\+Date\+Time}!Try\+Parse@{Try\+Parse}}
+\index{Try\+Parse@{Try\+Parse}!lib\+C\+Z\+I\+::\+Xml\+Date\+Time@{lib\+C\+Z\+I\+::\+Xml\+Date\+Time}}
+\subsubsection{\texorpdfstring{Try\+Parse()}{TryParse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static bool lib\+C\+Z\+I\+::\+Xml\+Date\+Time\+::\+Try\+Parse (\begin{DoxyParamCaption}\item[{const wchar\+\_\+t $\ast$}]{szw,  }\item[{\hyperlink{structlib_c_z_i_1_1_xml_date_time}{Xml\+Date\+Time} $\ast$}]{ptr\+Date\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Attempts to parse an \hyperlink{structlib_c_z_i_1_1_xml_date_time}{Xml\+Date\+Time} from the given string. The string needs to conform to I\+S\+O8601. 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em szw} & The string to parse. \\
+\hline
+\mbox{\tt in,out}  & {\em ptr\+Date\+Time} & If non-\/null and the parsing was successful, the information will be put here. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I\+\_\+\+Metadata.\+h\end{DoxyCompactItemize}

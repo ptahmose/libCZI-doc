@@ -1,0 +1,220 @@
+\hypertarget{classlib_c_z_i_1_1_i_dimension_z_info}{}\section{lib\+C\+ZI\+:\+:I\+Dimension\+Z\+Info Class Reference}
+\label{classlib_c_z_i_1_1_i_dimension_z_info}\index{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}}
+
+
+This structure defines the information for the \char`\"{}\+Z-\/dimension\char`\"{}. It resembles the Z\+E\+N-\/metadata-\/structure \char`\"{}\+Dimensions/\+Z\char`\"{}.  
+
+
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I\+\_\+\+Metadata.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_af1fcb2e3024d14cdcb9122aea7dca121}{Xyz\+Handedness} \+: std\+::uint8\+\_\+t \{ \hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_af1fcb2e3024d14cdcb9122aea7dca121acd5d8803eaa45145192f16041a365ee8}{Xyz\+Handedness\+::\+Left\+Handed}, 
+\hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_af1fcb2e3024d14cdcb9122aea7dca121a4583673c474e530a2db116199a93ba82}{Xyz\+Handedness\+::\+Right\+Handed}, 
+\hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_af1fcb2e3024d14cdcb9122aea7dca121aec0fc0100c4fc1ce4eea230c3dc10360}{Xyz\+Handedness\+::\+Undefined}
+ \}
+\item 
+enum \hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_a346b5be6ff305bf728939de9b97e9291}{Zaxis\+Direction} \+: std\+::uint8\+\_\+t \{ \hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_a346b5be6ff305bf728939de9b97e9291aaed51d0aebc4405a53cb433bba295738}{Zaxis\+Direction\+::\+From\+Specimen\+To\+Objective}, 
+\hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_a346b5be6ff305bf728939de9b97e9291a50427bef20739be87d45e6b4d11697e9}{Zaxis\+Direction\+::\+From\+Objective\+To\+Specimen}, 
+\hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_a346b5be6ff305bf728939de9b97e9291aec0fc0100c4fc1ce4eea230c3dc10360}{Zaxis\+Direction\+::\+Undefined}
+ \}
+\item 
+enum \hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_acf54f265a5a03d0aae6cdaca87c09a00}{Z\+Drive\+Mode} \+: std\+::uint8\+\_\+t \{ \hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_acf54f265a5a03d0aae6cdaca87c09a00a535863a82f163709557e59e2eb8139a7}{Z\+Drive\+Mode\+::\+Continuous}, 
+\hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_acf54f265a5a03d0aae6cdaca87c09a00a48c7c41b72e1d678923ce3571aa65b2d}{Z\+Drive\+Mode\+::\+Step}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_af41653d25ecf78549ad4b5b73d424d81}{Try\+Get\+Reference\+Position} (double $\ast$d)=0
+\item 
+virtual bool \hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_a74cb2b6c953edf73ee9916e3ab71de3c}{Try\+Get\+Interval\+Definition} (double $\ast$offset, double $\ast$increment)=0
+\item 
+virtual bool \hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_a457deaa1db474089288081fde2e48e14}{Try\+Get\+Position\+List} (std\+::vector$<$ double $>$ $\ast$positions)=0
+\item 
+virtual bool \hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_a7047431361b033e2eb258f1565150a09}{Try\+Get\+Xyz\+Handedness} (\hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_af1fcb2e3024d14cdcb9122aea7dca121}{Xyz\+Handedness} $\ast$xyz\+Handedness)=0
+\item 
+virtual bool \hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_a4a67c41fcf93248e239c249b0e353950}{Try\+Get\+Z\+Axis\+Direction} (\hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_a346b5be6ff305bf728939de9b97e9291}{Zaxis\+Direction} $\ast$z\+Axis\+Direction)=0
+\item 
+virtual bool \hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_a9cf8c1a2c01152d505c5441c6368b4ba}{Try\+Get\+Z\+Drive\+Mode} (\hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_acf54f265a5a03d0aae6cdaca87c09a00}{Z\+Drive\+Mode} $\ast$zdrivemode)=0
+\item 
+virtual bool \hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_a9129563d677685df52f4afe6897ef339}{Try\+Z\+Drive\+Speed} (double $\ast$zdrivespeed)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This structure defines the information for the \char`\"{}\+Z-\/dimension\char`\"{}. It resembles the Z\+E\+N-\/metadata-\/structure \char`\"{}\+Dimensions/\+Z\char`\"{}. 
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dimension_z_info_af1fcb2e3024d14cdcb9122aea7dca121}\label{classlib_c_z_i_1_1_i_dimension_z_info_af1fcb2e3024d14cdcb9122aea7dca121}} 
+\index{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}!Xyz\+Handedness@{Xyz\+Handedness}}
+\index{Xyz\+Handedness@{Xyz\+Handedness}!lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}}
+\subsubsection{\texorpdfstring{Xyz\+Handedness}{XyzHandedness}}
+{\footnotesize\ttfamily enum \hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_af1fcb2e3024d14cdcb9122aea7dca121}{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info\+::\+Xyz\+Handedness} \+: std\+::uint8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+Specifies the chirality of the coordinate system defined by
+\begin{DoxyItemize}
+\item X axis in a subblock, from left to right
+\item Y axis in a subblock, from top to bottom(-\/$>$ origin in the top-\/left corner)
+\item Z axis given by Z-\/index This chirality is used when arranging the z-\/slices spatially according to their Z-\/index. It is recommended to ensure that the chirality(and the order of the z-\/slices) is unchanged when arranging the z-\/slices according to their associated distances(as given by ../\+Dimensions/\+Z/\+Positions). 
+\end{DoxyItemize}\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Left\+Handed@{Left\+Handed}!lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}}\index{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}!Left\+Handed@{Left\+Handed}}}\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dimension_z_info_af1fcb2e3024d14cdcb9122aea7dca121acd5d8803eaa45145192f16041a365ee8}\label{classlib_c_z_i_1_1_i_dimension_z_info_af1fcb2e3024d14cdcb9122aea7dca121acd5d8803eaa45145192f16041a365ee8}} 
+Left\+Handed&The coordinate-\/system is orientated left-\/handed. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Right\+Handed@{Right\+Handed}!lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}}\index{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}!Right\+Handed@{Right\+Handed}}}\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dimension_z_info_af1fcb2e3024d14cdcb9122aea7dca121a4583673c474e530a2db116199a93ba82}\label{classlib_c_z_i_1_1_i_dimension_z_info_af1fcb2e3024d14cdcb9122aea7dca121a4583673c474e530a2db116199a93ba82}} 
+Right\+Handed&The coordinate-\/system is orientated right-\/handed. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Undefined@{Undefined}!lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}}\index{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}!Undefined@{Undefined}}}\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dimension_z_info_af1fcb2e3024d14cdcb9122aea7dca121aec0fc0100c4fc1ce4eea230c3dc10360}\label{classlib_c_z_i_1_1_i_dimension_z_info_af1fcb2e3024d14cdcb9122aea7dca121aec0fc0100c4fc1ce4eea230c3dc10360}} 
+Undefined&The coordinate-\/system is undefined. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dimension_z_info_a346b5be6ff305bf728939de9b97e9291}\label{classlib_c_z_i_1_1_i_dimension_z_info_a346b5be6ff305bf728939de9b97e9291}} 
+\index{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}!Zaxis\+Direction@{Zaxis\+Direction}}
+\index{Zaxis\+Direction@{Zaxis\+Direction}!lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}}
+\subsubsection{\texorpdfstring{Zaxis\+Direction}{ZaxisDirection}}
+{\footnotesize\ttfamily enum \hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_a346b5be6ff305bf728939de9b97e9291}{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info\+::\+Zaxis\+Direction} \+: std\+::uint8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+We define the z-\/axis to be collinear with the optical axis. On this axis the z-\/coordinates of the focal plane are measured, and their distances are found in the Z-\/labels (defined under ../\+Dimensions/\+Z/\+Positions) and the Focus\+Position-\/field found in subblock-\/metadata. The direction of the axis may either be “from specimen to objective” or “from objective to specimen”. In this coordinate system the specimen is at a fixed position.\+Note that the origin of the coordinate system is {\itshape not} defined here. Possible values are\+: From\+Specimen\+To\+Objective, From\+Objective\+To\+Specimen and undefined. Undefined is the default (and to be assumed if this element is not present). Note that the coordinate system defined here is different to the one defined with \char`\"{}\+X\+Y\+Z\+Handedness\char`\"{}. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{From\+Specimen\+To\+Objective@{From\+Specimen\+To\+Objective}!lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}}\index{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}!From\+Specimen\+To\+Objective@{From\+Specimen\+To\+Objective}}}\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dimension_z_info_a346b5be6ff305bf728939de9b97e9291aaed51d0aebc4405a53cb433bba295738}\label{classlib_c_z_i_1_1_i_dimension_z_info_a346b5be6ff305bf728939de9b97e9291aaed51d0aebc4405a53cb433bba295738}} 
+From\+Specimen\+To\+Objective&The z-\/axis is pointing from specimen to objective. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{From\+Objective\+To\+Specimen@{From\+Objective\+To\+Specimen}!lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}}\index{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}!From\+Objective\+To\+Specimen@{From\+Objective\+To\+Specimen}}}\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dimension_z_info_a346b5be6ff305bf728939de9b97e9291a50427bef20739be87d45e6b4d11697e9}\label{classlib_c_z_i_1_1_i_dimension_z_info_a346b5be6ff305bf728939de9b97e9291a50427bef20739be87d45e6b4d11697e9}} 
+From\+Objective\+To\+Specimen&The z-\/axis is pointing from objective to specimen. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Undefined@{Undefined}!lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}}\index{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}!Undefined@{Undefined}}}\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dimension_z_info_a346b5be6ff305bf728939de9b97e9291aec0fc0100c4fc1ce4eea230c3dc10360}\label{classlib_c_z_i_1_1_i_dimension_z_info_a346b5be6ff305bf728939de9b97e9291aec0fc0100c4fc1ce4eea230c3dc10360}} 
+Undefined&This parameter is undefined. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dimension_z_info_acf54f265a5a03d0aae6cdaca87c09a00}\label{classlib_c_z_i_1_1_i_dimension_z_info_acf54f265a5a03d0aae6cdaca87c09a00}} 
+\index{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}!Z\+Drive\+Mode@{Z\+Drive\+Mode}}
+\index{Z\+Drive\+Mode@{Z\+Drive\+Mode}!lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}}
+\subsubsection{\texorpdfstring{Z\+Drive\+Mode}{ZDriveMode}}
+{\footnotesize\ttfamily enum \hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_acf54f265a5a03d0aae6cdaca87c09a00}{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info\+::\+Z\+Drive\+Mode} \+: std\+::uint8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+Description of mode of operation of the Z-\/\+Drive. \char`\"{}\+Continuous\char`\"{} means that the z -\/ drive did not stop while acquiring the image. \char`\"{}\+Step\char`\"{} means that the Z -\/ drive did not move during the acquisition of the image. Used for S\+P\+IM. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Continuous@{Continuous}!lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}}\index{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}!Continuous@{Continuous}}}\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dimension_z_info_acf54f265a5a03d0aae6cdaca87c09a00a535863a82f163709557e59e2eb8139a7}\label{classlib_c_z_i_1_1_i_dimension_z_info_acf54f265a5a03d0aae6cdaca87c09a00a535863a82f163709557e59e2eb8139a7}} 
+Continuous&The z-\/drive did not stop while acquiring the image. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Step@{Step}!lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}}\index{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}!Step@{Step}}}\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dimension_z_info_acf54f265a5a03d0aae6cdaca87c09a00a48c7c41b72e1d678923ce3571aa65b2d}\label{classlib_c_z_i_1_1_i_dimension_z_info_acf54f265a5a03d0aae6cdaca87c09a00a48c7c41b72e1d678923ce3571aa65b2d}} 
+Step&The z-\/drive did not move during the acquisition of the image. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dimension_z_info_a74cb2b6c953edf73ee9916e3ab71de3c}\label{classlib_c_z_i_1_1_i_dimension_z_info_a74cb2b6c953edf73ee9916e3ab71de3c}} 
+\index{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}!Try\+Get\+Interval\+Definition@{Try\+Get\+Interval\+Definition}}
+\index{Try\+Get\+Interval\+Definition@{Try\+Get\+Interval\+Definition}!lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}}
+\subsubsection{\texorpdfstring{Try\+Get\+Interval\+Definition()}{TryGetIntervalDefinition()}}
+{\footnotesize\ttfamily virtual bool lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info\+::\+Try\+Get\+Interval\+Definition (\begin{DoxyParamCaption}\item[{double $\ast$}]{offset,  }\item[{double $\ast$}]{increment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Attempts to get interval definition for the z-\/positions. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em offset} & If non-\/null and the method was successful, the offset is stored here. \\
+\hline
+\mbox{\tt in,out}  & {\em increment} & If non-\/null and the method was successful, the increment is stored here. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dimension_z_info_a457deaa1db474089288081fde2e48e14}\label{classlib_c_z_i_1_1_i_dimension_z_info_a457deaa1db474089288081fde2e48e14}} 
+\index{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}!Try\+Get\+Position\+List@{Try\+Get\+Position\+List}}
+\index{Try\+Get\+Position\+List@{Try\+Get\+Position\+List}!lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}}
+\subsubsection{\texorpdfstring{Try\+Get\+Position\+List()}{TryGetPositionList()}}
+{\footnotesize\ttfamily virtual bool lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info\+::\+Try\+Get\+Position\+List (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ $\ast$}]{positions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Attempts to get list definition for the z-\/positions. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em positions} & If non-\/null and the method was successful, the list of positions is stored here. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dimension_z_info_af41653d25ecf78549ad4b5b73d424d81}\label{classlib_c_z_i_1_1_i_dimension_z_info_af41653d25ecf78549ad4b5b73d424d81}} 
+\index{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}!Try\+Get\+Reference\+Position@{Try\+Get\+Reference\+Position}}
+\index{Try\+Get\+Reference\+Position@{Try\+Get\+Reference\+Position}!lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}}
+\subsubsection{\texorpdfstring{Try\+Get\+Reference\+Position()}{TryGetReferencePosition()}}
+{\footnotesize\ttfamily virtual bool lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info\+::\+Try\+Get\+Reference\+Position (\begin{DoxyParamCaption}\item[{double $\ast$}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the reference position in units of µm. If this is not valid, then the Z-\/positions only have a relative meaning. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em d} & If non-\/null, the double will receive the requested value if successful. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dimension_z_info_a7047431361b033e2eb258f1565150a09}\label{classlib_c_z_i_1_1_i_dimension_z_info_a7047431361b033e2eb258f1565150a09}} 
+\index{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}!Try\+Get\+Xyz\+Handedness@{Try\+Get\+Xyz\+Handedness}}
+\index{Try\+Get\+Xyz\+Handedness@{Try\+Get\+Xyz\+Handedness}!lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}}
+\subsubsection{\texorpdfstring{Try\+Get\+Xyz\+Handedness()}{TryGetXyzHandedness()}}
+{\footnotesize\ttfamily virtual bool lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info\+::\+Try\+Get\+Xyz\+Handedness (\begin{DoxyParamCaption}\item[{\hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_af1fcb2e3024d14cdcb9122aea7dca121}{Xyz\+Handedness} $\ast$}]{xyz\+Handedness }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Attempts to get X\+Y\+Z-\/handedness property. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em xyz\+Handedness} & If non-\/null and the method was successful, the X\+Y\+Z-\/handedness is stored here. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dimension_z_info_a4a67c41fcf93248e239c249b0e353950}\label{classlib_c_z_i_1_1_i_dimension_z_info_a4a67c41fcf93248e239c249b0e353950}} 
+\index{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}!Try\+Get\+Z\+Axis\+Direction@{Try\+Get\+Z\+Axis\+Direction}}
+\index{Try\+Get\+Z\+Axis\+Direction@{Try\+Get\+Z\+Axis\+Direction}!lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}}
+\subsubsection{\texorpdfstring{Try\+Get\+Z\+Axis\+Direction()}{TryGetZAxisDirection()}}
+{\footnotesize\ttfamily virtual bool lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info\+::\+Try\+Get\+Z\+Axis\+Direction (\begin{DoxyParamCaption}\item[{\hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_a346b5be6ff305bf728939de9b97e9291}{Zaxis\+Direction} $\ast$}]{z\+Axis\+Direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Attempts to get Z-\/axis direction property. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em z\+Axis\+Direction} & If non-\/null and the method was successful, the Z-\/axis direction is stored here. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dimension_z_info_a9cf8c1a2c01152d505c5441c6368b4ba}\label{classlib_c_z_i_1_1_i_dimension_z_info_a9cf8c1a2c01152d505c5441c6368b4ba}} 
+\index{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}!Try\+Get\+Z\+Drive\+Mode@{Try\+Get\+Z\+Drive\+Mode}}
+\index{Try\+Get\+Z\+Drive\+Mode@{Try\+Get\+Z\+Drive\+Mode}!lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}}
+\subsubsection{\texorpdfstring{Try\+Get\+Z\+Drive\+Mode()}{TryGetZDriveMode()}}
+{\footnotesize\ttfamily virtual bool lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info\+::\+Try\+Get\+Z\+Drive\+Mode (\begin{DoxyParamCaption}\item[{\hyperlink{classlib_c_z_i_1_1_i_dimension_z_info_acf54f265a5a03d0aae6cdaca87c09a00}{Z\+Drive\+Mode} $\ast$}]{zdrivemode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Attempts to get Z-\/drive mode property. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em zdrivemode} & If non-\/null and the method was successful, the Z-\/drive mode is stored here. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dimension_z_info_a9129563d677685df52f4afe6897ef339}\label{classlib_c_z_i_1_1_i_dimension_z_info_a9129563d677685df52f4afe6897ef339}} 
+\index{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}!Try\+Z\+Drive\+Speed@{Try\+Z\+Drive\+Speed}}
+\index{Try\+Z\+Drive\+Speed@{Try\+Z\+Drive\+Speed}!lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info}}
+\subsubsection{\texorpdfstring{Try\+Z\+Drive\+Speed()}{TryZDriveSpeed()}}
+{\footnotesize\ttfamily virtual bool lib\+C\+Z\+I\+::\+I\+Dimension\+Z\+Info\+::\+Try\+Z\+Drive\+Speed (\begin{DoxyParamCaption}\item[{double $\ast$}]{zdrivespeed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Attempts to get the z-\/drive speed (in units of µm/s). 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em zdrivespeed} & If non-\/null and the method was successful, the z-\/drive speed is stored here. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I\+\_\+\+Metadata.\+h\end{DoxyCompactItemize}

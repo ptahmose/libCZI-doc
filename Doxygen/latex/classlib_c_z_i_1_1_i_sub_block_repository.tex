@@ -1,0 +1,121 @@
+\hypertarget{classlib_c_z_i_1_1_i_sub_block_repository}{}\section{lib\+C\+ZI\+:\+:I\+Sub\+Block\+Repository Class Reference}
+\label{classlib_c_z_i_1_1_i_sub_block_repository}\index{lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository@{lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository}}
+
+
+Interface for sub-\/block repository. This interface is used to access the sub-\/blocks in a C\+Z\+I-\/file.  
+
+
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I.\+h$>$}
+
+Inheritance diagram for lib\+C\+ZI\+:\+:I\+Sub\+Block\+Repository\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classlib_c_z_i_1_1_i_sub_block_repository}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classlib_c_z_i_1_1_i_sub_block_repository_a986ec9360cafdbadafdea9b8b5528ac3}{Enumerate\+Sub\+Blocks} (std\+::function$<$ bool(int index, const \hyperlink{structlib_c_z_i_1_1_sub_block_info}{Sub\+Block\+Info} \&info)$>$ func\+Enum)=0
+\item 
+virtual void \hyperlink{classlib_c_z_i_1_1_i_sub_block_repository_abf5c6fe4c21dde7079ac9c5aa04a760f}{Enum\+Subset} (const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate} $\ast$plane\+Coordinate, const \hyperlink{structlib_c_z_i_1_1_int_rect}{Int\+Rect} $\ast$roi, bool only\+Layer0, std\+::function$<$ bool(int index, const \hyperlink{structlib_c_z_i_1_1_sub_block_info}{Sub\+Block\+Info} \&info)$>$ func\+Enum)=0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_sub_block}{I\+Sub\+Block} $>$ \hyperlink{classlib_c_z_i_1_1_i_sub_block_repository_afd2d9c375554492cf499c97ae49aa50b}{Read\+Sub\+Block} (int index)=0
+\item 
+virtual bool \hyperlink{classlib_c_z_i_1_1_i_sub_block_repository_ae557269ff1dcc03bacc21610b17d2104}{Try\+Get\+Sub\+Block\+Info\+Of\+Arbitrary\+Sub\+Block\+In\+Channel} (int channel\+Index, \hyperlink{structlib_c_z_i_1_1_sub_block_info}{Sub\+Block\+Info} \&info)=0
+\item 
+virtual \hyperlink{structlib_c_z_i_1_1_sub_block_statistics}{Sub\+Block\+Statistics} \hyperlink{classlib_c_z_i_1_1_i_sub_block_repository_a6e44c1a929a27036ef77195d516dd719}{Get\+Statistics} ()=0
+\item 
+virtual \hyperlink{structlib_c_z_i_1_1_pyramid_statistics}{Pyramid\+Statistics} \hyperlink{classlib_c_z_i_1_1_i_sub_block_repository_ab2ce65ddad39daae9ec51ea17f6fbbcf}{Get\+Pyramid\+Statistics} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for sub-\/block repository. This interface is used to access the sub-\/blocks in a C\+Z\+I-\/file. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_sub_block_repository_a986ec9360cafdbadafdea9b8b5528ac3}\label{classlib_c_z_i_1_1_i_sub_block_repository_a986ec9360cafdbadafdea9b8b5528ac3}} 
+\index{lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository@{lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository}!Enumerate\+Sub\+Blocks@{Enumerate\+Sub\+Blocks}}
+\index{Enumerate\+Sub\+Blocks@{Enumerate\+Sub\+Blocks}!lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository@{lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository}}
+\subsubsection{\texorpdfstring{Enumerate\+Sub\+Blocks()}{EnumerateSubBlocks()}}
+{\footnotesize\ttfamily virtual void lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository\+::\+Enumerate\+Sub\+Blocks (\begin{DoxyParamCaption}\item[{std\+::function$<$ bool(int index, const \hyperlink{structlib_c_z_i_1_1_sub_block_info}{Sub\+Block\+Info} \&info)$>$}]{func\+Enum }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Enumerate all sub-\/blocks. 
+\begin{DoxyParams}{Parameters}
+{\em func\+Enum} & The functor which will be called for every sub-\/block. If the return value of the functor is true, the enumeration is continued, otherwise it is stopped. The first argument is the index of the sub-\/block and the second is providing information about the sub-\/block. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_sub_block_repository_abf5c6fe4c21dde7079ac9c5aa04a760f}\label{classlib_c_z_i_1_1_i_sub_block_repository_abf5c6fe4c21dde7079ac9c5aa04a760f}} 
+\index{lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository@{lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository}!Enum\+Subset@{Enum\+Subset}}
+\index{Enum\+Subset@{Enum\+Subset}!lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository@{lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository}}
+\subsubsection{\texorpdfstring{Enum\+Subset()}{EnumSubset()}}
+{\footnotesize\ttfamily virtual void lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository\+::\+Enum\+Subset (\begin{DoxyParamCaption}\item[{const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate} $\ast$}]{plane\+Coordinate,  }\item[{const \hyperlink{structlib_c_z_i_1_1_int_rect}{Int\+Rect} $\ast$}]{roi,  }\item[{bool}]{only\+Layer0,  }\item[{std\+::function$<$ bool(int index, const \hyperlink{structlib_c_z_i_1_1_sub_block_info}{Sub\+Block\+Info} \&info)$>$}]{func\+Enum }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Enumerate the subset of sub-\/blocks defined by the parameters. 
+\begin{DoxyParams}{Parameters}
+{\em plane\+Coordinate} & The plane coordinate. Only sub-\/blocks on this plane will be considered. \\
+\hline
+{\em roi} & The R\+OI -\/ only sub-\/blocks which intersects with this R\+OI will be considered. \\
+\hline
+{\em only\+Layer0} & If true, then only sub-\/blocks on pyramid-\/layer 0 will be considered. \\
+\hline
+{\em func\+Enum} & The functor which will be called for every sub-\/block. If the return value of the functor is true, the enumeration is continued, otherwise it is stopped. The first argument is the index of the sub-\/block and the second is providing information about the sub-\/block. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_sub_block_repository_ab2ce65ddad39daae9ec51ea17f6fbbcf}\label{classlib_c_z_i_1_1_i_sub_block_repository_ab2ce65ddad39daae9ec51ea17f6fbbcf}} 
+\index{lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository@{lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository}!Get\+Pyramid\+Statistics@{Get\+Pyramid\+Statistics}}
+\index{Get\+Pyramid\+Statistics@{Get\+Pyramid\+Statistics}!lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository@{lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository}}
+\subsubsection{\texorpdfstring{Get\+Pyramid\+Statistics()}{GetPyramidStatistics()}}
+{\footnotesize\ttfamily virtual \hyperlink{structlib_c_z_i_1_1_pyramid_statistics}{Pyramid\+Statistics} lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository\+::\+Get\+Pyramid\+Statistics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the statistics about the pyramid-\/layers. This information is constructed from all T, Z, C, ... Pyramids are constructed per scene in C\+ZI.
+
+\begin{DoxyReturn}{Returns}
+The pyramid statistics. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_sub_block_repository_a6e44c1a929a27036ef77195d516dd719}\label{classlib_c_z_i_1_1_i_sub_block_repository_a6e44c1a929a27036ef77195d516dd719}} 
+\index{lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository@{lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository}!Get\+Statistics@{Get\+Statistics}}
+\index{Get\+Statistics@{Get\+Statistics}!lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository@{lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository}}
+\subsubsection{\texorpdfstring{Get\+Statistics()}{GetStatistics()}}
+{\footnotesize\ttfamily virtual \hyperlink{structlib_c_z_i_1_1_sub_block_statistics}{Sub\+Block\+Statistics} lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository\+::\+Get\+Statistics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the statistics about the sub-\/blocks (determined from examining all sub-\/blocks). \begin{DoxyReturn}{Returns}
+The sub-\/block statistics. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_sub_block_repository_afd2d9c375554492cf499c97ae49aa50b}\label{classlib_c_z_i_1_1_i_sub_block_repository_afd2d9c375554492cf499c97ae49aa50b}} 
+\index{lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository@{lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository}!Read\+Sub\+Block@{Read\+Sub\+Block}}
+\index{Read\+Sub\+Block@{Read\+Sub\+Block}!lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository@{lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository}}
+\subsubsection{\texorpdfstring{Read\+Sub\+Block()}{ReadSubBlock()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_sub_block}{I\+Sub\+Block}$>$ lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository\+::\+Read\+Sub\+Block (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Reads the sub-\/block identified by the specified index. If there is no sub-\/block present (for the specified index) then an empty shared\+\_\+ptr is returned. If a different kind of problem occurs (e. g. I/O error or corrupted data) an exception is thrown. 
+\begin{DoxyParams}{Parameters}
+{\em index} & Index of the sub-\/block (as reported by the Enumerate-\/methods). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If successful, the sub-\/block object; otherwise an empty shared\+\_\+ptr. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_sub_block_repository_ae557269ff1dcc03bacc21610b17d2104}\label{classlib_c_z_i_1_1_i_sub_block_repository_ae557269ff1dcc03bacc21610b17d2104}} 
+\index{lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository@{lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository}!Try\+Get\+Sub\+Block\+Info\+Of\+Arbitrary\+Sub\+Block\+In\+Channel@{Try\+Get\+Sub\+Block\+Info\+Of\+Arbitrary\+Sub\+Block\+In\+Channel}}
+\index{Try\+Get\+Sub\+Block\+Info\+Of\+Arbitrary\+Sub\+Block\+In\+Channel@{Try\+Get\+Sub\+Block\+Info\+Of\+Arbitrary\+Sub\+Block\+In\+Channel}!lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository@{lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository}}
+\subsubsection{\texorpdfstring{Try\+Get\+Sub\+Block\+Info\+Of\+Arbitrary\+Sub\+Block\+In\+Channel()}{TryGetSubBlockInfoOfArbitrarySubBlockInChannel()}}
+{\footnotesize\ttfamily virtual bool lib\+C\+Z\+I\+::\+I\+Sub\+Block\+Repository\+::\+Try\+Get\+Sub\+Block\+Info\+Of\+Arbitrary\+Sub\+Block\+In\+Channel (\begin{DoxyParamCaption}\item[{int}]{channel\+Index,  }\item[{\hyperlink{structlib_c_z_i_1_1_sub_block_info}{Sub\+Block\+Info} \&}]{info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Attempts to get subblock information of an arbitrary subblock in of the specified channel. The purpose is that it is quite often necessary to determine the pixeltype of a channel -\/ and if we do not want to/cannot rely on metadata for determining this, then the obvious way is to look at an (arbitrary) subblock. In order to allow the repository to have this information available fast (i. e. cached) we introduce a specific method for this purpose. A cornerstone case is when no subblock has a channel-\/index -\/ the rule is\+: if no subblock has channel-\/ information, then a channel\+Index of 0 fits. Otherwise a subblock is a match if the channel-\/ index is an exact match. 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em channel\+Index} & The channel index. \\
+\hline
+\mbox{\tt out}  & {\em info} & The sub-\/block information (will be set only if the method is successful). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it succeeds, false if it fails. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I.\+h\end{DoxyCompactItemize}

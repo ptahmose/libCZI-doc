@@ -1,0 +1,50 @@
+Multi-\/channel-\/composition is the operation of combining a set of channels (usually grayscale images) into a one colored image.
+
+The operation (as implemented by the function Compositors\+::\+Compose\+Multi\+Channel) is controlled by the following options\+:
+
+
+\begin{DoxyItemize}
+\item tinting by a color
+\item definition of a black-\/ and white-\/point
+\item a gradiation curve
+\end{DoxyItemize}
+
+The steps in the operation are\+: \begin{DoxyVerb}Let result R-G-B pixel value = 0,0,0
+For each channel  
+    If tinting is enabled for this channel:
+        - get normalized pixel value
+        - apply gradation
+        - multiply with R-G-B tinting color
+        - add R-G-B value to result pixel 
+
+    If tinting is disabled for this channel:
+        - get normalized R-G-B value
+        - apply gradation to R, G and B
+        - add R-G-B value to result pixel 
+\end{DoxyVerb}
+
+
+The operation \char`\"{}\+Apply gradiation\char`\"{} works in the following way\+: the normalized pixel value is mapped to an integer (in the range 0..255) by looking up a value\+:
+
+
+\begin{DoxyImage}
+\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{gradationcurve_1.PNG}
+\doxyfigcaption{linear gradation curve}
+\end{DoxyImage}
+ Above a linear gradation curve is shown. There are three ways commonly used to define the gradation curve\+:
+\begin{DoxyItemize}
+\item linear (a straight line from the point \mbox{[}black point,0\mbox{]} to \mbox{[}white point,255\mbox{]} -\/ as shown above)
+\item gamma (instead of a straight line we use an exponential with the exponent gamma as a parameter)
+\item defined by a spline
+\end{DoxyItemize}
+
+In the function Compositors\+::\+Compose\+Multi\+Channel the gradation curve is given as an array of bytes. Those bytes give the R\+G\+B-\/value at uniformly distributed points between black point and white point. Values between those points are interpolated linearly.
+
+For example, the parameters white\+\_\+point=0.\+2, black\+\_\+point=1.\+0 and lookup\+Table=\{0, 66, 100, 166, 255\} will result in this gradation curve\+:
+
+
+\begin{DoxyImage}
+\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{gradationcurve_2.PNG}
+\doxyfigcaption{gradation curve sample}
+\end{DoxyImage}
+ For generating a look-\/up-\/table (which then can be used for Compositors\+::\+Compose\+Multi\+Channel) two utility functions are provided\+: Utils\+::\+Create8\+Bit\+Look\+Up\+Table\+From\+Splines and Utils\+::\+Create8\+Bit\+Look\+Up\+Table\+From\+Gamma. 

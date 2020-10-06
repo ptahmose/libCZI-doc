@@ -1,0 +1,75 @@
+\hypertarget{classlib_c_z_i_1_1_i_dimension_t_info}{}\section{lib\+C\+ZI\+:\+:I\+Dimension\+T\+Info Class Reference}
+\label{classlib_c_z_i_1_1_i_dimension_t_info}\index{lib\+C\+Z\+I\+::\+I\+Dimension\+T\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+T\+Info}}
+
+
+This structure defines the information for the \char`\"{}\+T-\/dimension\char`\"{}. It resembles the Z\+E\+N-\/metadata-\/structure \char`\"{}\+Dimensions/\+T\char`\"{}.  
+
+
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I\+\_\+\+Metadata.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classlib_c_z_i_1_1_i_dimension_t_info_ab815fa3e2df4f4d8a243a45e843f9a17}{Try\+Get\+Start\+Time} (\hyperlink{structlib_c_z_i_1_1_xml_date_time}{Xml\+Date\+Time} $\ast$date\+Time)=0
+\item 
+virtual bool \hyperlink{classlib_c_z_i_1_1_i_dimension_t_info_a524fe50881aaf29353744500f1166158}{Try\+Get\+Interval\+Definition} (double $\ast$offset, double $\ast$increment)=0
+\item 
+virtual bool \hyperlink{classlib_c_z_i_1_1_i_dimension_t_info_a2c852321a0f26213096c571ccc5f7b65}{Try\+Get\+Offsets\+List} (std\+::vector$<$ double $>$ $\ast$offsets)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This structure defines the information for the \char`\"{}\+T-\/dimension\char`\"{}. It resembles the Z\+E\+N-\/metadata-\/structure \char`\"{}\+Dimensions/\+T\char`\"{}. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dimension_t_info_a524fe50881aaf29353744500f1166158}\label{classlib_c_z_i_1_1_i_dimension_t_info_a524fe50881aaf29353744500f1166158}} 
+\index{lib\+C\+Z\+I\+::\+I\+Dimension\+T\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+T\+Info}!Try\+Get\+Interval\+Definition@{Try\+Get\+Interval\+Definition}}
+\index{Try\+Get\+Interval\+Definition@{Try\+Get\+Interval\+Definition}!lib\+C\+Z\+I\+::\+I\+Dimension\+T\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+T\+Info}}
+\subsubsection{\texorpdfstring{Try\+Get\+Interval\+Definition()}{TryGetIntervalDefinition()}}
+{\footnotesize\ttfamily virtual bool lib\+C\+Z\+I\+::\+I\+Dimension\+T\+Info\+::\+Try\+Get\+Interval\+Definition (\begin{DoxyParamCaption}\item[{double $\ast$}]{offset,  }\item[{double $\ast$}]{increment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Attempts to get interval definition which allows to associate a time span with a t-\/index. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em offset} & If non-\/null, the offset will be put here (unit\+: second). \\
+\hline
+\mbox{\tt in,out}  & {\em increment} & If non-\/null, the increment will be put here (unit\+: second). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dimension_t_info_a2c852321a0f26213096c571ccc5f7b65}\label{classlib_c_z_i_1_1_i_dimension_t_info_a2c852321a0f26213096c571ccc5f7b65}} 
+\index{lib\+C\+Z\+I\+::\+I\+Dimension\+T\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+T\+Info}!Try\+Get\+Offsets\+List@{Try\+Get\+Offsets\+List}}
+\index{Try\+Get\+Offsets\+List@{Try\+Get\+Offsets\+List}!lib\+C\+Z\+I\+::\+I\+Dimension\+T\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+T\+Info}}
+\subsubsection{\texorpdfstring{Try\+Get\+Offsets\+List()}{TryGetOffsetsList()}}
+{\footnotesize\ttfamily virtual bool lib\+C\+Z\+I\+::\+I\+Dimension\+T\+Info\+::\+Try\+Get\+Offsets\+List (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ $\ast$}]{offsets }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Attempts to get the offset list. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em offsets} & If non-\/null, the offsets will be put here (unit\+: second). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dimension_t_info_ab815fa3e2df4f4d8a243a45e843f9a17}\label{classlib_c_z_i_1_1_i_dimension_t_info_ab815fa3e2df4f4d8a243a45e843f9a17}} 
+\index{lib\+C\+Z\+I\+::\+I\+Dimension\+T\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+T\+Info}!Try\+Get\+Start\+Time@{Try\+Get\+Start\+Time}}
+\index{Try\+Get\+Start\+Time@{Try\+Get\+Start\+Time}!lib\+C\+Z\+I\+::\+I\+Dimension\+T\+Info@{lib\+C\+Z\+I\+::\+I\+Dimension\+T\+Info}}
+\subsubsection{\texorpdfstring{Try\+Get\+Start\+Time()}{TryGetStartTime()}}
+{\footnotesize\ttfamily virtual bool lib\+C\+Z\+I\+::\+I\+Dimension\+T\+Info\+::\+Try\+Get\+Start\+Time (\begin{DoxyParamCaption}\item[{\hyperlink{structlib_c_z_i_1_1_xml_date_time}{Xml\+Date\+Time} $\ast$}]{date\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Attempts to get start time -\/ an absolute point in time which gives the reference point (to which to relative time spans refer to). 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em date\+Time} & If non-\/null, the reference date time. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if it succeeds, false if it fails. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I\+\_\+\+Metadata.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,61 @@
+\hypertarget{structlib_c_z_i_1_1_scaling_info_ex}{}\section{lib\+C\+ZI\+:\+:Scaling\+Info\+Ex Struct Reference}
+\label{structlib_c_z_i_1_1_scaling_info_ex}\index{lib\+C\+Z\+I\+::\+Scaling\+Info\+Ex@{lib\+C\+Z\+I\+::\+Scaling\+Info\+Ex}}
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I\+\_\+\+Metadata.\+h$>$}
+
+Inheritance diagram for lib\+C\+ZI\+:\+:Scaling\+Info\+Ex\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structlib_c_z_i_1_1_scaling_info_ex}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI std\+::wstring \hyperlink{structlib_c_z_i_1_1_scaling_info_ex_a65dda3ab892e628177790061a43a80e9}{Get\+Default\+Unit\+Format} (char d) const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_scaling_info_ex_acdcace3931188bb0b5514f859d068284}\label{structlib_c_z_i_1_1_scaling_info_ex_acdcace3931188bb0b5514f859d068284}} 
+std\+::wstring \hyperlink{structlib_c_z_i_1_1_scaling_info_ex_acdcace3931188bb0b5514f859d068284}{default\+Unit\+FormatX}
+\begin{DoxyCompactList}\small\item\em The default unit-\/format for X. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_scaling_info_ex_a508a52d4f82bcbcf77697eaf12cbb255}\label{structlib_c_z_i_1_1_scaling_info_ex_a508a52d4f82bcbcf77697eaf12cbb255}} 
+std\+::wstring \hyperlink{structlib_c_z_i_1_1_scaling_info_ex_a508a52d4f82bcbcf77697eaf12cbb255}{default\+Unit\+FormatY}
+\begin{DoxyCompactList}\small\item\em The default unit-\/format for Y. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_scaling_info_ex_aeb63a3f3cd94309efe6de8852f113d5c}\label{structlib_c_z_i_1_1_scaling_info_ex_aeb63a3f3cd94309efe6de8852f113d5c}} 
+std\+::wstring \hyperlink{structlib_c_z_i_1_1_scaling_info_ex_aeb63a3f3cd94309efe6de8852f113d5c}{default\+Unit\+FormatZ}
+\begin{DoxyCompactList}\small\item\em The default unit-\/format for Z. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Extends the scaling information by a \char`\"{}default unit format\char`\"{}. Note that the value itself remains to be given in meter, here we just suggest a unit to display the scale. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structlib_c_z_i_1_1_scaling_info_ex_a65dda3ab892e628177790061a43a80e9}\label{structlib_c_z_i_1_1_scaling_info_ex_a65dda3ab892e628177790061a43a80e9}} 
+\index{lib\+C\+Z\+I\+::\+Scaling\+Info\+Ex@{lib\+C\+Z\+I\+::\+Scaling\+Info\+Ex}!Get\+Default\+Unit\+Format@{Get\+Default\+Unit\+Format}}
+\index{Get\+Default\+Unit\+Format@{Get\+Default\+Unit\+Format}!lib\+C\+Z\+I\+::\+Scaling\+Info\+Ex@{lib\+C\+Z\+I\+::\+Scaling\+Info\+Ex}}
+\subsubsection{\texorpdfstring{Get\+Default\+Unit\+Format()}{GetDefaultUnitFormat()}}
+{\footnotesize\ttfamily L\+I\+B\+C\+Z\+I\+\_\+\+A\+PI std\+::wstring lib\+C\+Z\+I\+::\+Scaling\+Info\+Ex\+::\+Get\+Default\+Unit\+Format (\begin{DoxyParamCaption}\item[{char}]{d }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the specified default unit-\/format.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Thrown when an invalid argument error condition occurs.\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em d} & Identifies the scale-\/value to query, can be \textquotesingle{}x\textquotesingle{}, \textquotesingle{}y\textquotesingle{} or \textquotesingle{}z\textquotesingle{} (or uppercase).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The specified scale. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I\+\_\+\+Metadata.\+h\end{DoxyCompactItemize}

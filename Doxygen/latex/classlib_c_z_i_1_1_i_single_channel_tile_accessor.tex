@@ -1,0 +1,168 @@
+\hypertarget{classlib_c_z_i_1_1_i_single_channel_tile_accessor}{}\section{lib\+C\+ZI\+:\+:I\+Single\+Channel\+Tile\+Accessor Class Reference}
+\label{classlib_c_z_i_1_1_i_single_channel_tile_accessor}\index{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor}}
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I\+\_\+\+Compositor.\+h$>$}
+
+Inheritance diagram for lib\+C\+ZI\+:\+:I\+Single\+Channel\+Tile\+Accessor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classlib_c_z_i_1_1_i_single_channel_tile_accessor}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structlib_c_z_i_1_1_i_single_channel_tile_accessor_1_1_options}{Options}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structlib_c_z_i_1_1_i_single_channel_tile_accessor_1_1_options}{Options} for controlling the composition operation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $>$ \hyperlink{classlib_c_z_i_1_1_i_single_channel_tile_accessor_a50e17c0c197bf5f782a67e044dd4e943}{Get} (const \hyperlink{structlib_c_z_i_1_1_int_rect}{lib\+C\+Z\+I\+::\+Int\+Rect} \&roi, const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate} $\ast$plane\+Coordinate, const \hyperlink{structlib_c_z_i_1_1_i_single_channel_tile_accessor_1_1_options}{Options} $\ast$p\+Options)=0
+\begin{DoxyCompactList}\small\item\em Gets the tile composite of the specified plane and the specified R\+OI. The pixeltype is determined by examing the first subblock found in the specified plane (which is an arbitrary subblock). A newly allocated bitmap is returned. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $>$ \hyperlink{classlib_c_z_i_1_1_i_single_channel_tile_accessor_a4fb81512693a2d7221abece14c33d1f3}{Get} (\hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834}{lib\+C\+Z\+I\+::\+Pixel\+Type} pixeltype, const \hyperlink{structlib_c_z_i_1_1_int_rect}{lib\+C\+Z\+I\+::\+Int\+Rect} \&roi, const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate} $\ast$plane\+Coordinate, const \hyperlink{structlib_c_z_i_1_1_i_single_channel_tile_accessor_1_1_options}{Options} $\ast$p\+Options)=0
+\item 
+virtual void \hyperlink{classlib_c_z_i_1_1_i_single_channel_tile_accessor_a275295786554ca6dbf9f2d0b3086dcad}{Get} (\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $\ast$p\+Dest, int x\+Pos, int y\+Pos, const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate} $\ast$plane\+Coordinate, const \hyperlink{structlib_c_z_i_1_1_i_single_channel_tile_accessor_1_1_options}{Options} $\ast$p\+Options)=0
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $>$ \hyperlink{classlib_c_z_i_1_1_i_single_channel_tile_accessor_a9ef98a25e06e5da36d811705bb076dcc}{Get} (int x\+Pos, int y\+Pos, int width, int height, const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate} $\ast$plane\+Coordinate, const \hyperlink{structlib_c_z_i_1_1_i_single_channel_tile_accessor_1_1_options}{Options} $\ast$p\+Options)
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $>$ \hyperlink{classlib_c_z_i_1_1_i_single_channel_tile_accessor_a8a9654ed1df4929068477a43597bf084}{Get} (\hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834}{lib\+C\+Z\+I\+::\+Pixel\+Type} pixeltype, int x\+Pos, int y\+Pos, int width, int height, const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate} $\ast$plane\+Coordinate, const \hyperlink{structlib_c_z_i_1_1_i_single_channel_tile_accessor_1_1_options}{Options} $\ast$p\+Options)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This accessor creates a multi-\/tile composite of a single channel (and a single plane). The accessor will request all tiles that intersect with the specified R\+OI and are on the specified plane and create a composite as shown here\+:  
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{SingleChannelTileAccessor_1.PNG}}
+\end{DoxyImageNoCaption}
+ The resulting output bitmap will look like this\+:  
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{SingleChannelTileAccessor_2.PNG}}
+\end{DoxyImageNoCaption}
+ This accessor only operates on pyramid layer 0 -\/ i. e. only sub-\/blocks with logical\+\_\+size = physical\+\_\+size will be considered. If the flag \char`\"{}draw\+Tile\+Border\char`\"{} is set, then the tiles will be sorted by their M-\/index (tiles with higher M-\/index are placed \textquotesingle{}on top\textquotesingle{}).~\newline
+The pixel type of the output bitmap is either specified as an argument or it is automatically determined. In the latter case the first sub-\/block found on the specified plane is examined for its pixeltype, and this pixeltype is used.~\newline
+The pixels in the output bitmap get converted from the source pixels (if their pixeltypes differs). 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_single_channel_tile_accessor_a50e17c0c197bf5f782a67e044dd4e943}\label{classlib_c_z_i_1_1_i_single_channel_tile_accessor_a50e17c0c197bf5f782a67e044dd4e943}} 
+\index{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor}!Get@{Get}}
+\index{Get@{Get}!lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data}$>$ lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor\+::\+Get (\begin{DoxyParamCaption}\item[{const \hyperlink{structlib_c_z_i_1_1_int_rect}{lib\+C\+Z\+I\+::\+Int\+Rect} \&}]{roi,  }\item[{const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate} $\ast$}]{plane\+Coordinate,  }\item[{const \hyperlink{structlib_c_z_i_1_1_i_single_channel_tile_accessor_1_1_options}{Options} $\ast$}]{p\+Options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the tile composite of the specified plane and the specified R\+OI. The pixeltype is determined by examing the first subblock found in the specified plane (which is an arbitrary subblock). A newly allocated bitmap is returned. 
+
+It needs to be defined what is supposed to happen if there is no subblock found in the specified plane. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em roi} & The R\+OI. \\
+\hline
+{\em plane\+Coordinate} & The plane coordinate. \\
+\hline
+{\em p\+Options} & \hyperlink{structlib_c_z_i_1_1_i_single_channel_tile_accessor_1_1_options}{Options} for controlling the operation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data}$>$ containing the tile-\/composite.
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_single_channel_tile_accessor_a4fb81512693a2d7221abece14c33d1f3}\label{classlib_c_z_i_1_1_i_single_channel_tile_accessor_a4fb81512693a2d7221abece14c33d1f3}} 
+\index{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor}!Get@{Get}}
+\index{Get@{Get}!lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data}$>$ lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor\+::\+Get (\begin{DoxyParamCaption}\item[{\hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834}{lib\+C\+Z\+I\+::\+Pixel\+Type}}]{pixeltype,  }\item[{const \hyperlink{structlib_c_z_i_1_1_int_rect}{lib\+C\+Z\+I\+::\+Int\+Rect} \&}]{roi,  }\item[{const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate} $\ast$}]{plane\+Coordinate,  }\item[{const \hyperlink{structlib_c_z_i_1_1_i_single_channel_tile_accessor_1_1_options}{Options} $\ast$}]{p\+Options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the tile composite of the specified plane and the specified R\+OI.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pixeltype} & The pixeltype. \\
+\hline
+{\em roi} & The R\+OI. \\
+\hline
+{\em plane\+Coordinate} & The plane coordinate. \\
+\hline
+{\em p\+Options} & \hyperlink{structlib_c_z_i_1_1_i_single_channel_tile_accessor_1_1_options}{Options} for controlling the operation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data}$>$ containing the tile-\/composite. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_single_channel_tile_accessor_a275295786554ca6dbf9f2d0b3086dcad}\label{classlib_c_z_i_1_1_i_single_channel_tile_accessor_a275295786554ca6dbf9f2d0b3086dcad}} 
+\index{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor}!Get@{Get}}
+\index{Get@{Get}!lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily virtual void lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor\+::\+Get (\begin{DoxyParamCaption}\item[{\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data} $\ast$}]{p\+Dest,  }\item[{int}]{x\+Pos,  }\item[{int}]{y\+Pos,  }\item[{const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate} $\ast$}]{plane\+Coordinate,  }\item[{const \hyperlink{structlib_c_z_i_1_1_i_single_channel_tile_accessor_1_1_options}{Options} $\ast$}]{p\+Options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Copy the tile composite into the specified bitmap. The bitmap passed in here determines the width and the height of the R\+OI (and the pixeltype).
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\+Dest} & The destination bitmap. \\
+\hline
+ & {\em x\+Pos} & The x-\/position of the R\+OI (width and height are given by p\+Dest). \\
+\hline
+ & {\em y\+Pos} & The y-\/position of the R\+OI ((width and height are given by p\+Dest). \\
+\hline
+ & {\em plane\+Coordinate} & The plane coordinate. \\
+\hline
+ & {\em p\+Options} & \hyperlink{structlib_c_z_i_1_1_i_single_channel_tile_accessor_1_1_options}{Options} for controlling the operation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_single_channel_tile_accessor_a9ef98a25e06e5da36d811705bb076dcc}\label{classlib_c_z_i_1_1_i_single_channel_tile_accessor_a9ef98a25e06e5da36d811705bb076dcc}} 
+\index{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor}!Get@{Get}}
+\index{Get@{Get}!lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data}$>$ lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor\+::\+Get (\begin{DoxyParamCaption}\item[{int}]{x\+Pos,  }\item[{int}]{y\+Pos,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate} $\ast$}]{plane\+Coordinate,  }\item[{const \hyperlink{structlib_c_z_i_1_1_i_single_channel_tile_accessor_1_1_options}{Options} $\ast$}]{p\+Options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the tile composite of the specified plane and the specified R\+OI. The pixeltype is determined by examing the first subblock found in the specified plane (which is an arbitrary subblock). A newly allocated bitmap is returned. 
+\begin{DoxyParams}{Parameters}
+{\em x\+Pos} & The x-\/position. \\
+\hline
+{\em y\+Pos} & The y-\/position. \\
+\hline
+{\em width} & The width. \\
+\hline
+{\em height} & The height. \\
+\hline
+{\em plane\+Coordinate} & The plane coordinate. \\
+\hline
+{\em p\+Options} & \hyperlink{structlib_c_z_i_1_1_i_single_channel_tile_accessor_1_1_options}{Options} for controlling the operation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data}$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_single_channel_tile_accessor_a8a9654ed1df4929068477a43597bf084}\label{classlib_c_z_i_1_1_i_single_channel_tile_accessor_a8a9654ed1df4929068477a43597bf084}} 
+\index{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor}!Get@{Get}}
+\index{Get@{Get}!lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor}}
+\subsubsection{\texorpdfstring{Get()}{Get()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data}$>$ lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Tile\+Accessor\+::\+Get (\begin{DoxyParamCaption}\item[{\hyperlink{namespacelib_c_z_i_abf8ce12ab88b06c8b3b47efbb5e2e834}{lib\+C\+Z\+I\+::\+Pixel\+Type}}]{pixeltype,  }\item[{int}]{x\+Pos,  }\item[{int}]{y\+Pos,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{const \hyperlink{classlib_c_z_i_1_1_i_dim_coordinate}{I\+Dim\+Coordinate} $\ast$}]{plane\+Coordinate,  }\item[{const \hyperlink{structlib_c_z_i_1_1_i_single_channel_tile_accessor_1_1_options}{Options} $\ast$}]{p\+Options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the tile composite of the specified plane and the specified R\+OI. 
+\begin{DoxyParams}{Parameters}
+{\em pixeltype} & The pixeltype. \\
+\hline
+{\em x\+Pos} & The x-\/position. \\
+\hline
+{\em y\+Pos} & The y-\/position. \\
+\hline
+{\em width} & The width. \\
+\hline
+{\em height} & The height. \\
+\hline
+{\em plane\+Coordinate} & The plane coordinate. \\
+\hline
+{\em p\+Options} & \hyperlink{structlib_c_z_i_1_1_i_single_channel_tile_accessor_1_1_options}{Options} for controlling the operation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_bitmap_data}{lib\+C\+Z\+I\+::\+I\+Bitmap\+Data}$>$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I\+\_\+\+Compositor.\+h\end{DoxyCompactItemize}

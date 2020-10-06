@@ -1,0 +1,50 @@
+\hypertarget{structlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor_1_1_options}{}\section{lib\+C\+ZI\+:\+:I\+Single\+Channel\+Pyramid\+Layer\+Tile\+Accessor\+:\+:Options Struct Reference}
+\label{structlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor_1_1_options}\index{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Pyramid\+Layer\+Tile\+Accessor\+::\+Options@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Pyramid\+Layer\+Tile\+Accessor\+::\+Options}}
+
+
+\hyperlink{structlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor_1_1_options}{Options} used for this accessor.  
+
+
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I\+\_\+\+Compositor.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor_1_1_options_acfdba60d24c4f9a8ae27767a91c817df}\label{structlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor_1_1_options_acfdba60d24c4f9a8ae27767a91c817df}} 
+void \hyperlink{structlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor_1_1_options_acfdba60d24c4f9a8ae27767a91c817df}{Clear} ()
+\begin{DoxyCompactList}\small\item\em Clears this object to its blank state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structlib_c_z_i_1_1_rgb_float_color}{Rgb\+Float\+Color} \hyperlink{structlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor_1_1_options_a6d5fe02340cf9e640b0c7a4e994e4c3a}{back\+Ground\+Color}
+\item 
+bool \hyperlink{structlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor_1_1_options_a53cf2b7a087395332e1daae3a3318b08}{draw\+Tile\+Border}
+\item 
+\mbox{\Hypertarget{structlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor_1_1_options_ac0a487d11790cfaaf5e0ea052efd178f}\label{structlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor_1_1_options_ac0a487d11790cfaaf5e0ea052efd178f}} 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_index_set}{lib\+C\+Z\+I\+::\+I\+Index\+Set} $>$ \hyperlink{structlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor_1_1_options_ac0a487d11790cfaaf5e0ea052efd178f}{scene\+Filter}
+\begin{DoxyCompactList}\small\item\em If specified, only subblocks with a scene-\/index contained in the set will be considered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{structlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor_1_1_options}{Options} used for this accessor. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor_1_1_options_a6d5fe02340cf9e640b0c7a4e994e4c3a}\label{structlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor_1_1_options_a6d5fe02340cf9e640b0c7a4e994e4c3a}} 
+\index{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Pyramid\+Layer\+Tile\+Accessor\+::\+Options@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Pyramid\+Layer\+Tile\+Accessor\+::\+Options}!back\+Ground\+Color@{back\+Ground\+Color}}
+\index{back\+Ground\+Color@{back\+Ground\+Color}!lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Pyramid\+Layer\+Tile\+Accessor\+::\+Options@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Pyramid\+Layer\+Tile\+Accessor\+::\+Options}}
+\subsubsection{\texorpdfstring{back\+Ground\+Color}{backGroundColor}}
+{\footnotesize\ttfamily \hyperlink{structlib_c_z_i_1_1_rgb_float_color}{Rgb\+Float\+Color} lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Pyramid\+Layer\+Tile\+Accessor\+::\+Options\+::back\+Ground\+Color}
+
+The back ground color. If the destination bitmap is a grayscale-\/type, then the mean from R, G and B is calculated and multiplied with the maximum pixel value (of the specific pixeltype). If it is a R\+G\+B-\/color type, then R, G and B are separately multiplied with the maximum pixel value. If any of R, G or B is NaN, then the background is not cleared. \mbox{\Hypertarget{structlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor_1_1_options_a53cf2b7a087395332e1daae3a3318b08}\label{structlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor_1_1_options_a53cf2b7a087395332e1daae3a3318b08}} 
+\index{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Pyramid\+Layer\+Tile\+Accessor\+::\+Options@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Pyramid\+Layer\+Tile\+Accessor\+::\+Options}!draw\+Tile\+Border@{draw\+Tile\+Border}}
+\index{draw\+Tile\+Border@{draw\+Tile\+Border}!lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Pyramid\+Layer\+Tile\+Accessor\+::\+Options@{lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Pyramid\+Layer\+Tile\+Accessor\+::\+Options}}
+\subsubsection{\texorpdfstring{draw\+Tile\+Border}{drawTileBorder}}
+{\footnotesize\ttfamily bool lib\+C\+Z\+I\+::\+I\+Single\+Channel\+Pyramid\+Layer\+Tile\+Accessor\+::\+Options\+::draw\+Tile\+Border}
+
+If true, then a one-\/pixel wide boundary will be drawn around each tile (in black color). 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I\+\_\+\+Compositor.\+h\end{DoxyCompactItemize}

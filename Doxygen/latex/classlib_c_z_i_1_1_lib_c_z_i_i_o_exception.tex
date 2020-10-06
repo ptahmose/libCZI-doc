@@ -1,0 +1,92 @@
+\hypertarget{classlib_c_z_i_1_1_lib_c_z_i_i_o_exception}{}\section{lib\+C\+ZI\+:\+:Lib\+C\+Z\+I\+I\+O\+Exception Class Reference}
+\label{classlib_c_z_i_1_1_lib_c_z_i_i_o_exception}\index{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+I\+O\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+I\+O\+Exception}}
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I\+\_\+exceptions.\+h$>$}
+
+Inheritance diagram for lib\+C\+ZI\+:\+:Lib\+C\+Z\+I\+I\+O\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classlib_c_z_i_1_1_lib_c_z_i_i_o_exception}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlib_c_z_i_1_1_lib_c_z_i_i_o_exception_aa8912797c22c48afee6e24bdb1e03008}{Lib\+C\+Z\+I\+I\+O\+Exception} (const char $\ast$sz\+Err\+Msg, std\+::uint64\+\_\+t offset, std\+::uint64\+\_\+t size)
+\item 
+std\+::uint64\+\_\+t \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_i_o_exception_a74781fd4547321f2e81e04028f385fd8}{Get\+Offset} () const
+\item 
+std\+::uint64\+\_\+t \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_i_o_exception_affd1d9993181dbbed726234b01c1eca7}{Get\+Size} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Exception for signaling an I/O error. If the problem originates from the (external) stream-\/object, then the original exception is enclosed here as a nested exception. In order to access the nested exception, use something like this\+: 
+\begin{DoxyCode}
+\textcolor{keywordflow}{try}
+    \{
+        spReader->Open(stream);
+    \}
+    \textcolor{keywordflow}{catch} (\hyperlink{classlib_c_z_i_1_1_lib_c_z_i_i_o_exception_aa8912797c22c48afee6e24bdb1e03008}{LibCZIIOException}& excp)
+    \{
+        \textcolor{keywordflow}{try}
+        \{
+            excp.rethrow\_nested();
+        \}
+        \textcolor{keywordflow}{catch} (std::ios\_base::failure& innerExcp) \textcolor{comment}{// assuming that is the exception you }
+        \{                                         \textcolor{comment}{// expect to be thrown from the stream-object}
+         ....
+        \}
+    \}
+\end{DoxyCode}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_lib_c_z_i_i_o_exception_aa8912797c22c48afee6e24bdb1e03008}\label{classlib_c_z_i_1_1_lib_c_z_i_i_o_exception_aa8912797c22c48afee6e24bdb1e03008}} 
+\index{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+I\+O\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+I\+O\+Exception}!Lib\+C\+Z\+I\+I\+O\+Exception@{Lib\+C\+Z\+I\+I\+O\+Exception}}
+\index{Lib\+C\+Z\+I\+I\+O\+Exception@{Lib\+C\+Z\+I\+I\+O\+Exception}!lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+I\+O\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+I\+O\+Exception}}
+\subsubsection{\texorpdfstring{Lib\+C\+Z\+I\+I\+O\+Exception()}{LibCZIIOException()}}
+{\footnotesize\ttfamily lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+I\+O\+Exception\+::\+Lib\+C\+Z\+I\+I\+O\+Exception (\begin{DoxyParamCaption}\item[{const char $\ast$}]{sz\+Err\+Msg,  }\item[{std\+::uint64\+\_\+t}]{offset,  }\item[{std\+::uint64\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor for the \hyperlink{classlib_c_z_i_1_1_lib_c_z_i_i_o_exception}{Lib\+C\+Z\+I\+I\+O\+Exception}. This type is used to signal an I/\+O-\/error from the underlying stream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sz\+Err\+Msg} & Message describing the error. \\
+\hline
+{\em offset} & The offset (into the stream) at which the I/\+O-\/error occured. \\
+\hline
+{\em size} & The size of data we have attempted to read (when the I/\+O-\/error occured). \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_lib_c_z_i_i_o_exception_a74781fd4547321f2e81e04028f385fd8}\label{classlib_c_z_i_1_1_lib_c_z_i_i_o_exception_a74781fd4547321f2e81e04028f385fd8}} 
+\index{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+I\+O\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+I\+O\+Exception}!Get\+Offset@{Get\+Offset}}
+\index{Get\+Offset@{Get\+Offset}!lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+I\+O\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+I\+O\+Exception}}
+\subsubsection{\texorpdfstring{Get\+Offset()}{GetOffset()}}
+{\footnotesize\ttfamily std\+::uint64\+\_\+t lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+I\+O\+Exception\+::\+Get\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the offset (in bytes) into the stream at which the I/\+O-\/error occured.
+
+\begin{DoxyReturn}{Returns}
+The offset (in bytes). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_lib_c_z_i_i_o_exception_affd1d9993181dbbed726234b01c1eca7}\label{classlib_c_z_i_1_1_lib_c_z_i_i_o_exception_affd1d9993181dbbed726234b01c1eca7}} 
+\index{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+I\+O\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+I\+O\+Exception}!Get\+Size@{Get\+Size}}
+\index{Get\+Size@{Get\+Size}!lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+I\+O\+Exception@{lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+I\+O\+Exception}}
+\subsubsection{\texorpdfstring{Get\+Size()}{GetSize()}}
+{\footnotesize\ttfamily std\+::uint64\+\_\+t lib\+C\+Z\+I\+::\+Lib\+C\+Z\+I\+I\+O\+Exception\+::\+Get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the size of data (in bytes) we attempted to read when the I/\+O-\/error occured.
+
+\begin{DoxyReturn}{Returns}
+The size (in bytes). 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I\+\_\+exceptions.\+h\end{DoxyCompactItemize}

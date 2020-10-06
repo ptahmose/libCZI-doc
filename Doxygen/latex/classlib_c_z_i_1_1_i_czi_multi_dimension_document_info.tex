@@ -1,0 +1,143 @@
+\hypertarget{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info}{}\section{lib\+C\+ZI\+:\+:I\+Czi\+Multi\+Dimension\+Document\+Info Class Reference}
+\label{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info}\index{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info@{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info}}
+
+
+The top-\/level interface for the C\+Z\+I-\/metadata object.  
+
+
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I\+\_\+\+Metadata.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{structlib_c_z_i_1_1_general_document_info}{General\+Document\+Info} \hyperlink{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_aefea877fc65e9510d9a3127e366cb85c}{Get\+General\+Document\+Info} () const =0
+\item 
+virtual \hyperlink{structlib_c_z_i_1_1_scaling_info_ex}{lib\+C\+Z\+I\+::\+Scaling\+Info\+Ex} \hyperlink{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_a78275ba9453cb6a75081079d0a5bac1c}{Get\+Scaling\+Info\+Ex} () const =0
+\item 
+virtual \hyperlink{structlib_c_z_i_1_1_scaling_info}{lib\+C\+Z\+I\+::\+Scaling\+Info} \hyperlink{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_ae94341e3e5824b8c1d5c84928ced2e6c}{Get\+Scaling\+Info} () const =0
+\item 
+virtual void \hyperlink{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_a23f7b26bd323732fac0d190e9b38b6e3}{Enum\+Dimensions} (std\+::function$<$ bool(\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{Dimension\+Index})$>$ enum\+Dimensions)=0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_dimension_info}{I\+Dimension\+Info} $>$ \hyperlink{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_a1e5d72c39dc22f99e1ee27b21055d3ea}{Get\+Dimension\+Info} (\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{Dimension\+Index} dim)=0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_dimension_z_info}{I\+Dimension\+Z\+Info} $>$ \hyperlink{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_a58fbba886729ac71ae4be8a75a6e96f5}{Get\+Dimension\+Z\+Info} ()=0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_dimension_t_info}{I\+Dimension\+T\+Info} $>$ \hyperlink{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_a5b052b9eaa3b4e2dadb7ffe6e222006c}{Get\+Dimension\+T\+Info} ()=0
+\item 
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_a8ae66d4d866ddd93efd19b1cb0d54b0e}\label{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_a8ae66d4d866ddd93efd19b1cb0d54b0e}} 
+virtual std\+::shared\+\_\+ptr$<$ I\+Dimensions\+Channels\+Info $>$ {\bfseries Get\+Dimension\+Channels\+Info} ()=0
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{classlib_c_z_i_1_1_i_display_settings}{I\+Display\+Settings} $>$ \hyperlink{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_a8aff8239a31b047b737f80be0b2c9bda}{Get\+Display\+Settings} () const =0
+\item 
+std\+::vector$<$ \hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{Dimension\+Index} $>$ \hyperlink{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_aede2d6dd6e991151afff77b0cb96834a}{Get\+Dimensions} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The top-\/level interface for the C\+Z\+I-\/metadata object. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_a23f7b26bd323732fac0d190e9b38b6e3}\label{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_a23f7b26bd323732fac0d190e9b38b6e3}} 
+\index{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info@{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info}!Enum\+Dimensions@{Enum\+Dimensions}}
+\index{Enum\+Dimensions@{Enum\+Dimensions}!lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info@{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info}}
+\subsubsection{\texorpdfstring{Enum\+Dimensions()}{EnumDimensions()}}
+{\footnotesize\ttfamily virtual void lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info\+::\+Enum\+Dimensions (\begin{DoxyParamCaption}\item[{std\+::function$<$ bool(\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{Dimension\+Index})$>$}]{enum\+Dimensions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Enumerate the dimensions (defined in the metadata under Metadata/\+Information/\+Image, checking for the nodes StartZ, SizeZ, StartC, SizeC, StartT, StartT, ...). \begin{DoxyRemark}{Remarks}
+The information here is not considered authoritative. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em enum\+Dimensions} & The functor which will be called for each dimension. If the functor returns false, the enumeration is canceled. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_a1e5d72c39dc22f99e1ee27b21055d3ea}\label{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_a1e5d72c39dc22f99e1ee27b21055d3ea}} 
+\index{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info@{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info}!Get\+Dimension\+Info@{Get\+Dimension\+Info}}
+\index{Get\+Dimension\+Info@{Get\+Dimension\+Info}!lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info@{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info}}
+\subsubsection{\texorpdfstring{Get\+Dimension\+Info()}{GetDimensionInfo()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_dimension_info}{I\+Dimension\+Info}$>$ lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info\+::\+Get\+Dimension\+Info (\begin{DoxyParamCaption}\item[{\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{Dimension\+Index}}]{dim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the dimension information for the specified dimension. \begin{DoxyRemark}{Remarks}
+The information here is not considered authoritative. 
+\end{DoxyRemark}
+
+\begin{DoxyParams}{Parameters}
+{\em dim} & The dimension to retrieve the information for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The dimension information if available. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_aede2d6dd6e991151afff77b0cb96834a}\label{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_aede2d6dd6e991151afff77b0cb96834a}} 
+\index{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info@{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info}!Get\+Dimensions@{Get\+Dimensions}}
+\index{Get\+Dimensions@{Get\+Dimensions}!lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info@{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info}}
+\subsubsection{\texorpdfstring{Get\+Dimensions()}{GetDimensions()}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{Dimension\+Index}$>$ lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info\+::\+Get\+Dimensions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets a vector with all dimensions (found in metadata). \begin{DoxyReturn}{Returns}
+The vector containing all dimensions. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_a5b052b9eaa3b4e2dadb7ffe6e222006c}\label{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_a5b052b9eaa3b4e2dadb7ffe6e222006c}} 
+\index{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info@{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info}!Get\+Dimension\+T\+Info@{Get\+Dimension\+T\+Info}}
+\index{Get\+Dimension\+T\+Info@{Get\+Dimension\+T\+Info}!lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info@{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info}}
+\subsubsection{\texorpdfstring{Get\+Dimension\+T\+Info()}{GetDimensionTInfo()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_dimension_t_info}{I\+Dimension\+T\+Info}$>$ lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info\+::\+Get\+Dimension\+T\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets information about the \char`\"{}dimension t\char`\"{} (from the Dimension/T metadata node). If this node is not available, an empty pointer is returned. \begin{DoxyReturn}{Returns}
+The \char`\"{}dimension t\char`\"{} information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_a58fbba886729ac71ae4be8a75a6e96f5}\label{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_a58fbba886729ac71ae4be8a75a6e96f5}} 
+\index{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info@{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info}!Get\+Dimension\+Z\+Info@{Get\+Dimension\+Z\+Info}}
+\index{Get\+Dimension\+Z\+Info@{Get\+Dimension\+Z\+Info}!lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info@{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info}}
+\subsubsection{\texorpdfstring{Get\+Dimension\+Z\+Info()}{GetDimensionZInfo()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_dimension_z_info}{I\+Dimension\+Z\+Info}$>$ lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info\+::\+Get\+Dimension\+Z\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets information about the \char`\"{}dimension z\char`\"{} (from the Dimension/Z metadata node). If this node is not available, an empty pointer is returned. \begin{DoxyReturn}{Returns}
+The \char`\"{}dimension z\char`\"{} information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_a8aff8239a31b047b737f80be0b2c9bda}\label{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_a8aff8239a31b047b737f80be0b2c9bda}} 
+\index{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info@{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info}!Get\+Display\+Settings@{Get\+Display\+Settings}}
+\index{Get\+Display\+Settings@{Get\+Display\+Settings}!lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info@{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info}}
+\subsubsection{\texorpdfstring{Get\+Display\+Settings()}{GetDisplaySettings()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\hyperlink{classlib_c_z_i_1_1_i_display_settings}{I\+Display\+Settings}$>$ lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info\+::\+Get\+Display\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets the display settings. \begin{DoxyRemark}{Remarks}
+This method may return an empty shared\+\_\+ptr in case that display-\/settings are not present in the metadata. 
+\end{DoxyRemark}
+\begin{DoxyReturn}{Returns}
+The display settings object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_aefea877fc65e9510d9a3127e366cb85c}\label{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_aefea877fc65e9510d9a3127e366cb85c}} 
+\index{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info@{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info}!Get\+General\+Document\+Info@{Get\+General\+Document\+Info}}
+\index{Get\+General\+Document\+Info@{Get\+General\+Document\+Info}!lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info@{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info}}
+\subsubsection{\texorpdfstring{Get\+General\+Document\+Info()}{GetGeneralDocumentInfo()}}
+{\footnotesize\ttfamily virtual \hyperlink{structlib_c_z_i_1_1_general_document_info}{General\+Document\+Info} lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info\+::\+Get\+General\+Document\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets \char`\"{}general document information\char`\"{}. \begin{DoxyReturn}{Returns}
+The \char`\"{}general document information\char`\"{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_ae94341e3e5824b8c1d5c84928ced2e6c}\label{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_ae94341e3e5824b8c1d5c84928ced2e6c}} 
+\index{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info@{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info}!Get\+Scaling\+Info@{Get\+Scaling\+Info}}
+\index{Get\+Scaling\+Info@{Get\+Scaling\+Info}!lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info@{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info}}
+\subsubsection{\texorpdfstring{Get\+Scaling\+Info()}{GetScalingInfo()}}
+{\footnotesize\ttfamily virtual \hyperlink{structlib_c_z_i_1_1_scaling_info}{lib\+C\+Z\+I\+::\+Scaling\+Info} lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info\+::\+Get\+Scaling\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets \char`\"{}scaling information\char`\"{}. \begin{DoxyReturn}{Returns}
+The \char`\"{}scaling information\char`\"{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_a78275ba9453cb6a75081079d0a5bac1c}\label{classlib_c_z_i_1_1_i_czi_multi_dimension_document_info_a78275ba9453cb6a75081079d0a5bac1c}} 
+\index{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info@{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info}!Get\+Scaling\+Info\+Ex@{Get\+Scaling\+Info\+Ex}}
+\index{Get\+Scaling\+Info\+Ex@{Get\+Scaling\+Info\+Ex}!lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info@{lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info}}
+\subsubsection{\texorpdfstring{Get\+Scaling\+Info\+Ex()}{GetScalingInfoEx()}}
+{\footnotesize\ttfamily virtual \hyperlink{structlib_c_z_i_1_1_scaling_info_ex}{lib\+C\+Z\+I\+::\+Scaling\+Info\+Ex} lib\+C\+Z\+I\+::\+I\+Czi\+Multi\+Dimension\+Document\+Info\+::\+Get\+Scaling\+Info\+Ex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Gets \char`\"{}extended scaling information\char`\"{}. \begin{DoxyReturn}{Returns}
+The \char`\"{}extended scaling information\char`\"{}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I\+\_\+\+Metadata.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,71 @@
+\hypertarget{classlib_c_z_i_1_1_i_dim_bounds}{}\section{lib\+C\+ZI\+:\+:I\+Dim\+Bounds Class Reference}
+\label{classlib_c_z_i_1_1_i_dim_bounds}\index{lib\+C\+Z\+I\+::\+I\+Dim\+Bounds@{lib\+C\+Z\+I\+::\+I\+Dim\+Bounds}}
+
+
+Interface used to represent an interval (for several dimensions).  
+
+
+
+
+{\ttfamily \#include $<$lib\+C\+Z\+I\+\_\+\+Dim\+Coordinate.\+h$>$}
+
+Inheritance diagram for lib\+C\+ZI\+:\+:I\+Dim\+Bounds\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classlib_c_z_i_1_1_i_dim_bounds}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classlib_c_z_i_1_1_i_dim_bounds_a7f42cf193370731a6b21ae5d2d6fa78e}{Try\+Get\+Interval} (\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{Dimension\+Index} dim, int $\ast$start\+Index, int $\ast$size) const =0
+\item 
+bool \hyperlink{classlib_c_z_i_1_1_i_dim_bounds_ae34c55b6b510804b86383eea5b7c0da9}{Is\+Valid} (\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{Dimension\+Index} dim) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface used to represent an interval (for several dimensions). 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dim_bounds_ae34c55b6b510804b86383eea5b7c0da9}\label{classlib_c_z_i_1_1_i_dim_bounds_ae34c55b6b510804b86383eea5b7c0da9}} 
+\index{lib\+C\+Z\+I\+::\+I\+Dim\+Bounds@{lib\+C\+Z\+I\+::\+I\+Dim\+Bounds}!Is\+Valid@{Is\+Valid}}
+\index{Is\+Valid@{Is\+Valid}!lib\+C\+Z\+I\+::\+I\+Dim\+Bounds@{lib\+C\+Z\+I\+::\+I\+Dim\+Bounds}}
+\subsubsection{\texorpdfstring{Is\+Valid()}{IsValid()}}
+{\footnotesize\ttfamily bool lib\+C\+Z\+I\+::\+I\+Dim\+Bounds\+::\+Is\+Valid (\begin{DoxyParamCaption}\item[{\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{Dimension\+Index}}]{dim }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Query if the specified dimension is valid. 
+\begin{DoxyParams}{Parameters}
+{\em dim} & The dimension. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if valid, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlib_c_z_i_1_1_i_dim_bounds_a7f42cf193370731a6b21ae5d2d6fa78e}\label{classlib_c_z_i_1_1_i_dim_bounds_a7f42cf193370731a6b21ae5d2d6fa78e}} 
+\index{lib\+C\+Z\+I\+::\+I\+Dim\+Bounds@{lib\+C\+Z\+I\+::\+I\+Dim\+Bounds}!Try\+Get\+Interval@{Try\+Get\+Interval}}
+\index{Try\+Get\+Interval@{Try\+Get\+Interval}!lib\+C\+Z\+I\+::\+I\+Dim\+Bounds@{lib\+C\+Z\+I\+::\+I\+Dim\+Bounds}}
+\subsubsection{\texorpdfstring{Try\+Get\+Interval()}{TryGetInterval()}}
+{\footnotesize\ttfamily virtual bool lib\+C\+Z\+I\+::\+I\+Dim\+Bounds\+::\+Try\+Get\+Interval (\begin{DoxyParamCaption}\item[{\hyperlink{namespacelib_c_z_i_a55049658acf59d0eddfaebcad16df424}{Dimension\+Index}}]{dim,  }\item[{int $\ast$}]{start\+Index,  }\item[{int $\ast$}]{size }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Attempts to get the interval for the specified dimension. 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em dim} & The dimension. \\
+\hline
+\mbox{\tt in,out}  & {\em start\+Index} & If non-\/null, it will receive the start index. \\
+\hline
+\mbox{\tt in,out}  & {\em size} & If non-\/null, it will receive the size. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the dimension is valid and the data was succeessfully retrieved, false if it fails. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classlib_c_z_i_1_1_c_dim_bounds_abf42285e28ddc4843556f88b2292c494}{lib\+C\+Z\+I\+::\+C\+Dim\+Bounds}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib\+C\+Z\+I/lib\+C\+Z\+I\+\_\+\+Dim\+Coordinate.\+h\end{DoxyCompactItemize}
