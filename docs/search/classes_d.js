@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['utils_484',['Utils',['../classlib_c_z_i_1_1_utils.html',1,'libCZI']]]
+  ['tintingcolor',['TintingColor',['../structlib_c_z_i_1_1_compositors_1_1_tinting_color.html',1,'libCZI::Compositors']]]
 ];

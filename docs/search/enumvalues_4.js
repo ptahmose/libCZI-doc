@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['fromgreaterthanto_802',['FromGreaterThanTo',['../classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception.html#a42ecdd87f0e6f47ca0accda1b90497d2aff73eb7f68565f16f023d1c074816ea5',1,'libCZI::LibCZIStringParseException']]],
-  ['fromobjectivetospecimen_803',['FromObjectiveToSpecimen',['../classlib_c_z_i_1_1_i_dimension_z_info.html#a346b5be6ff305bf728939de9b97e9291a50427bef20739be87d45e6b4d11697e9',1,'libCZI::IDimensionZInfo']]],
-  ['fromspecimentoobjective_804',['FromSpecimenToObjective',['../classlib_c_z_i_1_1_i_dimension_z_info.html#a346b5be6ff305bf728939de9b97e9291aaed51d0aebc4405a53cb433bba295738',1,'libCZI::IDimensionZInfo']]]
+  ['evaluatetofalse',['EvaluateToFalse',['../structlib_c_z_i_1_1_query_options.html#ae9ed8c23d9b03f1d146d9527b41c75faaea87c3a6a5273c2066b1f4145e46f42b',1,'libCZI::QueryOptions']]],
+  ['evaluatetotrue',['EvaluateToTrue',['../structlib_c_z_i_1_1_query_options.html#ae9ed8c23d9b03f1d146d9527b41c75faa8117d5f936be083cdaf889d9f142cc84',1,'libCZI::QueryOptions']]]
 ];

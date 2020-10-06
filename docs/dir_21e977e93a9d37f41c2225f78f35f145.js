@@ -6,6 +6,7 @@ var dir_21e977e93a9d37f41c2225f78f35f145 =
     [ "libCZI_exceptions.h", "lib_c_z_i__exceptions_8h_source.html", null ],
     [ "libCZI_Metadata.h", "lib_c_z_i___metadata_8h_source.html", null ],
     [ "libCZI_Pixels.h", "lib_c_z_i___pixels_8h_source.html", null ],
+    [ "libCZI_Query.h", "lib_c_z_i___query_8h_source.html", null ],
     [ "libCZI_Site.h", "lib_c_z_i___site_8h_source.html", null ],
     [ "libCZI_Utilities.h", "lib_c_z_i___utilities_8h_source.html", null ]
 ];

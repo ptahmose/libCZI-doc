@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['none_830',['None',['../classlib_c_z_i_1_1_i_display_settings.html#a5a69bda933a814a09f15983606047876a6adf97f83acf6453d4a6a4b1070f3754',1,'libCZI::IDisplaySettings']]],
-  ['notenoughdata_831',['NotEnoughData',['../structlib_c_z_i_1_1_lib_c_z_i_c_z_i_parse_exception.html#a32a6c8ab31a657e490e5c605c97efb40ab6e495eeaee7cdf1bac313472e4681ac',1,'libCZI::LibCZICZIParseException']]]
+  ['maxdim',['MaxDim',['../namespacelib_c_z_i.html#a55049658acf59d0eddfaebcad16df424a217b2ee2e671fc8ef713c2c309d0fd13',1,'libCZI']]],
+  ['metadata',['Metadata',['../classlib_c_z_i_1_1_i_sub_block.html#a4dc4926ea65d8d20310b8b79ea76e108ada66dacad65a36fd265a7a2dacae197c',1,'libCZI::ISubBlock']]],
+  ['mindim',['MinDim',['../namespacelib_c_z_i.html#a55049658acf59d0eddfaebcad16df424a4664bf19d8f3ef0300bc3d7170ea139f',1,'libCZI']]],
+  ['missingdimension',['MissingDimension',['../structlib_c_z_i_1_1_lib_c_z_i_invalid_plane_coordinate_exception.html#a2e22a8936930f8e8de4b874764407b60a06a04b63fba5058c3dc36269ef6dfaaa',1,'libCZI::LibCZIInvalidPlaneCoordinateException']]]
 ];

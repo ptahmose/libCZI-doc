@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['z_848',['Z',['../namespacelib_c_z_i.html#a55049658acf59d0eddfaebcad16df424a21c2e59531c8710156d34a3c30ac81d5',1,'libCZI']]]
+  ['xmlmetadata',['XmlMetadata',['../classlib_c_z_i_1_1_i_metadata_segment.html#a3acd5e2bf5161629f1ee56ecef9b3b72a33f06811a574191b45596337520b8984',1,'libCZI::IMetadataSegment']]]
 ];

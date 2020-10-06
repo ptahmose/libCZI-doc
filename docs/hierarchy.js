@@ -14,6 +14,7 @@ var hierarchy =
     [ "libCZI::Compositors::ChannelInfo", "structlib_c_z_i_1_1_compositors_1_1_channel_info.html", null ],
     [ "libCZI::Compositors::ComposeSingleTileOptions", "structlib_c_z_i_1_1_compositors_1_1_compose_single_tile_options.html", null ],
     [ "libCZI::Compositors", "classlib_c_z_i_1_1_compositors.html", null ],
+    [ "libCZI::CQueryParser", "classlib_c_z_i_1_1_c_query_parser.html", null ],
     [ "libCZI::IDisplaySettings::CubicSplineCoefficients", "structlib_c_z_i_1_1_i_display_settings_1_1_cubic_spline_coefficients.html", null ],
     [ "libCZI::DblRect", "structlib_c_z_i_1_1_dbl_rect.html", null ],
     [ "libCZI::DimensionAndStartSize", "structlib_c_z_i_1_1_dimension_and_start_size.html", null ],
@@ -48,6 +49,7 @@ var hierarchy =
     [ "libCZI::IMetadataSegment", "classlib_c_z_i_1_1_i_metadata_segment.html", null ],
     [ "libCZI::IntRect", "structlib_c_z_i_1_1_int_rect.html", null ],
     [ "libCZI::IntSize", "structlib_c_z_i_1_1_int_size.html", null ],
+    [ "libCZI::IQueryCondition", "classlib_c_z_i_1_1_i_query_condition.html", null ],
     [ "libCZI::ISite", "classlib_c_z_i_1_1_i_site.html", null ],
     [ "libCZI::IStream", "classlib_c_z_i_1_1_i_stream.html", null ],
     [ "libCZI::ISubBlock", "classlib_c_z_i_1_1_i_sub_block.html", null ],
@@ -60,13 +62,14 @@ var hierarchy =
     [ "nested_exception", null, [
       [ "libCZI::LibCZIIOException", "classlib_c_z_i_1_1_lib_c_z_i_i_o_exception.html", null ]
     ] ],
-    [ "libCZI::ISingleChannelScalingTileAccessor::Options", "structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options.html", null ],
-    [ "libCZI::ISingleChannelTileAccessor::Options", "structlib_c_z_i_1_1_i_single_channel_tile_accessor_1_1_options.html", null ],
     [ "libCZI::ISingleChannelPyramidLayerTileAccessor::Options", "structlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor_1_1_options.html", null ],
+    [ "libCZI::ISingleChannelTileAccessor::Options", "structlib_c_z_i_1_1_i_single_channel_tile_accessor_1_1_options.html", null ],
+    [ "libCZI::ISingleChannelScalingTileAccessor::Options", "structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options.html", null ],
     [ "libCZI::ISingleChannelPyramidLayerTileAccessor::PyramidLayerInfo", "structlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor_1_1_pyramid_layer_info.html", null ],
     [ "libCZI::PyramidStatistics::PyramidLayerInfo", "structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_info.html", null ],
     [ "libCZI::PyramidStatistics::PyramidLayerStatistics", "structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_statistics.html", null ],
     [ "libCZI::PyramidStatistics", "structlib_c_z_i_1_1_pyramid_statistics.html", null ],
+    [ "libCZI::QueryOptions", "structlib_c_z_i_1_1_query_options.html", null ],
     [ "libCZI::Rgb8Color", "structlib_c_z_i_1_1_rgb8_color.html", null ],
     [ "libCZI::RgbFloatColor", "structlib_c_z_i_1_1_rgb_float_color.html", null ],
     [ "runtime_error", null, [

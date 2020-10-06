@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['imagedecodertype_778',['ImageDecoderType',['../namespacelib_c_z_i.html#a68cd7521fd89880f820ea55baf6f6179',1,'libCZI']]]
+  ['handlingofnonexistentdimensions',['HandlingOfNonExistentDimensions',['../structlib_c_z_i_1_1_query_options.html#ae9ed8c23d9b03f1d146d9527b41c75fa',1,'libCZI::QueryOptions']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tintingmode_782',['TintingMode',['../classlib_c_z_i_1_1_i_display_settings.html#a5a69bda933a814a09f15983606047876',1,'libCZI::IDisplaySettings']]]
+  ['siteobjecttype',['SiteObjectType',['../namespacelib_c_z_i.html#a77743727a5f0709a64237e58b9254983',1,'libCZI']]]
 ];
