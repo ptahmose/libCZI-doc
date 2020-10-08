@@ -3,7 +3,7 @@ var searchData=
   ['t',['T',['../namespacelib_c_z_i.html#a55049658acf59d0eddfaebcad16df424ab9ece18c950afbfa6b0fdbfa4ff731d3',1,'libCZI']]],
   ['tinting',['tinting',['../structlib_c_z_i_1_1_compositors_1_1_channel_info.html#a5bc342e6d105188d423110cbbd48af87',1,'libCZI::Compositors::ChannelInfo']]],
   ['tintingcolor',['TintingColor',['../structlib_c_z_i_1_1_compositors_1_1_tinting_color.html',1,'libCZI::Compositors::TintingColor'],['../structlib_c_z_i_1_1_channel_display_settings_p_o_d.html#aaecc9fb8046318f7eba1d711e20b824b',1,'libCZI::ChannelDisplaySettingsPOD::tintingColor()']]],
-  ['tintingmode',['tintingMode',['../structlib_c_z_i_1_1_channel_display_settings_p_o_d.html#a3829067d6622854bddfb66f3e39718d1',1,'libCZI::ChannelDisplaySettingsPOD::tintingMode()'],['../classlib_c_z_i_1_1_i_display_settings.html#a5a69bda933a814a09f15983606047876',1,'libCZI::IDisplaySettings::TintingMode()']]],
+  ['tintingmode',['TintingMode',['../classlib_c_z_i_1_1_i_display_settings.html#a5a69bda933a814a09f15983606047876',1,'libCZI::IDisplaySettings::TintingMode()'],['../structlib_c_z_i_1_1_channel_display_settings_p_o_d.html#a3829067d6622854bddfb66f3e39718d1',1,'libCZI::ChannelDisplaySettingsPOD::tintingMode()']]],
   ['title',['title',['../structlib_c_z_i_1_1_general_document_info.html#ab35797e1b6c3a8e5c8476b43672180bc',1,'libCZI::GeneralDocumentInfo']]],
   ['title_5fvalid',['title_valid',['../structlib_c_z_i_1_1_general_document_info.html#af240090fbdd5c8a48c888d7c19a69d3b',1,'libCZI::GeneralDocumentInfo']]],
   ['todos',['Todos',['../todos.html',1,'']]],

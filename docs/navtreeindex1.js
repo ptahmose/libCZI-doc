@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception.html#a42ecdd87f0e6f47ca0accda1b90497d2aff73eb7f68565f16f023d1c074816ea5":[10,0,0,52,0,2],
+"classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception.html#a6bcf9792770dc4cbe17f8a8a0d665b7d":[10,0,0,52,1],
 "classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception.html#ab9f93bffdad9f93cec7d69f66ce57dfc":[10,0,0,52,3],
 "classlib_c_z_i_1_1_lib_c_z_i_string_parse_exception.html#abf18d7eb523f8aa3ed8b110e2cc170a2":[10,0,0,52,2],
 "classlib_c_z_i_1_1_lib_c_z_i_xml_parse_exception.html":[10,0,0,53],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_info.html#afc9992be68effd61fa8ff828c3fe467d":[10,0,0,54,0,1],
 "structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_statistics.html":[10,0,0,54,1],
 "structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_statistics.html#a9622c14764217c603d3e50565c768702":[10,0,0,54,1,0],
-"structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_statistics.html#aebd2aa3ece769861674d89007717aa4a":[10,0,0,54,1,1],
-"structlib_c_z_i_1_1_query_options.html":[10,0,0,55],
-"structlib_c_z_i_1_1_query_options.html#a5fa08bd9612f2e676881498f93b03981":[10,0,0,55,2]
+"structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_statistics.html#aebd2aa3ece769861674d89007717aa4a":[10,0,0,54,1,1]
 };

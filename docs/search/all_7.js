@@ -13,6 +13,7 @@ var searchData=
   ['getdefaultsiteobject',['GetDefaultSiteObject',['../namespacelib_c_z_i.html#a12210a6ee4bbda8306b25648f2c4833d',1,'libCZI']]],
   ['getdefaultunitformat',['GetDefaultUnitFormat',['../structlib_c_z_i_1_1_scaling_info_ex.html#a65dda3ab892e628177790061a43a80e9',1,'libCZI::ScalingInfoEx']]],
   ['getdimension',['GetDimension',['../classlib_c_z_i_1_1_i_dimension_info.html#a3aef5c6762b0142fc2665d342e939a9d',1,'libCZI::IDimensionInfo']]],
+  ['getdimensionchannelsinfo',['GetDimensionChannelsInfo',['../classlib_c_z_i_1_1_i_czi_multi_dimension_document_info.html#a8ae66d4d866ddd93efd19b1cb0d54b0e',1,'libCZI::ICziMultiDimensionDocumentInfo']]],
   ['getdimensioninfo',['GetDimensionInfo',['../classlib_c_z_i_1_1_i_czi_multi_dimension_document_info.html#a1e5d72c39dc22f99e1ee27b21055d3ea',1,'libCZI::ICziMultiDimensionDocumentInfo']]],
   ['getdimensions',['GetDimensions',['../classlib_c_z_i_1_1_i_czi_multi_dimension_document_info.html#aede2d6dd6e991151afff77b0cb96834a',1,'libCZI::ICziMultiDimensionDocumentInfo']]],
   ['getdimensiontinfo',['GetDimensionTInfo',['../classlib_c_z_i_1_1_i_czi_multi_dimension_document_info.html#a5b052b9eaa3b4e2dadb7ffe6e222006c',1,'libCZI::ICziMultiDimensionDocumentInfo']]],
