@@ -7,10 +7,12 @@ var searchData=
   ['scenefilter',['sceneFilter',['../structlib_c_z_i_1_1_i_single_channel_tile_accessor_1_1_options.html#a7f07fd78043d3ab587e86a510a088e84',1,'libCZI::ISingleChannelTileAccessor::Options::sceneFilter()'],['../structlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor_1_1_options.html#ac0a487d11790cfaaf5e0ea052efd178f',1,'libCZI::ISingleChannelPyramidLayerTileAccessor::Options::sceneFilter()'],['../structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options.html#a8cede93cd20a293ccf34354813779d41',1,'libCZI::ISingleChannelScalingTileAccessor::Options::sceneFilter()']]],
   ['scenepyramidstatistics',['scenePyramidStatistics',['../structlib_c_z_i_1_1_pyramid_statistics.html#a07ba65bd447d746f10ab578060d25959',1,'libCZI::PyramidStatistics']]],
   ['sec',['sec',['../structlib_c_z_i_1_1_xml_date_time.html#ad6150dda14ef3c9dd3c7d8035e203add',1,'libCZI::XmlDateTime']]],
+  ['singlevalue',['singleValue',['../structlib_c_z_i_1_1_range_or_single_value.html#ab7281ed3283d0f683757f3fd5d40e9aa',1,'libCZI::RangeOrSingleValue']]],
   ['size',['size',['../structlib_c_z_i_1_1_dimension_and_start_size.html#ac0953e9273d2261ee3d282dac2683175',1,'libCZI::DimensionAndStartSize::size()'],['../structlib_c_z_i_1_1_bitmap_lock_info.html#a109f8d69b48bc4398861217c375dee1b',1,'libCZI::BitmapLockInfo::size()']]],
   ['sortbym',['sortByM',['../structlib_c_z_i_1_1_i_single_channel_tile_accessor_1_1_options.html#a6825901b1c28cff524d5eec48a2ceea3',1,'libCZI::ISingleChannelTileAccessor::Options']]],
   ['splinectrlpoints',['splineCtrlPoints',['../structlib_c_z_i_1_1_channel_display_settings_p_o_d.html#ae3342d21506c44664f165e7c9cc8422e',1,'libCZI::ChannelDisplaySettingsPOD']]],
   ['start',['start',['../structlib_c_z_i_1_1_dimension_and_start_size.html#abea9803a01b3f198f34ed14278669500',1,'libCZI::DimensionAndStartSize']]],
+  ['startorsinglevalue',['startOrSingleValue',['../structlib_c_z_i_1_1_range_or_single_value.html#af3e966f0b8b30334d6c8ba8fa5752322',1,'libCZI::RangeOrSingleValue']]],
   ['stride',['stride',['../structlib_c_z_i_1_1_bitmap_lock_info.html#a8e7259142382ec0ad887c974d27775b6',1,'libCZI::BitmapLockInfo']]],
   ['subblockcount',['subBlockCount',['../structlib_c_z_i_1_1_sub_block_statistics.html#a2507642d2007c30f4984cc2618203534',1,'libCZI::SubBlockStatistics']]]
 ];

@@ -31,6 +31,12 @@ var hierarchy =
     [ "libCZI::IAttachmentRepository", "classlib_c_z_i_1_1_i_attachment_repository.html", [
       [ "libCZI::ICZIReader", "classlib_c_z_i_1_1_i_c_z_i_reader.html", null ]
     ] ],
+    [ "libCZI::IAttributeId", "classlib_c_z_i_1_1_i_attribute_id.html", [
+      [ "libCZI::IDimensionChannelInfo", "classlib_c_z_i_1_1_i_dimension_channel_info.html", null ]
+    ] ],
+    [ "libCZI::IAttributeName", "classlib_c_z_i_1_1_i_attribute_name.html", [
+      [ "libCZI::IDimensionChannelInfo", "classlib_c_z_i_1_1_i_dimension_channel_info.html", null ]
+    ] ],
     [ "libCZI::IBitmapData", "classlib_c_z_i_1_1_i_bitmap_data.html", null ],
     [ "libCZI::IChannelDisplaySetting", "classlib_c_z_i_1_1_i_channel_display_setting.html", null ],
     [ "libCZI::ICziMultiDimensionDocumentInfo", "classlib_c_z_i_1_1_i_czi_multi_dimension_document_info.html", null ],
@@ -41,16 +47,32 @@ var hierarchy =
     [ "libCZI::IDimCoordinate", "classlib_c_z_i_1_1_i_dim_coordinate.html", [
       [ "libCZI::CDimCoordinate", "classlib_c_z_i_1_1_c_dim_coordinate.html", null ]
     ] ],
+    [ "libCZI::IDimensionChannelAiryscanSettings", "classlib_c_z_i_1_1_i_dimension_channel_airyscan_settings.html", null ],
+    [ "libCZI::IDimensionChannelDetectorSettings", "classlib_c_z_i_1_1_i_dimension_channel_detector_settings.html", null ],
+    [ "libCZI::IDimensionChannelLaserScanInfo", "classlib_c_z_i_1_1_i_dimension_channel_laser_scan_info.html", null ],
+    [ "libCZI::IDimensionChannelLightPath", "classlib_c_z_i_1_1_i_dimension_channel_light_path.html", null ],
+    [ "libCZI::IDimensionChannelLightSourcesSetting", "classlib_c_z_i_1_1_i_dimension_channel_light_sources_setting.html", null ],
+    [ "libCZI::IDimensionChannelLightSourcesSettings", "classlib_c_z_i_1_1_i_dimension_channel_light_sources_settings.html", null ],
+    [ "libCZI::IDimensionChannelPolarizingSettings", "classlib_c_z_i_1_1_i_dimension_channel_polarizing_settings.html", null ],
+    [ "libCZI::IDimensionChannelRatio", "classlib_c_z_i_1_1_i_dimension_channel_ratio.html", null ],
+    [ "libCZI::IDimensionChannelSIMSettings", "classlib_c_z_i_1_1_i_dimension_channel_s_i_m_settings.html", null ],
+    [ "libCZI::IDimensionChannelSPIMDetectionSettings", "classlib_c_z_i_1_1_i_dimension_channel_s_p_i_m_detection_settings.html", null ],
+    [ "libCZI::IDimensionChannelSPIMIlluminationSettings", "classlib_c_z_i_1_1_i_dimension_channel_s_p_i_m_illumination_settings.html", null ],
     [ "libCZI::IDimensionInfo", "classlib_c_z_i_1_1_i_dimension_info.html", null ],
+    [ "libCZI::IDimensionsChannelsInfo", "classlib_c_z_i_1_1_i_dimensions_channels_info.html", null ],
     [ "libCZI::IDimensionTInfo", "classlib_c_z_i_1_1_i_dimension_t_info.html", null ],
     [ "libCZI::IDimensionZInfo", "classlib_c_z_i_1_1_i_dimension_z_info.html", null ],
     [ "libCZI::IDisplaySettings", "classlib_c_z_i_1_1_i_display_settings.html", null ],
+    [ "libCZI::IFastAiryScanSettings", "classlib_c_z_i_1_1_i_fast_airy_scan_settings.html", null ],
     [ "libCZI::IIndexSet", "classlib_c_z_i_1_1_i_index_set.html", null ],
+    [ "libCZI::IInstrumentObjectiveSettings", "classlib_c_z_i_1_1_i_instrument_objective_settings.html", null ],
     [ "libCZI::IMetadataSegment", "classlib_c_z_i_1_1_i_metadata_segment.html", null ],
     [ "libCZI::IntRect", "structlib_c_z_i_1_1_int_rect.html", null ],
     [ "libCZI::IntSize", "structlib_c_z_i_1_1_int_size.html", null ],
     [ "libCZI::IQueryCondition", "classlib_c_z_i_1_1_i_query_condition.html", null ],
     [ "libCZI::ISite", "classlib_c_z_i_1_1_i_site.html", null ],
+    [ "libCZI::ISPIMIlluminationGalvoScannerSettings", "classlib_c_z_i_1_1_i_s_p_i_m_illumination_galvo_scanner_settings.html", null ],
+    [ "libCZI::ISPIMIlluminationResonanceScannerSettings", "classlib_c_z_i_1_1_i_s_p_i_m_illumination_resonance_scanner_settings.html", null ],
     [ "libCZI::IStream", "classlib_c_z_i_1_1_i_stream.html", null ],
     [ "libCZI::ISubBlock", "classlib_c_z_i_1_1_i_sub_block.html", null ],
     [ "libCZI::ISubBlockRepository", "classlib_c_z_i_1_1_i_sub_block_repository.html", [
@@ -63,13 +85,15 @@ var hierarchy =
       [ "libCZI::LibCZIIOException", "classlib_c_z_i_1_1_lib_c_z_i_i_o_exception.html", null ]
     ] ],
     [ "libCZI::ISingleChannelPyramidLayerTileAccessor::Options", "structlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor_1_1_options.html", null ],
-    [ "libCZI::ISingleChannelTileAccessor::Options", "structlib_c_z_i_1_1_i_single_channel_tile_accessor_1_1_options.html", null ],
     [ "libCZI::ISingleChannelScalingTileAccessor::Options", "structlib_c_z_i_1_1_i_single_channel_scaling_tile_accessor_1_1_options.html", null ],
-    [ "libCZI::ISingleChannelPyramidLayerTileAccessor::PyramidLayerInfo", "structlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor_1_1_pyramid_layer_info.html", null ],
+    [ "libCZI::ISingleChannelTileAccessor::Options", "structlib_c_z_i_1_1_i_single_channel_tile_accessor_1_1_options.html", null ],
+    [ "libCZI::IDimensionChannelLightSourcesSetting::Polarization", "structlib_c_z_i_1_1_i_dimension_channel_light_sources_setting_1_1_polarization.html", null ],
     [ "libCZI::PyramidStatistics::PyramidLayerInfo", "structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_info.html", null ],
+    [ "libCZI::ISingleChannelPyramidLayerTileAccessor::PyramidLayerInfo", "structlib_c_z_i_1_1_i_single_channel_pyramid_layer_tile_accessor_1_1_pyramid_layer_info.html", null ],
     [ "libCZI::PyramidStatistics::PyramidLayerStatistics", "structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_statistics.html", null ],
     [ "libCZI::PyramidStatistics", "structlib_c_z_i_1_1_pyramid_statistics.html", null ],
     [ "libCZI::QueryOptions", "structlib_c_z_i_1_1_query_options.html", null ],
+    [ "libCZI::RangeOrSingleValue< t >", "structlib_c_z_i_1_1_range_or_single_value.html", null ],
     [ "libCZI::Rgb8Color", "structlib_c_z_i_1_1_rgb8_color.html", null ],
     [ "libCZI::RgbFloatColor", "structlib_c_z_i_1_1_rgb_float_color.html", null ],
     [ "runtime_error", null, [
@@ -88,11 +112,13 @@ var hierarchy =
     [ "libCZI::ScalingInfo", "structlib_c_z_i_1_1_scaling_info.html", [
       [ "libCZI::ScalingInfoEx", "structlib_c_z_i_1_1_scaling_info_ex.html", null ]
     ] ],
+    [ "libCZI::SpectrumCharacteristics", "structlib_c_z_i_1_1_spectrum_characteristics.html", null ],
     [ "libCZI::IDisplaySettings::SplineControlPoint", "structlib_c_z_i_1_1_i_display_settings_1_1_spline_control_point.html", null ],
     [ "libCZI::IDisplaySettings::SplineData", "structlib_c_z_i_1_1_i_display_settings_1_1_spline_data.html", null ],
     [ "libCZI::SubBlockInfo", "structlib_c_z_i_1_1_sub_block_info.html", null ],
     [ "libCZI::SubBlockStatistics", "structlib_c_z_i_1_1_sub_block_statistics.html", null ],
     [ "libCZI::Compositors::TintingColor", "structlib_c_z_i_1_1_compositors_1_1_tinting_color.html", null ],
     [ "libCZI::Utils", "classlib_c_z_i_1_1_utils.html", null ],
+    [ "libCZI::IFastAiryScanSettings::Vector", "structlib_c_z_i_1_1_i_fast_airy_scan_settings_1_1_vector.html", null ],
     [ "libCZI::XmlDateTime", "structlib_c_z_i_1_1_xml_date_time.html", null ]
 ];

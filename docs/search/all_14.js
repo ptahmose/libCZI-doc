@@ -18,6 +18,8 @@ var searchData=
   ['trygetposition',['TryGetPosition',['../classlib_c_z_i_1_1_i_dim_coordinate.html#a3b1c18f0102bd5635b3cd9cc3fba69d2',1,'libCZI::IDimCoordinate::TryGetPosition()'],['../classlib_c_z_i_1_1_c_dim_coordinate.html#af7bc7e775a5971d46550e45ebf2b2ba7',1,'libCZI::CDimCoordinate::TryGetPosition()']]],
   ['trygetpositionlist',['TryGetPositionList',['../classlib_c_z_i_1_1_i_dimension_z_info.html#a457deaa1db474089288081fde2e48e14',1,'libCZI::IDimensionZInfo']]],
   ['trygetreferenceposition',['TryGetReferencePosition',['../classlib_c_z_i_1_1_i_dimension_z_info.html#af41653d25ecf78549ad4b5b73d424d81',1,'libCZI::IDimensionZInfo']]],
+  ['trygetsource1',['TryGetSource1',['../classlib_c_z_i_1_1_i_dimension_channel_ratio.html#a05fcba39b2b7893653fdc12daf451851',1,'libCZI::IDimensionChannelRatio']]],
+  ['trygetsource2',['TryGetSource2',['../classlib_c_z_i_1_1_i_dimension_channel_ratio.html#a8c0654ae00019a48e6b560976da93322',1,'libCZI::IDimensionChannelRatio']]],
   ['trygetsplinecontrolpoints',['TryGetSplineControlPoints',['../classlib_c_z_i_1_1_i_channel_display_setting.html#ae8a2192fd92015fc6ce59958b598a8cb',1,'libCZI::IChannelDisplaySetting']]],
   ['trygetsplinedata',['TryGetSplineData',['../classlib_c_z_i_1_1_i_channel_display_setting.html#ae3779bf0fb5b48c8ee3549e2ebb3947f',1,'libCZI::IChannelDisplaySetting']]],
   ['trygetstarttime',['TryGetStartTime',['../classlib_c_z_i_1_1_i_dimension_t_info.html#ab815fa3e2df4f4d8a243a45e843f9a17',1,'libCZI::IDimensionTInfo']]],
@@ -35,5 +37,6 @@ var searchData=
   ['trygetzaxisdirection',['TryGetZAxisDirection',['../classlib_c_z_i_1_1_i_dimension_z_info.html#a4a67c41fcf93248e239c249b0e353950',1,'libCZI::IDimensionZInfo']]],
   ['trygetzdrivemode',['TryGetZDriveMode',['../classlib_c_z_i_1_1_i_dimension_z_info.html#a9cf8c1a2c01152d505c5441c6368b4ba',1,'libCZI::IDimensionZInfo']]],
   ['tryparse',['TryParse',['../structlib_c_z_i_1_1_xml_date_time.html#acde177dc8ddb80c6e831645a7d2fd276',1,'libCZI::XmlDateTime::TryParse(const char *sz, XmlDateTime *ptrDateTime)'],['../structlib_c_z_i_1_1_xml_date_time.html#ae7875a4a64cd9c4fd0906cf27832c0d4',1,'libCZI::XmlDateTime::TryParse(const wchar_t *szw, XmlDateTime *ptrDateTime)']]],
-  ['tryzdrivespeed',['TryZDriveSpeed',['../classlib_c_z_i_1_1_i_dimension_z_info.html#a9129563d677685df52f4afe6897ef339',1,'libCZI::IDimensionZInfo']]]
+  ['tryzdrivespeed',['TryZDriveSpeed',['../classlib_c_z_i_1_1_i_dimension_z_info.html#a9129563d677685df52f4afe6897ef339',1,'libCZI::IDimensionZInfo']]],
+  ['type',['Type',['../classlib_c_z_i_1_1_i_dimension_channel_ratio.html#ad8dd2ab443f73e8adba6c6d36c4ae8c1',1,'libCZI::IDimensionChannelRatio']]]
 ];

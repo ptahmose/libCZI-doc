@@ -1,6 +1,7 @@
 var searchData=
 [
   ['enabletinting',['enableTinting',['../structlib_c_z_i_1_1_compositors_1_1_channel_info.html#a55842ad5f759439b4e7909b19a3e10ad',1,'libCZI::Compositors::ChannelInfo']]],
+  ['end',['end',['../structlib_c_z_i_1_1_range_or_single_value.html#abbb1b9986790aaf6f778c4aa3220d56c',1,'libCZI::RangeOrSingleValue']]],
   ['enumallcoordinates',['EnumAllCoordinates',['../classlib_c_z_i_1_1_utils.html#a38d50d87b67917004a2f0c8156ecee6d',1,'libCZI::Utils']]],
   ['enumattributes',['EnumAttributes',['../classlib_c_z_i_1_1_i_xml_node_read.html#afe7294913f033998c7a0bb695d795c0f',1,'libCZI::IXmlNodeRead']]],
   ['enumchannels',['EnumChannels',['../classlib_c_z_i_1_1_i_display_settings.html#af19480abbb7905656e5411bd34d0506d',1,'libCZI::IDisplaySettings']]],

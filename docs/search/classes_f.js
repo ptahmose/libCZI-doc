@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xmldatetime',['XmlDateTime',['../structlib_c_z_i_1_1_xml_date_time.html',1,'libCZI']]]
+  ['vector',['Vector',['../structlib_c_z_i_1_1_i_fast_airy_scan_settings_1_1_vector.html',1,'libCZI::IFastAiryScanSettings']]]
 ];
