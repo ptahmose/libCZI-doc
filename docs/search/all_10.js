@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['palhr',['PalHR',['../namespacelib_c_z_i.html#a8825d01d553b73fe6eb2be888e5e30d0ad113b45cb877fd416ad793bc01346050',1,'libCZI']]],
+  ['palwidefield',['PalWidefield',['../namespacelib_c_z_i.html#a8825d01d553b73fe6eb2be888e5e30d0a5b6702b7e4644b39c79db2c2a632b9b0',1,'libCZI']]],
   ['parse',['Parse',['../classlib_c_z_i_1_1_c_dim_coordinate.html#a684c17ad37de1e817c660e89e704d81e',1,'libCZI::CDimCoordinate::Parse()'],['../classlib_c_z_i_1_1_c_dim_bounds.html#a10a59c07b8f3cb2ec8d8a082e9167bfb',1,'libCZI::CDimBounds::Parse()']]],
   ['parsequerystring',['ParseQueryString',['../classlib_c_z_i_1_1_c_query_parser.html#a7ac176310b58e461d64e2506954f1da4',1,'libCZI::CQueryParser']]],
   ['physicalsize',['physicalSize',['../structlib_c_z_i_1_1_sub_block_info.html#abfd40e11bbd325fb760b911588b25b0b',1,'libCZI::SubBlockInfo']]],

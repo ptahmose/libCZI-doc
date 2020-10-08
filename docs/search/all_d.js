@@ -15,5 +15,6 @@ var searchData=
   ['missingdimension',['MissingDimension',['../structlib_c_z_i_1_1_lib_c_z_i_invalid_plane_coordinate_exception.html#a2e22a8936930f8e8de4b874764407b60a06a04b63fba5058c3dc36269ef6dfaaa',1,'libCZI::LibCZIInvalidPlaneCoordinateException']]],
   ['mode',['mode',['../structlib_c_z_i_1_1_sub_block_info.html#a0e293a3e7ea6188e3df08ae74c16221f',1,'libCZI::SubBlockInfo']]],
   ['mon',['mon',['../structlib_c_z_i_1_1_xml_date_time.html#aa6dedc3005bf4d2fec428e8d3e27460c',1,'libCZI::XmlDateTime']]],
-  ['multi_2dchannel_2dcomposition',['Multi-channel-composition',['../multichannelcomposition.html',1,'']]]
+  ['multi_2dchannel_2dcomposition',['Multi-channel-composition',['../multichannelcomposition.html',1,'']]],
+  ['multiphotonmicroscopy',['MultiPhotonMicroscopy',['../namespacelib_c_z_i.html#a5e5e5c5cb70e248d7a285c49d519d1c9aff2c4538efeb157323ae88c4c67affea',1,'libCZI']]]
 ];
