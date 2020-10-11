@@ -7,5 +7,6 @@ var searchData=
   ['airyscansr',['AiryScanSr',['../namespacelib_c_z_i.html#a8825d01d553b73fe6eb2be888e5e30d0a70590a2796a8e372be7c430357de50e4',1,'libCZI']]],
   ['airyscansum',['AiryScanSum',['../namespacelib_c_z_i.html#a8825d01d553b73fe6eb2be888e5e30d0a5ab895f1cc3b5383117f2b74cd396da1',1,'libCZI']]],
   ['airyscanvp',['AiryScanVp',['../namespacelib_c_z_i.html#a8825d01d553b73fe6eb2be888e5e30d0add2291081096c6cda26a16880b1d688c',1,'libCZI']]],
+  ['aperturecorrelation',['ApertureCorrelation',['../namespacelib_c_z_i.html#a5e5e5c5cb70e248d7a285c49d519d1c9a00d1cb49694efdbb63ec8f7e564e6c57',1,'libCZI']]],
   ['attachment',['Attachment',['../classlib_c_z_i_1_1_i_sub_block.html#a4dc4926ea65d8d20310b8b79ea76e108ab60de398d6a7a2fe1c4c9585572b3ef1',1,'libCZI::ISubBlock::Attachment()'],['../classlib_c_z_i_1_1_i_metadata_segment.html#a3acd5e2bf5161629f1ee56ecef9b3b72a61a22550a6ebb48d975667b448757bec',1,'libCZI::IMetadataSegment::Attachment()']]]
 ];

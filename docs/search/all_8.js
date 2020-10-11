@@ -6,5 +6,6 @@ var searchData=
   ['hassamedimensions',['HasSameDimensions',['../classlib_c_z_i_1_1_utils.html#a12906a27e0e3fbf65f999c9387782cbc',1,'libCZI::Utils']]],
   ['hastimezoneoffset',['HasTimeZoneOffset',['../structlib_c_z_i_1_1_xml_date_time.html#abdd0b4dc181a4825b2eaf97aea58d44d',1,'libCZI::XmlDateTime']]],
   ['heightmap',['Heightmap',['../namespacelib_c_z_i.html#a8825d01d553b73fe6eb2be888e5e30d0a6836366b1ef05ae4b5032f5bd2c6bf67',1,'libCZI']]],
+  ['hoffmanmodulation',['HoffmanModulation',['../namespacelib_c_z_i.html#a11a1d85aa49586162fdbdd422ad97b14a081f8f2aa97aa8cd24fad8f82cfb4f4f',1,'libCZI']]],
   ['hour',['hour',['../structlib_c_z_i_1_1_xml_date_time.html#a2cdc652279c693a679fc677067f1555f',1,'libCZI::XmlDateTime']]]
 ];

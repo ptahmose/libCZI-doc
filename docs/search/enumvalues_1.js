@@ -5,5 +5,6 @@ var searchData=
   ['bgr24',['Bgr24',['../namespacelib_c_z_i.html#abf8ce12ab88b06c8b3b47efbb5e2e834ab2c7c7f5592a2d285184d73d3b619173',1,'libCZI']]],
   ['bgr48',['Bgr48',['../namespacelib_c_z_i.html#abf8ce12ab88b06c8b3b47efbb5e2e834a7db8f5fba48387a28c10c0f27eea31a0',1,'libCZI']]],
   ['bgr96float',['Bgr96Float',['../namespacelib_c_z_i.html#abf8ce12ab88b06c8b3b47efbb5e2e834ad42330ab003d3ccd0e9bfb8dcb59fe78',1,'libCZI']]],
-  ['bgra32',['Bgra32',['../namespacelib_c_z_i.html#abf8ce12ab88b06c8b3b47efbb5e2e834a2c5ed55e4aac8b7ca717880f2267896a',1,'libCZI']]]
+  ['bgra32',['Bgra32',['../namespacelib_c_z_i.html#abf8ce12ab88b06c8b3b47efbb5e2e834a2c5ed55e4aac8b7ca717880f2267896a',1,'libCZI']]],
+  ['brightfield',['Brightfield',['../namespacelib_c_z_i.html#a11a1d85aa49586162fdbdd422ad97b14a72b59da6efc955ef6b462ac89a36acba',1,'libCZI']]]
 ];

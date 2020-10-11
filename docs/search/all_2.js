@@ -13,6 +13,7 @@ var searchData=
   ['boundingboxes',['BoundingBoxes',['../structlib_c_z_i_1_1_bounding_boxes.html',1,'libCZI']]],
   ['boundingboxlayer0',['boundingBoxLayer0',['../structlib_c_z_i_1_1_bounding_boxes.html#a6e0e45a2c8bc35fe10463437dc8b9509',1,'libCZI::BoundingBoxes']]],
   ['boundingboxlayer0only',['boundingBoxLayer0Only',['../structlib_c_z_i_1_1_sub_block_statistics.html#a5256d470970ed24507b6bd1fadf32096',1,'libCZI::SubBlockStatistics']]],
+  ['brightfield',['Brightfield',['../namespacelib_c_z_i.html#a11a1d85aa49586162fdbdd422ad97b14a72b59da6efc955ef6b462ac89a36acba',1,'libCZI']]],
   ['buildinformation',['BuildInformation',['../structlib_c_z_i_1_1_build_information.html',1,'libCZI']]],
   ['building_20libczi',['Building libCZI',['../buildinglib_c_z_i.html',1,'']]]
 ];

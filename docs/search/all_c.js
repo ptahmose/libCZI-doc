@@ -3,6 +3,7 @@ var searchData=
   ['libczi_20documentation',['libCZI Documentation',['../index.html',1,'']]],
   ['laserscanningconfocalmicroscopy',['LaserScanningConfocalMicroscopy',['../namespacelib_c_z_i.html#a5e5e5c5cb70e248d7a285c49d519d1c9a610377b30c5177bc79f41bb0532f9033',1,'libCZI']]],
   ['layerinfo',['layerInfo',['../structlib_c_z_i_1_1_pyramid_statistics_1_1_pyramid_layer_statistics.html#aebd2aa3ece769861674d89007717aa4a',1,'libCZI::PyramidStatistics::PyramidLayerStatistics']]],
+  ['lcm',['LCM',['../namespacelib_c_z_i.html#a5e5e5c5cb70e248d7a285c49d519d1c9a33543c5b4c8770146939560aa5dbc9f1',1,'libCZI']]],
   ['lefthanded',['LeftHanded',['../classlib_c_z_i_1_1_i_dimension_z_info.html#af1fcb2e3024d14cdcb9122aea7dca121acd5d8803eaa45145192f16041a365ee8',1,'libCZI::IDimensionZInfo']]],
   ['libczi',['libCZI',['../namespacelib_c_z_i.html',1,'']]],
   ['libcziaccessorexception',['LibCZIAccessorException',['../classlib_c_z_i_1_1_lib_c_z_i_accessor_exception.html',1,'libCZI::LibCZIAccessorException'],['../classlib_c_z_i_1_1_lib_c_z_i_accessor_exception.html#a4eb949381be1d9ca7e1f1b65f5fdacd0',1,'libCZI::LibCZIAccessorException::LibCZIAccessorException()']]],

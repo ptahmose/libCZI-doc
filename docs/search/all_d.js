@@ -16,5 +16,6 @@ var searchData=
   ['mode',['mode',['../structlib_c_z_i_1_1_sub_block_info.html#a0e293a3e7ea6188e3df08ae74c16221f',1,'libCZI::SubBlockInfo']]],
   ['mon',['mon',['../structlib_c_z_i_1_1_xml_date_time.html#aa6dedc3005bf4d2fec428e8d3e27460c',1,'libCZI::XmlDateTime']]],
   ['multi_2dchannel_2dcomposition',['Multi-channel-composition',['../multichannelcomposition.html',1,'']]],
+  ['multiphotonfluorescence',['MultiPhotonFluorescence',['../namespacelib_c_z_i.html#a11a1d85aa49586162fdbdd422ad97b14a9da6d854cd4b41b7a89aa5bfe17b8d43',1,'libCZI']]],
   ['multiphotonmicroscopy',['MultiPhotonMicroscopy',['../namespacelib_c_z_i.html#a5e5e5c5cb70e248d7a285c49d519d1c9aff2c4538efeb157323ae88c4c67affea',1,'libCZI']]]
 ];
