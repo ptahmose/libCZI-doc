@@ -10,6 +10,7 @@ var searchData=
   ['singlechannelscalingtileaccessor',['SingleChannelScalingTileAccessor',['../namespacelib_c_z_i.html#aa626474324df92c9cdc7258cdb1e677cae5c28a1e209fa4abe7f13039724c5a6c',1,'libCZI']]],
   ['singlechanneltileaccessor',['SingleChannelTileAccessor',['../namespacelib_c_z_i.html#aa626474324df92c9cdc7258cdb1e677ca0e2de81425cb9e8bf8cc720f158dda7a',1,'libCZI']]],
   ['singlemoleculeimaging',['SingleMoleculeImaging',['../namespacelib_c_z_i.html#a5e5e5c5cb70e248d7a285c49d519d1c9af86697d8f35550ec8bbd2471d30c6f55',1,'libCZI']]],
+  ['singlepeak',['SinglePeak',['../structlib_c_z_i_1_1_spectrum_characteristics.html#ad543bf448848d899f0a0d091ab1f6cc0aa2dfc66f9ea767b2ca5a0f3d6b831864',1,'libCZI::SpectrumCharacteristics']]],
   ['slitscanconfocal',['SlitScanConfocal',['../namespacelib_c_z_i.html#a5e5e5c5cb70e248d7a285c49d519d1c9af916aa68f515b53006d0dbc045138043',1,'libCZI']]],
   ['spectralimaging',['SpectralImaging',['../namespacelib_c_z_i.html#a5e5e5c5cb70e248d7a285c49d519d1c9a917a04b04216a40fcdace26ff8d3c147',1,'libCZI']]],
   ['spim',['SPIM',['../namespacelib_c_z_i.html#a5e5e5c5cb70e248d7a285c49d519d1c9a483ded61848c1516206185f87ac8c497',1,'libCZI']]],

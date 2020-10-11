@@ -93,6 +93,11 @@ $(document).ready(function(){initNavTree('classlib_c_z_i_1_1_i_attribute_name.ht
 <div class="title">libCZI::IAttributeName Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This interface is used for all elements that contain a 'name' (as XML-attribute).  
+ <a href="classlib_c_z_i_1_1_i_attribute_name.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="lib_c_z_i___metadata2_8h_source.html">libCZI_Metadata2.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for libCZI::IAttributeName:</div>
 <div class="dyncontent">
@@ -105,10 +110,45 @@ Inheritance diagram for libCZI::IAttributeName:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adbc5aaf7457a5f6a3c16322cd06b2bb3"><td class="memItemLeft" align="right" valign="top"><a id="adbc5aaf7457a5f6a3c16322cd06b2bb3"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>TryGetAttributeName</b> (std::wstring *name)=0</td></tr>
+<tr class="memitem:adbc5aaf7457a5f6a3c16322cd06b2bb3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlib_c_z_i_1_1_i_attribute_name.html#adbc5aaf7457a5f6a3c16322cd06b2bb3">TryGetAttributeName</a> (std::wstring *name)=0</td></tr>
 <tr class="separator:adbc5aaf7457a5f6a3c16322cd06b2bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This interface is used for all elements that contain a 'name' (as XML-attribute). </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="adbc5aaf7457a5f6a3c16322cd06b2bb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbc5aaf7457a5f6a3c16322cd06b2bb3">&#9670;&nbsp;</a></span>TryGetAttributeName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool libCZI::IAttributeName::TryGetAttributeName </td>
+          <td>(</td>
+          <td class="paramtype">std::wstring *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Attempts to get the 'name'. If the method succeeds, the name is put into the specified string. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">id</td><td>If non-null, the name is put here (if successful). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if it succeeds; false otherwise. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>libCZI/<a class="el" href="lib_c_z_i___metadata2_8h_source.html">libCZI_Metadata2.h</a></li>
 </ul>

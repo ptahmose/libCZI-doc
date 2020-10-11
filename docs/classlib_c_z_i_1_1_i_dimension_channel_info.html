@@ -104,8 +104,8 @@ Inheritance diagram for libCZI::IDimensionChannelInfo:</div>
  <div class="center">
   <img src="classlib_c_z_i_1_1_i_dimension_channel_info.png" usemap="#libCZI::IDimensionChannelInfo_map" alt=""/>
   <map id="libCZI::IDimensionChannelInfo_map" name="libCZI::IDimensionChannelInfo_map">
-<area href="classlib_c_z_i_1_1_i_attribute_id.html" alt="libCZI::IAttributeId" shape="rect" coords="0,0,181,24"/>
-<area href="classlib_c_z_i_1_1_i_attribute_name.html" alt="libCZI::IAttributeName" shape="rect" coords="191,0,372,24"/>
+<area href="classlib_c_z_i_1_1_i_attribute_id.html" title="This interface is used for all elements that contain an &#39;id&#39; (as XML-attribute). " alt="libCZI::IAttributeId" shape="rect" coords="0,0,181,24"/>
+<area href="classlib_c_z_i_1_1_i_attribute_name.html" title="This interface is used for all elements that contain a &#39;name&#39; (as XML-attribute). ..." alt="libCZI::IAttributeName" shape="rect" coords="191,0,372,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -160,7 +160,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>TryGetPinhole
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>TryGetPinholeSizeAiry</b> (double *pinholesizeairy)=0</td></tr>
 <tr class="separator:ac95835111818dcd7dd547e48a39c2492"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a091b8d2b7e4486b13aabc3dae19ccf7d"><td class="memItemLeft" align="right" valign="top"><a id="a091b8d2b7e4486b13aabc3dae19ccf7d"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>TryGetPinholeGeometry</b> (DimensionChannelPinholeGeometry *pinholegeometry)=0</td></tr>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>TryGetPinholeGeometry</b> (<a class="el" href="namespacelib_c_z_i.html#ac40046e78d00155b37a13d89b518db78">DimensionChannelPinholeGeometry</a> *pinholegeometry)=0</td></tr>
 <tr class="separator:a091b8d2b7e4486b13aabc3dae19ccf7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e9e82b80960fbfb5b4844fd15fd2893"><td class="memItemLeft" align="right" valign="top"><a id="a6e9e82b80960fbfb5b4844fd15fd2893"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>TryGetFluor</b> (std::wstring *fluor)=0</td></tr>
@@ -223,12 +223,10 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>TryGetNAConde
 virtual std::shared_ptr&lt; <a class="el" href="classlib_c_z_i_1_1_i_dimension_channel_ratio.html">IDimensionChannelRatio</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetRatio</b> ()=0</td></tr>
 <tr class="separator:ab0880a0bb968f9cf3a55f4cc65a20501"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classlib_c_z_i_1_1_i_attribute_id"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classlib_c_z_i_1_1_i_attribute_id')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classlib_c_z_i_1_1_i_attribute_id.html">libCZI::IAttributeId</a></td></tr>
-<tr class="memitem:a6b6c0e56429c9fc460fe936d5a7b1d61 inherit pub_methods_classlib_c_z_i_1_1_i_attribute_id"><td class="memItemLeft" align="right" valign="top"><a id="a6b6c0e56429c9fc460fe936d5a7b1d61"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>TryGetAttributeId</b> (std::wstring *id)=0</td></tr>
+<tr class="memitem:a6b6c0e56429c9fc460fe936d5a7b1d61 inherit pub_methods_classlib_c_z_i_1_1_i_attribute_id"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlib_c_z_i_1_1_i_attribute_id.html#a6b6c0e56429c9fc460fe936d5a7b1d61">TryGetAttributeId</a> (std::wstring *id)=0</td></tr>
 <tr class="separator:a6b6c0e56429c9fc460fe936d5a7b1d61 inherit pub_methods_classlib_c_z_i_1_1_i_attribute_id"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classlib_c_z_i_1_1_i_attribute_name"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classlib_c_z_i_1_1_i_attribute_name')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classlib_c_z_i_1_1_i_attribute_name.html">libCZI::IAttributeName</a></td></tr>
-<tr class="memitem:adbc5aaf7457a5f6a3c16322cd06b2bb3 inherit pub_methods_classlib_c_z_i_1_1_i_attribute_name"><td class="memItemLeft" align="right" valign="top"><a id="adbc5aaf7457a5f6a3c16322cd06b2bb3"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>TryGetAttributeName</b> (std::wstring *name)=0</td></tr>
+<tr class="memitem:adbc5aaf7457a5f6a3c16322cd06b2bb3 inherit pub_methods_classlib_c_z_i_1_1_i_attribute_name"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlib_c_z_i_1_1_i_attribute_name.html#adbc5aaf7457a5f6a3c16322cd06b2bb3">TryGetAttributeName</a> (std::wstring *name)=0</td></tr>
 <tr class="separator:adbc5aaf7457a5f6a3c16322cd06b2bb3 inherit pub_methods_classlib_c_z_i_1_1_i_attribute_name"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

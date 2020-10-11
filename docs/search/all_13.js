@@ -33,6 +33,7 @@ var searchData=
   ['singlechannelscalingtileaccessor',['SingleChannelScalingTileAccessor',['../namespacelib_c_z_i.html#aa626474324df92c9cdc7258cdb1e677cae5c28a1e209fa4abe7f13039724c5a6c',1,'libCZI']]],
   ['singlechanneltileaccessor',['SingleChannelTileAccessor',['../namespacelib_c_z_i.html#aa626474324df92c9cdc7258cdb1e677ca0e2de81425cb9e8bf8cc720f158dda7a',1,'libCZI']]],
   ['singlemoleculeimaging',['SingleMoleculeImaging',['../namespacelib_c_z_i.html#a5e5e5c5cb70e248d7a285c49d519d1c9af86697d8f35550ec8bbd2471d30c6f55',1,'libCZI']]],
+  ['singlepeak',['SinglePeak',['../structlib_c_z_i_1_1_spectrum_characteristics.html#ad543bf448848d899f0a0d091ab1f6cc0aa2dfc66f9ea767b2ca5a0f3d6b831864',1,'libCZI::SpectrumCharacteristics::SinglePeak()'],['../structlib_c_z_i_1_1_spectrum_characteristics.html#af079f5cdea64ae1c1ce9c1802e5fd7f3',1,'libCZI::SpectrumCharacteristics::singlePeak()']]],
   ['singlevalue',['singleValue',['../structlib_c_z_i_1_1_range_or_single_value.html#ab7281ed3283d0f683757f3fd5d40e9aa',1,'libCZI::RangeOrSingleValue']]],
   ['siteobjecttype',['SiteObjectType',['../namespacelib_c_z_i.html#a77743727a5f0709a64237e58b9254983',1,'libCZI']]],
   ['size',['size',['../structlib_c_z_i_1_1_dimension_and_start_size.html#ac0953e9273d2261ee3d282dac2683175',1,'libCZI::DimensionAndStartSize::size()'],['../structlib_c_z_i_1_1_bitmap_lock_info.html#a109f8d69b48bc4398861217c375dee1b',1,'libCZI::BitmapLockInfo::size()']]],

@@ -4,6 +4,8 @@ var searchData=
   ['toxmlwstring',['ToXmlWstring',['../structlib_c_z_i_1_1_xml_date_time.html#a98d5f56db50d7ae8b269dafb18f620a8',1,'libCZI::XmlDateTime']]],
   ['trydeterminepixeltypeforchannel',['TryDeterminePixelTypeForChannel',['../classlib_c_z_i_1_1_utils.html#ad105cc3a3791e6dd269116de0f71de04',1,'libCZI::Utils']]],
   ['trygetattribute',['TryGetAttribute',['../classlib_c_z_i_1_1_i_xml_node_read.html#a7cf31fe7e079358d5436289ee678e0df',1,'libCZI::IXmlNodeRead']]],
+  ['trygetattributeid',['TryGetAttributeId',['../classlib_c_z_i_1_1_i_attribute_id.html#a6b6c0e56429c9fc460fe936d5a7b1d61',1,'libCZI::IAttributeId']]],
+  ['trygetattributename',['TryGetAttributeName',['../classlib_c_z_i_1_1_i_attribute_name.html#adbc5aaf7457a5f6a3c16322cd06b2bb3',1,'libCZI::IAttributeName']]],
   ['trygetgamma',['TryGetGamma',['../classlib_c_z_i_1_1_i_channel_display_setting.html#a37a0c8e3159e6a5e3a9cd0c22b90fd2f',1,'libCZI::IChannelDisplaySetting']]],
   ['trygetinterval',['TryGetInterval',['../classlib_c_z_i_1_1_i_dim_bounds.html#a7f42cf193370731a6b21ae5d2d6fa78e',1,'libCZI::IDimBounds::TryGetInterval()'],['../classlib_c_z_i_1_1_c_dim_bounds.html#abf42285e28ddc4843556f88b2292c494',1,'libCZI::CDimBounds::TryGetInterval()']]],
   ['trygetintervaldefinition',['TryGetIntervalDefinition',['../classlib_c_z_i_1_1_i_dimension_z_info.html#a74cb2b6c953edf73ee9916e3ab71de3c',1,'libCZI::IDimensionZInfo::TryGetIntervalDefinition()'],['../classlib_c_z_i_1_1_i_dimension_t_info.html#a524fe50881aaf29353744500f1166158',1,'libCZI::IDimensionTInfo::TryGetIntervalDefinition()']]],

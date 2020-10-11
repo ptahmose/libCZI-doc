@@ -38,6 +38,7 @@ var searchData=
   ['image_20document_20concept',['Image Document Concept',['../imagedocumentconcept.html',1,'']]],
   ['imetadatasegment',['IMetadataSegment',['../classlib_c_z_i_1_1_i_metadata_segment.html',1,'libCZI']]],
   ['indexsetfromstring',['IndexSetFromString',['../classlib_c_z_i_1_1_utils.html#a69fdbdc41c4700f35a648a516757bbca',1,'libCZI::Utils']]],
+  ['informationtype',['InformationType',['../structlib_c_z_i_1_1_spectrum_characteristics.html#ad543bf448848d899f0a0d091ab1f6cc0',1,'libCZI::SpectrumCharacteristics']]],
   ['internalerror',['InternalError',['../structlib_c_z_i_1_1_lib_c_z_i_c_z_i_parse_exception.html#a32a6c8ab31a657e490e5c605c97efb40a8462b58246e70e5c83e5b939a9332cb5',1,'libCZI::LibCZICZIParseException']]],
   ['intersect',['Intersect',['../structlib_c_z_i_1_1_int_rect.html#a705db72d07819bb7dc89de8e85a695e1',1,'libCZI::IntRect::Intersect(const IntRect &amp;r) const'],['../structlib_c_z_i_1_1_int_rect.html#ab90921fdce94ba493985e125fdb32d39',1,'libCZI::IntRect::Intersect(const IntRect &amp;a, const IntRect &amp;b)']]],
   ['intersectswith',['IntersectsWith',['../structlib_c_z_i_1_1_int_rect.html#a7f1f1d29e2b43f840dd81584ae15bb15',1,'libCZI::IntRect']]],
