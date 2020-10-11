@@ -2,7 +2,7 @@ var searchData=
 [
   ['r',['r',['../structlib_c_z_i_1_1_rgb8_color.html#acdf7d80ba3adccfc7866b4c0f182248c',1,'libCZI::Rgb8Color::r()'],['../structlib_c_z_i_1_1_rgb_float_color.html#a41c20a73ab74d9ade494315511267ef2',1,'libCZI::RgbFloatColor::r()'],['../namespacelib_c_z_i.html#a55049658acf59d0eddfaebcad16df424ae1e1d3d40573127e9ee0480caf1283d6',1,'libCZI::R()']]],
   ['rangeorsinglevalue',['RangeOrSingleValue',['../structlib_c_z_i_1_1_range_or_single_value.html',1,'libCZI']]],
-  ['ranges',['ranges',['../structlib_c_z_i_1_1_spectrum_characteristics.html#afe80c63dc2ebd10f5f2b8a99f1a02a97',1,'libCZI::SpectrumCharacteristics']]],
+  ['ranges',['Ranges',['../structlib_c_z_i_1_1_spectrum_characteristics.html#ad543bf448848d899f0a0d091ab1f6cc0a92711ef5b0215a076fef4a3abbfc2258',1,'libCZI::SpectrumCharacteristics::Ranges()'],['../structlib_c_z_i_1_1_spectrum_characteristics.html#afe80c63dc2ebd10f5f2b8a99f1a02a97',1,'libCZI::SpectrumCharacteristics::ranges()']]],
   ['rating',['rating',['../structlib_c_z_i_1_1_general_document_info.html#a26ded0bae7ffb1bc68fef7f1862c0508',1,'libCZI::GeneralDocumentInfo']]],
   ['rating_5fvalid',['rating_valid',['../structlib_c_z_i_1_1_general_document_info.html#a460546de9c8871c3c8df603acdc08ecf',1,'libCZI::GeneralDocumentInfo']]],
   ['read',['Read',['../classlib_c_z_i_1_1_i_stream.html#ae275276d0da5082a3711527ddfedfd9f',1,'libCZI::IStream']]],
